@@ -24,4 +24,6 @@ soldati: NO!
 luka: SIAMO LA RESISTENZA! E LA RESISTENZA NON DIMENTICA! MORTE A SANINSKI!
 colpo di pistola
 soldati: OOOOOOOOOOHHH
+
+set GameState.petr_alive = false
 => giorno2/start

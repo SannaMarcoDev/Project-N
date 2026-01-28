@@ -1,6 +1,6 @@
 extends Node2D
 
-var scelta_dialogo: bool = true
+var petr_alive: bool = true
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
