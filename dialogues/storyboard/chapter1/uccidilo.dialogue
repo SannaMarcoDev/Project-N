@@ -1,0 +1,27 @@
+import "res://dialogues/storyboard/chapter2/intro.dialogue" as giorno2
+
+~ start
+luka: il file è nelle mie mani, lui non ci serve più a niente.
+luka: Un traditore, un agente governativo, magari anche una spia, ma non faremo il loro gioco.
+luka: Ivan.
+ivan: ...
+luka: Portalo fuori, nel cortile principale.
+ivan: Certo capo, agli ordini.
+luka: ...
+ivan: DAI FORZA NON PIAGNUCOLARE, MUOVITI!
+petr: VI HO AIUTATO! VI HO DATO TUTTO! VI PREGO!
+luka: Sono proprio venuti tutti a vedere, meglio così, li caricherà ancora di più.
+luka: Oggi amici miei, faremo capire al mondo, che noi non vacilliamo!
+soldati: SI!
+luka: che non li perdoneremo mai per quello che ci hanno fatto, anche se dovessero venire da noi strisciando!
+soldati: SI!
+luka: Ci hai dato dei documenti, documenti che hai scritto nella comodità della tua stanza, al riparo dai bombardamenti, mangiando pollo e salmone!
+soldati: A MORTE!
+luka: Il tutto mentre noi morivamo di fame! Hai ucciso, hai aiutato il nemico, e pensi che fare ammenda alla fine ti possa salvare?
+soldati: NO!
+luka: Non siamo un rifugio per chi cambia bandiera!
+soldati: NO!
+luka: SIAMO LA RESISTENZA! E LA RESISTENZA NON DIMENTICA! MORTE A SANINSKI!
+colpo di pistola
+soldati: OOOOOOOOOOHHH
+=> giorno2/start

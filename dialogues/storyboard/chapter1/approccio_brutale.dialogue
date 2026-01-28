@@ -1,0 +1,53 @@
+import "res://dialogues/storyboard/chapter1/perdonalo.dialogue" as perdonalo
+import "res://dialogues/storyboard/chapter1/uccidilo.dialogue" as uccidilo
+
+~ start
+luka: SVEGLIA!
+petr: AHHHHHHHHH!
+luka: Spero non ti faccia male la mia pistola sulla tua tempia, non che mi interessi ovviamente, io non sento nulla.
+luka: Senti ho poco tempo e ancora meno pazienza.
+luka: Dammi una sola ragione per non spargere il tuo cervello su questo pavimento e andarmene a dormire.
+petr: No! No ti prego!
+petr: Ho informazioni!
+petr: Ho le planimetrie della centrale!
+luka: Di quale centrale stai parlando? E ti avviso, se sento puzza di bugie, ti ficco in quella bella caldaia, almeno avremo qualcos'altro ad alimentare il fuoco.
+petr: La centrale a est, a metà strada da qui a Eden, sulla statale.
+petr: Lavoravo lì come manutentore, ho scritto io tutti i documenti, planimetrie e codici. Posso farvi entrare con questo!
+luka: Dai qua! Fammi controllare...
+petr: C'è tutto, falle nel sistema ancora non sistemati, planimetrie complete, tutte le informazioni sui sistemi di difesa, ronde...
+petr: Per favore devi credermi! Ho rischiato la vita per fare avere tutto questo alla resistenza!
+luka: Taci poppante, sto leggendo.
+petr: ...
+luka: forse...
+petr: ...
+luka: Senti un po', schifoso topo di fogna, perchè dovrei credere a una singola parola che dici?
+luka: Indossi l'uniforme, non sei neanche un collaborazionista forzato, hai scelto tu di arruolarti, e ora cambi idea così? All'improvviso, fai i bagagli e ci consegni le chiavi di casa?
+petr: Sono stato costretto!
+petr: Avevo bisogno di un lavoro, mi avevano detto che sarei rimasto alla manutenzione dei veicoli. Saremmo morti di fame senza soldi.
+petr: Mio fratello è invalido dalla guerra civile di 5 anni fa, veniamo dal nord, non c'è via di fuga lassù!
+petr: Ho dovuto fare cose orribili è vero, sono stato torturato perchè mi sono rifiutato tante volte di obbedire.
+luka: Effettivamente mi chiedevo cosa fossero quelle botte sul viso, ha anche un orecchio... sembra mangiato? Cosa fanno veramente alla capitale?
+petr: Dopo anni di lavoro disgustoso sono riuscito a farci cambiare di sede, lontano dalla capitale, nella speranza di fuggire.
+petr: Nel mentre ho guadagnato la fiducia dei lavoratori della centrale, non sono cattivi, sono solo... Neutrali, fanno quel che possono per dar da mangiare ai loro figli.
+luka: Cazzate! Non esistono neutrali in questa guerra, pensano di lavarsene le mani così, ma sono solo dei vigliacchi. Complici.
+luka: Mentre voi siete lì a lavorare per mantenere l'infrastruttura del governo in piedi, a mangiare caviale nei vostri latti caldi.
+luka: Noi siamo qui a fare la differenza, mangiando topi e dormendo tutti vicini per un po' di calore.
+luka: Che fine ha fatto tuo fratello? è in agguato da qualche parte in attesa che ti lasciamo andare? Perchè non succederà.
+petr: Lui... è morto.
+petr: Ha dato la sua vita per permettermi di scappare, ha distratto le guardie mentre scappavo, ho sentito la sua esecuzione da lonano.
+luka: Ottimo! Un verme in meno. Tempo di fare lo stesso con te.
+luka: Ah e grazie per i documenti, sembrano tutti veritieri, perlomeno hai fatto qualcosa di buono nella tua vita, magari Dio ti perdonerà il resto, lo vedrai a breve.
+petr: Aspetta! Ti ho dato tutto, ho rischiato tutto per fare finalmente la differenza, posso dare una mano, sono un ingegnere, posso aiutarvi con le macchine!
+petr: Inoltre non ci metteranno tanto a capire che i documenti sono spariti, possiamo attaccarli in fretta, con me ad aiutarvi sarà più semplice!
+luka: ...
+luka: Aspetta qua.
+luka: Che situazione.
+ivan: allora?
+luka: Sembrerebbe dire il vero, è scappato per consegnarci tutte le informazioni sulla centrale elettrica, con queste entreremmo in 5 minuti.
+ivan: E di lui cosa ne facciamo? So ti ho sentito sbraitare dentro, ha ucciso tante persone, forse anche famigliari nostri.
+ivan: Solo perchè ci fa un regalino alla fine non vuol dire che vada perdonato. Vogliamo vendetta.
+luka: So cosa intende, le risorse scarseggiano, sarebbe una bocca in più che non possiamo permetterci di sfamare. Ma uccidere un uomo che si è arreso? Cosa direbbe...?
+- Uccidilo
+	=> uccidilo/start
+- Perdonalo
+	=> perdonalo/start

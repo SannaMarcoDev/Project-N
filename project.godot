@@ -1,0 +1,41 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="4 days of war"
+run/main_scene="uid://da51p18bbkc8h"
+config/features=PackedStringArray("4.5", "GL Compatibility")
+
+[autoload]
+
+DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
+GameState="*res://scripts/game_state.gd"
+
+[dialogue_manager]
+
+runtime/balloon_path="res://dialogues/balloon.tscn"
+
+[display]
+
+window/stretch/mode="viewport"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
+
+[internationalization]
+
+locale/translations_pot_files=PackedStringArray("res://dialogues/storyboard/chapter1/intro.dialogue", "res://dialogues/storyboard/chapter1/buone_notizie.dialogue", "res://dialogues/storyboard/chapter1/brutte_notizie.dialogue", "res://dialogues/storyboard/chapter1/approccio_diplomatico.dialogue", "res://dialogues/storyboard/chapter1/approccio_brutale.dialogue", "res://dialogues/storyboard/chapter1/uccidilo.dialogue", "res://dialogues/storyboard/chapter1/perdonalo.dialogue", "res://dialogues/storyboard/chapter2/intro.dialogue")
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

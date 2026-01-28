@@ -1,0 +1,23 @@
+import "res://dialogues/storyboard/chapter1/buone_notizie.dialogue" as buone_notizie
+import "res://dialogues/storyboard/chapter1/brutte_notizie.dialogue" as brutte_notizie
+
+
+~ start
+luka: Sei anni.
+luka: Sono bastati sei anni a Saninski per trasformare quella che era una nazione fiera, in un cimitero a cielo aperto.
+luka: Da quando ha preso il potere... o meglio, da quando se l'è preso con la forza, spacciandola per democrazia, il mio mondo si è ridotto a due sole costanti: la fame e il silenzio.
+luka: Molti mi chiedono perchè non ci ribelliamo con più ferocia, perchè non scendiamo in piazza a urlare. La verità? La rabbia richiede calorie.
+luka: L’odio brucia energie che non abbiamo. Ci è rimasta solo una tiepida, disperata speranza che qualcuno, da qualche parte oltre il confine, si ricordi ancora di noi
+ivan: La dovresti smettere di leggere quella vecchia lettera capo, non è bene rivangare il passato.
+luka: Cosa ci fa Ivan qui a quest'ora?
+ivan: Fa freddo.
+luka: Non dici altro da giorni. Non è che ti sta venendo l'Alzheimer, vecchio pazzo?
+luka: Vedere quella manica penzolante fa effetto anche dopo anni, se solo io...
+ivan: O forse fa solo fottutamente freddo. 
+luka: ...
+luka: Aggiornami vecchio psicopatico, come siamo messi?
+ivan: Ho buone e cattive notizie come sempre, quali vuole sentire prima sua maestà?
+- Buone notizie
+	=> buone_notizie/start
+- Cattive notizie
+	=> brutte_notizie/start

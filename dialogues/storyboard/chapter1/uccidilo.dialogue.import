@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dl0ybyq5kmbwy"
+path="res://.godot/imported/uccidilo.dialogue-55ea8137f68b03d5790ca1baf1597b58.tres"
+
+[deps]
+
+source_file="res://dialogues/storyboard/chapter1/uccidilo.dialogue"
+dest_files=["res://.godot/imported/uccidilo.dialogue-55ea8137f68b03d5790ca1baf1597b58.tres"]
+
+[params]
+
+defaults=true

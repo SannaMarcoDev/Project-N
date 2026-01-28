@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://d1t1qugfo3ky5"
+path="res://.godot/imported/approccio_diplomatico.dialogue-7648dd2e04adfbce6728749b5151ab9d.tres"
+
+[deps]
+
+source_file="res://dialogues/storyboard/chapter1/approccio_diplomatico.dialogue"
+dest_files=["res://.godot/imported/approccio_diplomatico.dialogue-7648dd2e04adfbce6728749b5151ab9d.tres"]
+
+[params]
+
+defaults=true

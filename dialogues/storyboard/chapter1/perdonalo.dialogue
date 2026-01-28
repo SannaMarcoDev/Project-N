@@ -1,0 +1,32 @@
+import "res://dialogues/storyboard/chapter2/intro.dialogue" as giorno2
+
+~ start
+luka: Il file completo era ora nelle mie mani.
+luka: Sarebbe facile ucciderlo ora, chiamarla vendetta, e andare avanti.
+luka: Fallo uscire Ivan, e dagli qualcosa di caldo da bere.
+ivan: Signore, i ragazzi lo faranno a pezzi se lo vedono girare libero.
+luka: Ho detto fallo uscire. Raduna tutti in mensa.
+luka: Parlerò io.
+soldati: ...
+luka: Guardatelo! Guardatelo bene, cosa vedete?
+soldati: Un verme di Saninki!
+soldati: Un assassino!
+luka: Io vedo un ragazzo.
+luka: Vedo qualcuno che ha avuto il coraggio di dire BASTA!
+luka: QUalcuno che ha rischiato la fucilazione per portarci questo.
+luka: Questa è la chiave di volta per la nostra rivoluzione!
+soldati: ohh!
+luka: Se uccidiamo chiunque cerchi di scappare dalla follia di Saninski, in cosa siamo diversi da lui?
+luka: Se uccidiamo la speranza, o quel poco che ci rimane, abbiamo già perso.
+luka: Da oggi, lavora ai generatori, è un tecnico, e ne abbiamo un fottuto bisogno!
+ivan: E finalmente, non ce la facevo più a fare tutto da solo, ti farò sgobbare piccoletto.
+soldato: Hey a me potrebbe servire un compagno di boxe? Che ne dici piccoletto facciamo a botte?
+soldato: Calmati, se è un tecnico può riparare il jukebox nell'angolo, lascialo stare
+luka: Sembrerebbe essere andato bene.
+luka: Come ti chiami ragazzo?
+petr: Petr, signore. Petr.
+luka: Bene Petr, lavora sodo, e vedi di darci una mano.
+luka: Grazie, per avermi dato corda prima.
+ivan: Cosa faresti senza di me, saresti ancora a spalare letame nella tua fattoria.
+luka: o di quello che è rimasto.
+=> giorno2/start
