@@ -1,0 +1,28 @@
+import "res://dialogues/storyboard/chapter1/day2/sera.dialogue" as sera
+
+~ start
+luka: ...
+luka: Chiudete i portelloni.
+luka: Non ruberemo cibo a dei civili. Andiamo via. Ora.
+ivan: Cosa stai facendo Luka? La nostra gente sta morendo di fame. Non possiamo andare avanti così!
+luka: E cosa dovremmo fare, condannare a morte altra gente? Possiamo resistere col poco che abbiamo, dobbiamo resistere col poco che abbiamo.
+porta che sbatte
+soldato: Al diavolo, buonista del cazzo!
+soldato: Se non lo vuoi tu, noi ci prendiamo questo camion e ce ne andiamo, fanculo te e la tua resistenza. Dove pensi di andare senza mangiare?
+autista: NO!
+luka: (Stanno veramente scappando con un camion, perchè...)
+luka: (Devo fermarli a qualunque costo, o non saranno gli ultimi a ribellarsi a me.)
+luka: NELE!
+nele: Non devi dirlo due volte.
+Bang
+Screeeeech
+STUMP
+ivan: ...
+luka: ...
+nele: ...
+luka: (Perdonatemi.)
+luka: Recuperate quello che riuscite da quel camion, e date tutto agli autisti, ripartiranno a breve.
+ivan: Che giornata di merda.
+luka: MUOVERSI!
+set GameState.stole_food = false
+=> sera/start

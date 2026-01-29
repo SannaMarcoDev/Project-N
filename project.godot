@@ -33,7 +33,7 @@ enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://dialogues/storyboard/chapter1/intro.dialogue", "res://dialogues/storyboard/chapter1/buone_notizie.dialogue", "res://dialogues/storyboard/chapter1/brutte_notizie.dialogue", "res://dialogues/storyboard/chapter1/approccio_diplomatico.dialogue", "res://dialogues/storyboard/chapter1/approccio_brutale.dialogue", "res://dialogues/storyboard/chapter1/uccidilo.dialogue", "res://dialogues/storyboard/chapter1/perdonalo.dialogue", "res://dialogues/storyboard/chapter2/intro.dialogue")
+locale/translations_pot_files=PackedStringArray("res://dialogues/storyboard/chapter1/intro.dialogue", "res://dialogues/storyboard/chapter1/buone_notizie.dialogue", "res://dialogues/storyboard/chapter1/brutte_notizie.dialogue", "res://dialogues/storyboard/chapter1/approccio_diplomatico.dialogue", "res://dialogues/storyboard/chapter1/approccio_brutale.dialogue", "res://dialogues/storyboard/chapter1/uccidilo.dialogue", "res://dialogues/storyboard/chapter1/perdonalo.dialogue", "res://dialogues/storyboard/chapter1/day2/intro.dialogue", "res://dialogues/storyboard/chapter1/day2/depreda.dialogue", "res://dialogues/storyboard/chapter1/day2/lasciali_andare.dialogue", "res://dialogues/storyboard/chapter1/day2/sera.dialogue", "res://dialogues/storyboard/chapter1/day3/intro.dialogue")
 
 [rendering]
 

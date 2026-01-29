@@ -1,6 +1,7 @@
 extends Node2D
 
 var petr_alive: bool = true
+var stole_food: bool = true
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

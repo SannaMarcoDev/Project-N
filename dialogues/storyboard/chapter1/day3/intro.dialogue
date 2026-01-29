@@ -1,0 +1,98 @@
+~ start
+Erano a malapena le sei del mattino.
+L'alba non era ancora arrivata del tutto. Il sole era solo una ferita pallida all'orizzonte, filtrata dalla nebbia gelida.
+Il freddo mordeva come un cane, ma era un dolore familiare ormai, quasi confortante.
+Accesi la solita sigaretta.
+luka: Ivan queste sigaretta fanno proprio cagare. Sanno di copertone bruciato.
+ivan: Sono le solite di sempre, vecchio pazzo. Sei solo stressato.
+ivan: E ringrazia di averne, io sono due giorni che non ne ho.
+luka: Magari smettila di giocare d'azzardo. Lo sanno tutti che sei capace a bluffare.
+ivan: Già...
+ivan: Sei sicuro di quello che vuoi fare? Stiamo parlando di un attacco su larga scala. Possiamo davvero fidarci di quel dannato fascicolo?
+
+if GameState.petr_alive
+	luka: L'hai visto com'è quel ragazzo. Petr.
+	luka: Ho passato anni a guardare la gente negli occhi prima di sparargli, Ivan.
+	luka: Non c'è malizia in lui. Non una singola cellula del mio corpo mi dice che sia una trappola.
+	luka: Inoltre i tecnici hanno passato le notti a incrociare i suoi dati con le nostre ricognizioni. Combacia tutto.
+	luka: Turni, planimetrie, tutto.
+	ivan: E se avessimo sbagliato?
+	ivan: E se fosse l'attore migliore della storia?
+	ivan: Vuoi veramente mobilitare l'intera resistenza, svuotare il campo e rischiare tutto su una chance?
+	luka: Rimane una chance molto grossa Ivan. Forse l'unica che avremo mai.
+	ivan: Resta comunque una scommessa.
+	luka: Inoltre sai bene che non possiamo stare qui a marcire ancora a lungo, come ci ha trovato lui ci troveranno presto gli altri.
+	luka: E non voglio morire nascondendomi.
+else
+	luka: ...
+	Sospirai, il ricordo del corpo di Petr ancora fresco nella mia memoria.
+	luka: Sono abbasanza sicuro che non fosse un doppiogiochista.
+	luka: I dati del fascicolo sono solidi. Abbiamo controllato tutto con le informazioni che avevamo già.
+	luka: è roba autentica Ivan. Nessuno sacrfica informazioni così vitali solo per tenderci un'imboscata.
+	ivan: E se avessimo sbagliato? Vuoi veramente mobilitare tutta la resistenza su una chance che ci ha dato un morto?
+	ivan: Un tizio che per giunta, hai spedito tu all'altro mondo?
+	Strinsi i pugni.
+	luka: L'ho ucciso per principio.
+	luka: Se fai del male alla causa, non pensare di venire qui a chiedere perdono dopo.
+	luka: Non sono Dio, Ivan. Non riesco a perdonare come Lui.
+	luka: Ho fatto quello che dovevo per mantenere l'ordine.
+	luka: ...
+	luka: E comunque, la scommessa è troppo grossa per ignorarla. Morto o vivo, le sue informazioni cambieranno questa guerra.
+	ivan: è comunque solo una scommessa?.
+	ivan: Ma dannazione, lo capisco. Non possiamo rimanere qui ancora a lungo, mentre il cappio al collo è sempre più stretto.
+	
+Lasciai cadere un mozzicone e lo schiacciai con lo scarpone.
+luka: Hai paura di morire per caso? Che c'è Ivan, cosa hai da perdere ormai?
+ivan: Non ritirare fuori la storia, vecchio bastardo.
+ivan: Solo perchè la mia famiglia è morta sotto le macerie dei collaborazionisti, non vuol dire che io abbia fretta di raggiungerli.
+ivan: Spero solo di non morire a casaccio. Voglio morire quando avremo vinto.
+luka: Questa sarà la nostra vittoria!
+luka: Se riuscissimo veramente a prendere il controllo della centrale elettrica, tutte le loro difese, le loro artiglierie, comunicazioni.
+luka: tutto alla nostra mercè!.
+luka: Inoltre lo sai bene. I bombardamenti stanno avanzando. Sentiamo i boati ogni notte più vicini.
+luka: Non sappiamo quando toccherà a noi, ma una cosa è sicura.
+luka: Non bombarderebbero mai la loro preziosa centrale. Sarebbe un suicidio politico. Lì dentro staremmo al sicuro.
+ivan: Va bene, mi hai convinto, non che possa tirarmi indietro ora. Avviso il campo, preparati anche te.
+
+Il convoglio si mosse qualche ora dopo.
+Non era una parata militare, era un corteo fantasma di mezzi arrugginiti.
+I camion avanzavano a fari spenti, guidati solo dalla luce grigia della notte, e della memoria muscolare degli autisti che conoscevano ogni buca di quella foresta.
+Nele teneva una mappa stropicciata sulle ginocchia, illuminandola con una torcia a dinamo dalla luce fioca.
+nele: Faremo meglio ad accamparci a ovest della centrale,se i dati del fascicolo sono corretti, le telecamere hanno un punto cieco in quella zona.
+nele: Da lì potremo prenderli alla sprovvista.
+ivan: Se i dati sono corretti, se c'è un punto cieco. La mia vita è appesa a troppi se per i miei gusti, ragazza.
+nele: Sempre meglio di un attacco frontale come proponevi tu, vecchio. A meno che tu non voglia correre contro le mitragliatrici urlando insulti.
+
+Nel mentre nella stiva dei camion i soldati si preparavano.
+
+if GameState.stole_food
+	Il bocia tirò fuori dalla tasca una barretta energetica. Era parte del carico rubato.
+	La rigirava tra le dita con un sorrisetto nervoso, quasi compiaciuto.
+	bocia: Ivan! Vuoi metà? è al cioccolato!
+	Ivan lo guardò con occhi ridotti a fessure.
+	C'era qualcosa di diverso nei miei uomini oggi. Una sorta di ombra negli sguardi.
+	Non si guardavano più come fratelli, ma quasi come complici di un crimine segreto.
+	Ivan strappò mezza barretta dalle mani del ragazzo.
+	ivan: Dai qua! Potrei non avere fame ma a una barretta al cioccolato non posso mica dire di no!
+	ivan: Chissà come se la passano quelli di Eden, sapendo che il loro riso è nella mia pancia hahahah!
+	bocia: E chissenefrega? Meglio a noi che a loro, la legge della giungia, no Comandante?
+	luka: ...
+else
+	Il Bocia si strinse le braccia al petto, tremando. Non era solo il freddo.
+	Il suo stomaco brontolò rumorosamente nel silenzio del camion, un suono lungo e doloroso.
+	bocia: Ho sentito che nella mensa della centrale hanno scorte vere.
+	bocia: Carne in scatola. Forse persino caffè!
+	Kael chiuse gli occhi, appoggiando la testa contro la paratia metallica. Sembrava più vecchio di dieci anni, la pelle grigia tirata sulle ossa.
+	ivan: Smettila di sognare ragazzo, risparmia il fiato. Meno parli, meno calorie bruci.
+	Nele strinse le labbra, pallida come un lenzuolo.
+	nele: Se prendiamo la centrale... prenderemo anche la loro cucina. Resisti piccolo.»
+	La debolezza era palpabile, un passeggero invisibile che ci sedeva accanto, rendendo ogni movimento uno sforzo titanico.
+
+if GameState.petr_alive
+	Petr era seduto goffamente su una cassa di munizioni, cercando di tenere fermo l'elmetto che gli scivolava continuamente sugli occhi.
+	Ogni volta che il camion prendeva una buca, lui rimbalzava e sbatteva la spalla contro la paratia, mormorando scuse a nessuno in particolare.
+	bonk bonk
+	petr: Scusate... Scusami.
+	nele: Stai calmo, "Miracolato". Non ti mangiamo mica.
+	
+=> END

@@ -1,4 +1,4 @@
-import "res://dialogues/storyboard/chapter2/intro.dialogue" as giorno2
+import "res://dialogues/storyboard/chapter1/day2/intro.dialogue" as giorno2
 
 ~ start
 luka: Il file completo era ora nelle mie mani.

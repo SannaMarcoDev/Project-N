@@ -1,0 +1,24 @@
+import "res://dialogues/storyboard/chapter1/day2/sera.dialogue" as sera
+
+~ start
+luka: (Non posso lasciare i miei soldati nell'agonia ancora per molto)
+luka: (Mi servono in forze per i prossimi giorni.)
+luka: SVUOTATE I CAMION!
+luka: Ogni singolo sacco. La rivoluzione non si combatte a stomaco vuoto.
+luka: Loro sono già condannati, noi abbiamo ancora una possibilità.
+Luka: MORTE AI COLLABORAZIONISTI!
+ivan: Subito capo.
+autista: NO!
+autista: I miei figli! Non potete. Non potete farci questo!
+luka: Lasciami andare stupido vecchio! Lasciami andare ho detto!
+BAM
+ivan: ...
+nele: ...
+luka: Prendete anche i camion, fate in modo che non si noti nemmeno che siamo stati qui.
+luka: E fatelo in fretta.
+soldato: Si mangia finalmente.
+soldato: Non ne potevo veramente più, ancora un giorno così e sarei uscito di testa.
+luka: (Cercherò di fare in modo che questo cibo non verrà sprecato.)
+luka: (Io porrò fine a questa guerra, molto presto.)
+set GameState.stole_food = true
+=> sera/start

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://5w042ey25ddh"
+path="res://.godot/imported/lasciali_andare.dialogue-77e88f4cc5161fdb5876f15671636491.tres"
+
+[deps]
+
+source_file="res://dialogues/storyboard/chapter1/day2/lasciali_andare.dialogue"
+dest_files=["res://.godot/imported/lasciali_andare.dialogue-77e88f4cc5161fdb5876f15671636491.tres"]
+
+[params]
+
+defaults=true

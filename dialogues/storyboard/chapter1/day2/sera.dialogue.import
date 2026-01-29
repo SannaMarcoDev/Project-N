@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://d0dse5wmij35o"
+path="res://.godot/imported/sera.dialogue-96246e8e03caee2b23e8edc4a4aab636.tres"
+
+[deps]
+
+source_file="res://dialogues/storyboard/chapter1/day2/sera.dialogue"
+dest_files=["res://.godot/imported/sera.dialogue-96246e8e03caee2b23e8edc4a4aab636.tres"]
+
+[params]
+
+defaults=true

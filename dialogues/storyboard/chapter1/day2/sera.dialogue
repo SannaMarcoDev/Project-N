@@ -1,0 +1,49 @@
+import "res://dialogues/storyboard/chapter1/day3/intro.dialogue" as day3
+
+~ start
+Era ormai sera.
+La mensa, che solo poche ore prima risuonava di speranze e risate nervose, ora era un antro di ombre, allungate dalla luce tremolante del generatore.
+Era mezza vuota. Molti avevano preferito ritirarsi direttamente nelle loro cuccette, forse per dormire.
+if GameState.stole_food
+	O forse per continuare a mangiare senza essere visti, senza senzi di colpa.
+else
+	o forse solo per fissare il soffitto buio, coi crampi allo stomaco.
+
+Pochi soldati sedevano ai tavoli di metallo.
+E qualunque cibo avessero davanti, per tutti aveva lo stesso sapore. Quello metallico del sangue versato sulla neve.
+Nele puliva il suo fucile in un angolo. Lo smontava e lo rimontava con gesti meccanici, ossessivi, senza mai alzare lo sguardo.
+Ivan fissava il vuoto, stringeva la sua solita tazza di latte caldo.
+Luka: Buonanotte ragazzi, domani partiremo, è meglio per tutti se andate a dormire anche voi.
+ivan: ...
+Uscendo dalla tenda, vengo fermato da Nele bruscamente.
+nele: Ascolta Luka...
+luka: ...
+nele: ...buonanotte, ci vediamo domani.
+
+if GameState.petr_alive and GameState.stole_food
+	Tornando alla mia tenda, ancora dolorante dalla fatica del giorno, venni fermato da Petr.
+	luka: Ciao miracolato, cosa ci fai ancora in giro? Domani partiremo, sarà meglio che tu sia riposato.
+	petr: ...
+	Aveva uno strano sguardo in faccia, le mani nascoste nelle tasche.
+	luka: Scusa?
+	petr: Assassini.
+	petr: Quante persone moriranno a causa vostra?! Rubare il cibo a dei poveri innocenti.
+	petr: Avete condannato tutti per riempirvi la panca!
+	luka: Petr per favore, ho solo fatto quello che ritenevo giusto. Per noi, noi faremo la differenza in questa guerra.
+	petr: Ho disertato e mi sono unito alla resistenza per fare del bene. NON PER QUESTO!
+	Vidi il luccichio opaco di una vecchia pistola d'ordinanza nella sua mano.
+	BANG
+	Sentì una fiammata violenta alla spalla sinistra, un dolore accecante, come se un ferro rovente mi avesse trapassato la carne e frantumato l'osso.
+	luka: Lurido...!
+	Petr, con gli occhi sgranati dal terrore per ciò che aveva fatto, cercò di prendere la mira per il colpo di grazia.
+	Non gliene diedi il tempo.
+	Mi lanciai su di lui, ignorando il sangue che mi colava lungo il braccio.
+	Lo travolsi di peso, facendolo schiantare contro il pavimento freddo e innevato.
+	Cercò di divincolarsi, scalciando e urlando, ma la mia mano destra aveva già trovato l'impugnatura del coltello alla mia cintura.
+	luka: Lo sapevo che non ci si poteva fidare di te. Governativo del cazzo.
+	SPLAT.
+	Con un unico movimento, affondai la lama nel suo petto, dritto al cuore.
+	Mi guardò, la bocca aperta in un grido muto, e la luce nei suoi occhi spenta per sempre.
+	Il ragazzo che avevo risparmiato ieri, era morto oggi per mano mia.
+
+=> day3/start

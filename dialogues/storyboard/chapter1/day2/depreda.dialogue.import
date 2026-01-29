@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://diy8o4bxyt3bd"
+path="res://.godot/imported/depreda.dialogue-526c64e73652d13ff6a16ec262bd0ae7.tres"
+
+[deps]
+
+source_file="res://dialogues/storyboard/chapter1/day2/depreda.dialogue"
+dest_files=["res://.godot/imported/depreda.dialogue-526c64e73652d13ff6a16ec262bd0ae7.tres"]
+
+[params]
+
+defaults=true
