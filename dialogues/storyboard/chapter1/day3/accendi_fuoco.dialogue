@@ -1,0 +1,37 @@
+import "res://dialogues/storyboard/chapter1/day4/intro.dialogue" as giorno4
+
+~ start
+luka: Va bene. Accendete il fuoco. Ma piccolo, e fatelo bene.
+ivan: Perchè non mi stai mai ad ascoltare, vuoi veramente farci ammazzare tutti?
+Nele si mise in mezzo, con occhi di fuoco.
+nele: Vai a prendere della legna, adesso.
+Scegliemmo un punto riparato, sotto un piccolo parapetto roccioso naturale coperto da una fitta tettoia di rami e rovi.
+La roccia avrebbe fatto da scudo termico parziale e da riflettore per il calore, creando una sorta di forno naturale.
+I soldati si mossero con efficienza silenziosa.
+Scavarono una buca profonda per nascondere la fiamma alla vista laterale e usarono legna secca, priva di resina, per minimizzare il fumo.
+Spogliammo il ragazzo dei vestiti fradici e lo avvolgemmo in coperte asciutte, posizionandolo vicino al calore della roccia.
+Per un'ora lunga e agonizzante, non successe nulla. Nessuno osava fiatare.
+Solo il crepitio sommesso della legna e il sibilo del vento fuori dal nostro piccolo rifugio caldo.
+Ogni volta che sentivo un rumore in cielo, il cuore mi saltava in gola, immaginando il ronzio di un drone.
+
+Poi, un colpo di tosse.
+Debole, rauco, ma inconfondibile.
+Il ragazzo inspirò profondamente, come chi riemerge dall'acqua.
+luka: piano ragazzo, piano.
+luka: Sei al sicuro, sei con noi ora.
+Un'ondata di sollievo attraversò il piccolo gruppo riunito attorno al fuoco.
+Le spalle tese si rilassarono. Qualcuno ridacchiò nervosamente.
+nele: Hai visto, Ivan? Il vecchio fuoco funziona ancora.
+ivan: Tsk. Ci è andata bene.
+Il bocia tirò fuori dallo zaino una salsiccia rinsecchita, un tesoro che probabilmente conservava per l'occasione speciale della vittoria.
+bocia: Al diavolo, si festeggia stasera.
+Il profumo di carne e grasso che sfrigolava sul fuoco riempì la piccola grotta improvvisata. Sembrava il profumo di casa.
+Condividemmo quel boccone simbolico, passandoci la salsiccia calda di mano in mano, ognuno prendendone un morso minuscolo come se fosse un sacramento.
+Chiacchierammo sottovoce, non della guerra, non della centrale, ma di cose stupide.
+Il sapore del cibo vero, il ricordo di un letto morbido, scommesse su chi avrebbe dormito di più dopo la vittoria
+nele: Si è già riaddormentato.
+luka: Lascialo riposare, anzi, dovremmo farlo anche noi, non manca molto all'alba.
+Mi sdraiai accanto a Nele, che fissava il ragazzino.
+nele: Hai scelto bene. 
+Appena prima che il sonno ci prendesse tutti.
+=> giorno4/start

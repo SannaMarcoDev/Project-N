@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bqe3if576jygc"
+path="res://.godot/imported/accendi_fuoco.dialogue-1596ae996275c0ae45609fd55c1aeb05.tres"
+
+[deps]
+
+source_file="res://dialogues/storyboard/chapter1/day3/accendi_fuoco.dialogue"
+dest_files=["res://.godot/imported/accendi_fuoco.dialogue-1596ae996275c0ae45609fd55c1aeb05.tres"]
+
+[params]
+
+defaults=true

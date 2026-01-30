@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://dcoh5venj807c"]
+
+[ext_resource type="Texture2D" uid="uid://chw38c4offtjh" path="res://backgrounds/chapter1/base_camp.png" id="1_errlg"]
+[ext_resource type="Script" uid="uid://cp4p2evbb42ff" path="res://scenes/camera_2d.gd" id="2_bl13t"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(1920, 1080)
+offset_right = 1920.0
+offset_bottom = 1080.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_errlg")
+expand_mode = 2
+stretch_mode = 1
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(84, 53)
+anchor_mode = 0
+zoom = Vector2(1.1, 1.1)
+script = ExtResource("2_bl13t")

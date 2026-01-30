@@ -1,0 +1,36 @@
+import "res://dialogues/storyboard/chapter1/day4/intro.dialogue" as giorno4
+
+~ start
+Guardai il ragazzo tremare, poi alzai lo sguardo verso la volta di rami sopra di noi. Potevo quasi sentire il ronzio invisibile dei sensori nemici nel cielo.
+luka: Niente fuoco. è troppo rischioso.
+luka: Non posso scommetere le nostre vite e la risucita della missione su una fiamma.
+nele: ...
+nele: Ho un idea! Ivan dammi una mano.
+Lavorammo in silenzio. Spogliammo il ragazzo dei suoi stracci ghiacciati. La sua pelle era fredda al tatto, inquietantemente simile a marmo.
+Lo avvolgemmo in due strati di coperte termiche.
+nele: Serve contato. Pelle su pelle. E l'unico modo per trasferire calore abbastanza in fretta.
+Mettemmo il ragazzo in mezzo a noi. Era piccolo, fragile come un uccellino caduto dal nido.
+Il suo corpo era un blocco di ghiaccio contro il mio fianco. Lo strinsi, cercando di trasmettergli ogni grammo di calore che avevo.
+Irina lo abbracciò da dietro, avvolgendolo completamente, sussurrandogli parole per calmarlo.
+Alla fine, la stanchezza ebbe la meglio e il buio ci inghiottì.
+
+Mi svegliai con la luce grigia dell'alba che filtrava attraverso la tela della tenda.
+C'era un silenzio strano.
+Aprii gli occhi.
+La visione davanti a me era qualcosa che si poteva solo sognare.
+Nele era sveglia. Mi guardò sopra la testa arruffata del ragazzino.
+La temibile cecchina, la donna che avevo visto abbattere soldati senza battere ciglio, stava piangendo.
+Erano lacrime silenziose che le rigavano il volto. Teneva il ragazzo stretto a sé, il mento appoggiato sulla sua fronte, dondolandolo impercettibilmente.
+Non sembrava un soldato in quel momento. Sembrava una madre che aveva appena riavuto indietro un figlio che credeva perso.
+Il ragazzo era vivo.
+nele: è caldo.
+nele: Ce l'ha fatta capo. è caldo.
+luka: Grazie a Dio.
+luka: Non avrei sopportato l'idea svegliarmi accanto a...
+ivan: Bhe.
+Ivan entrò con la sua solita espressione burberà, ma alla vista della scena, anche lui si fermò un attimo.
+ivan: A quanto pare il calore umano serve ancora a qualcosa in questo dannato mondo.
+Uscimmo dal sacco a pelo piano per non svegliarlo, lasciandolo dormire ancora un po'.
+Avevamo rischiato scegliendo la prudenza, ma il miracolo era avvenuto lo stesso.
+Eravamo pronti a combattere, e per la prima volta dopo giorni, sentivo che avevamo qualcosa di concreto per cui valeva la pena farlo.
+=> giorno4/start

@@ -1,3 +1,6 @@
+import "res://dialogues/storyboard/chapter1/day3/accendi_fuoco.dialogue" as fuoco
+import "res://dialogues/storyboard/chapter1/day3/coperte.dialogue" as coperte
+
 ~ start
 Erano a malapena le sei del mattino.
 L'alba non era ancora arrivata del tutto. Il sole era solo una ferita pallida all'orizzonte, filtrata dalla nebbia gelida.
@@ -94,5 +97,67 @@ if GameState.petr_alive
 	bonk bonk
 	petr: Scusate... Scusami.
 	nele: Stai calmo, "Miracolato". Non ti mangiamo mica.
+	petr: È che... non sono abituato a viaggiare. Di solito io ero a riparare questi camion, non a starci sopra mentre si va in guerra.»
+	soldato: Tranquillo, amico. Finché ci porti dentro quella centrale, puoi anche ballare la polka.
+	nele: Sei la nostra mascotte ormai. Se sopravvivi tu, sopravviviamo tutti.
+	petr: heh
+	petr: Ah comunque!
+	petr: Mi sono appena ricordato, il condotto di ventilazione nella parte nord della struttura. La grata è mezza andata a causa dei topi che continuavano a farci nidi.
+	petr: Posso svitarla io... Col mio fidato cacciavite fortunato!
+	Tirò fuori un vecchio cacciavite dal taschino, tenendolo come se fosse Excalibur. Persino Ivan rise, scuotendo la testa.
+	ivan: Tienitelo stretto, tecnico. Potrebbe valere più del mio fucile domani.
 	
-=> END
+Il camion sobbalzò violentemente su una radice, interrompendo le chiacchiere.
+Il camion rallentò fino a fermarsi. Il motore si spense.
+Dal posto di guida, arrivarono due colpi secchi sulla carrozzeria. Segnale di sbarco.
+luka: Tutti giù, niente rumori, niente luci, ci accampiamo qui fino a domani.
+
+Scendemmo nel fitto del bosco. L'aria sapeva di pino e neve.
+Davanti a noi, a meno di un chilometro, la Centrale Termoelettrica si ergeva come un mostro di cemento.
+Le sue ciminiere che vomitavano fumo nero nel cielo pallido. Le luci perimetrali tagliavano la nebbia.
+Ci accampammo in un avvallamento naturale coperto da rovi, perfetto per nascondere la nostra presenza per le prossime ore.
+ I soldati si muovevano veloci, stendendo teli mimetici.
+luka: Sembra tranquillo, che dici?
+ivan: Troppo tranquillo.
+ivan: Abbiamo una lunga notte davanti prima dell'attacco. Cerca di dormire, Capo.
+ivan: Domani ci servirà ogni gioccio di forza.
+Abbassai il binocolo. Domani l'avremmo presa o saremmo morti provandoci. Ma per stasera, eravamo solo ombre in attesa nel bosco.
+
+La tenda era piccola, un guscio di tela che puzzava di muffa e sudore stantio, ma riparava dal vento.
+Ivan russava già piano in un angolo, raggomitolato come un vecchio cane da guerra.
+Nele, invece, era ancora sveglia, seduta a gambe incrociate mentre lucidava le lenti del suo mirino alla debole luce di una candela.
+luka: Non riesci a dormire?
+nele: Troppi pensieri. Penso al futuro, alla centrale, a cosa succederà se perderemo, cosa succederà se perderai. Se ci sarà un futuro per...
+luka: Ci sarà.
+luka: Sarà diverso, ma ci sarà.
+nele: Buonanotte Luka.
+Il sonno mi prese quasi subito, un buio pesante e senza sogni, ma durò poco.
+
+bocia: Comandante, svegliatevi!
+Aprii gli occhi di scatto, la mano già sulla pistola. Era il bocia. Il suo volto era pallido sotto il passamontagna.
+luka: Che succede? Ci hanno trovato?
+bocia: Abbiamo trovato qualcuno. Nel fosso a ovest del perimetro.
+Il bocia scostò il lembo della tenda. Due soldati entrarono trascinando un corpo piccolo e inerte.
+Era un ragazzino, non poteva avere più di dodici anni. I suoi vestiti erano stracci bagnati fradici, rigidi per il ghiaccio.
+Le sue labbra erano blu, la pelle cerea. Tremava, ma erano scosse deboli, irregolari. Il corpo stava smettendo di lottare.
+Mi avvicinai, toccandogli la fronte. Era freddo come il marmo.
+
+nele: Dobbiamo scaldarlo, e subito!
+nele: Serve un fuoco. Ha bisogno di calore vero per far ripartire la circolazione. Le coperte potrebbero non bastare a riportarlo indietro da questo stadio
+ivan: Sei impazzita?
+ivan: Siamo a meno di un chilometro dalla centrale! I droni a scansione termica passano ogni ora.
+ivan: Anche se siamo coperti dai rovi, una fonte di calore come un fuoco risalta come un faro nella notte. Vuoi rischiare di farci bombardare tutti?
+ivan: E per cosa? Guardalo. È quasi andato.
+ivan: Forse accendiamo il fuoco, rischiamo la vita di 150 uomini, e lui muore comunque tra mezz'ora per lo shock termico. Non sappiamo se basterà
+nele: E allora cosa facciamo? Lo guardiamo spegnersi?
+ivan: Prendete delle coperte, e sperate per il meglio.
+nele: Luka?!
+Guardai il ragazzo. Il suo respiro era un rantolo superficiale.
+Il metodo di Ivan era sicuro per la missione, ma lento. Molto lento. Forse troppo lento per un cuore che batteva così piano.
+Il fuoco era rapido, potente, la sua chance migliore di sopravvivere alla notte...
+Ma era una scommessa mortale contro i sensori del governo. E anche con il fuoco, non c'erano garanzie che si sarebbe svegliato.
+
+- Accendi il fuoco
+	=> fuoco/start
+- Usa le coperte
+	=> coperte/start
