@@ -1,0 +1,66 @@
+[gd_scene load_steps=10 format=3 uid="uid://dcoh5venj807c"]
+
+[ext_resource type="Script" uid="uid://b61np4u7bqse2" path="res://scenes/chapter1/chapter_1.gd" id="1_jef6v"]
+[ext_resource type="PackedScene" uid="uid://bv8xvb5uksg1y" path="res://dialogues/balloon.tscn" id="2_08fay"]
+[ext_resource type="Script" uid="uid://cp4p2evbb42ff" path="res://scenes/chapter1/camera_2d.gd" id="2_bl13t"]
+[ext_resource type="Texture2D" uid="uid://d0sl70lhnw3w6" path="res://backgrounds/temps/black.jpg" id="3_vju1c"]
+
+[sub_resource type="Curve" id="Curve_gqb2f"]
+_data = [Vector2(0.06870229, 1), 0.0, 0.0, 0, 0, Vector2(0.8167938, 0.5019646), 0.0, 0.0, 0, 0, Vector2(1, 0.0039292574), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_bqqt6"]
+curve = SubResource("Curve_gqb2f")
+
+[sub_resource type="Gradient" id="Gradient_jef6v"]
+offsets = PackedFloat32Array(0.33514985, 0.57493186)
+colors = PackedColorArray(1, 1, 1, 0.6784314, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_bqqt6"]
+gradient = SubResource("Gradient_jef6v")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_vju1c"]
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(1080, 1, 1)
+gravity = Vector3(0, 40, 0)
+radial_accel_min = -2.2351742e-06
+radial_accel_max = 28.299997
+tangential_accel_min = -30.000002
+tangential_accel_max = 29.999996
+scale_max = 5.0
+color_initial_ramp = SubResource("GradientTexture1D_bqqt6")
+alpha_curve = SubResource("CurveTexture_bqqt6")
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_jef6v")
+balloon_tscn = ExtResource("2_08fay")
+initial_dialogue = ExtResource("3_vju1c")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("3_vju1c")
+centered = false
+
+[node name="Background" type="TextureRect" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(1920, 1080)
+offset_right = 1920.0
+offset_bottom = 1080.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+expand_mode = 2
+stretch_mode = 1
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(84, 53)
+anchor_mode = 0
+zoom = Vector2(1.1, 1.1)
+script = ExtResource("2_bl13t")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+visible = false
+position = Vector2(1080, 0)
+amount = 1000
+lifetime = 8.5
+preprocess = 30.0
+process_material = SubResource("ParticleProcessMaterial_vju1c")

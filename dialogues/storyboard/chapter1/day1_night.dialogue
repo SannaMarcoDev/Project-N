@@ -1,0 +1,94 @@
+~ veichle
+luka: Il mio fidato Land Dweller.
+luka: Nonostante i tanti anni, e un radiatore tenuto su con nasto adesivo e chiodi, fa ancora il suo dovere.
+=> END
+
+~ kitchen
+if GameState.day1_night_kitchen_talk
+	luka: (L'entrata per la mensa, oramai vuota, i tavoli sono ben rassettati però!)
+else:
+	luka: (L'entrata per la mensa, a quest'ora immagino sia vuota, chissà se hanno messo a posto i tavoli oggi)
+	set GameState.day1_night_kitchen_talk = true
+	do GameState.change_background("res://backgrounds/temps/cafeteria.jpg")
+	do GameState.wait()
+	Neanche il tempo di entrare, che mi trovai davanti Ivan, di pessimo umore, sbuffava e sbottava girando per i tavoli.
+	luka: Ivan cosa diamine ci fai qui a quest'ora?
+	ivan: !
+	ivan: Miseria, ti sembra il modo? Mi hai quasi fatto venire un infarto.
+	luka: Si vede il tuo udito non è più quello di un tempo. Che ci fai qui?
+	ivan: Sto sistemando i tavoli, come al solito i ragazzi hanno mangiato, e se la sono svignata. Maledetti.
+	ivan: Devi essere più severo con loro Luka, sono un branco di ragazzini immaturi.
+	luka: Stanno già facendo la differenza là fuori, preferisco soldati con morale alto che una cucina ben rassettata.
+	luka: Dai ti dò una mano.
+	Ci mettemmo a sistemare il caos che era la mensa, non so cosa facciano per renderla così ogni volta.
+	luka: A proposito Ivan, ho sempre voluto chiederti, come feci a sopravvivere quella volta, alla capitale?
+	ivan: Dici quando ho perso il mio braccio per te?
+	luka: Se proprio vuoi ributtarmi in faccia quella storia, basta che mi racconti anche il seguito.
+	ivan: Bene, eravamo al mattatoio della capitale, come ben sai.
+	ivan: Stavamo ispezionando quando qualcuno ebbe l'ottima idea di controllare dentro un enorme tritacarne.
+	- Non dire nulla
+		luka: ...
+	- Andava fatto!
+		luka: Considerando quello che c'era in giro, era solo che ovvio che...
+		ivan: Silenzio, sto parlando io.
+	ivan: In ogni caso, sempre quel qualcuno inciampò, e attivò il tritacarne proprio mentre stavo guardando dentro, e il mio braccio rimase bloccato lì
+	ivan: Il che allertò le guardie, e dopo una breve lotta ti dissi di andartene e lasciarmi lì.
+	ivan: Quel che è successo poi in realtà è ancora abbastanza confuso per me.
+	ivan: Mi fecero prigioniero, per qualche motivo la fucilazione non arrivò, erano occupati sul fronte in quel periodo.
+	ivan: Conobbi Jackson, il nostro attuale contatto che ci riempie di armi. Un gran bel colpo di fortuna.
+	ivan: Una mente brillante, riuscì a scassinare la cella, caricarmi su una camionetta e portarmi in salvo.
+	ivan: Ed eccomi qua, che pulisco i tavoli e racconto storie a un idiota.
+	luka: Non mi avevi mai detto come avevi conosciuto Jackson, quindi era anche lui un prigioniero? Come fa ad avere così tante armi da mandarci?
+	luka: Voglio dire, siamo stracolmi, non che mi lamenti.
+	ivan: Sai figliolo, te dovresti fare meno domande.
+	ivan: In ogni caso, qui abbiamo finito, vado a dormire che sono stanco morto.
+	ivan: Buonanotte.
+	luka: Buonanotte, Ivan.
+	luka: ...
+	do GameState.wait()
+	do GameState.change_background("res://backgrounds/temps/camp_center.jpg")
+=> END
+
+
+~ nele
+if GameState.day1_night_nele_talk
+	Forse non dovrei disturbarla di nuovo
+else
+	set GameState.day1_night_nele_talk = true
+	luka: Nele! Anche tu ancora in giro?
+	nele: ...
+	- Chiedile di fare una passeggiata
+		luka: Ti va di fare una passeggiata? Per una volta che non c'è una bufera.
+		nele: ...
+		Era seduta su una sedia a dondolo, il suo sguardo fisso nel vuoto.
+		Era davanti a me, e contemporaneamente non c'era.
+		In mano aveva una vecchia foto
+		- Prendi la foto
+			Provai a prendere la foto dalla sua mano.
+			Non oppose resistenza, la foto si sfilò dalle sue dita, che la tenevano con leggerezza.
+			Scoppiò a piangere, non era strano vederla così la sera. Una visione a cui in realtà non mi sono mai abituato.
+			do GameState.change_background("res://backgrounds/temps/family_photo.jpg")
+			Guardai la foto nelle mie mani.
+			Era una foto di famiglia.
+			La nostra foto di famiglia.
+			Quattro persone felici, spensierate
+			do GameState.change_background("res://backgrounds/temps/camp_center.jpg")
+			Rimisi la foto nelle sue mani, mettendole i capelli dietro l'orecchio.
+		- Lascia stare
+			Non avevo la forza di disturbarla
+			La lasciai stare.
+	- Lascia perdere.
+	luka: ...
+	luka: Buonanotte Nele.
+=> END
+
+~ letto
+Vuoi andare a dormire?
+- Concludi la giornata
+	luka: Sarà il caso di andare a letto, ho fatto abbastanza per oggi.
+	set GameState.story_continue = "res://dialogues/storyboard/chapter1/day2/intro.dialogue"
+	set GameState.continued_from_night = true
+	do GameState.change_scene("res://scenes/chapter1/chapter1.tscn")
+- Aspetta
+	luka: Ancora non ho sonno.
+=> END

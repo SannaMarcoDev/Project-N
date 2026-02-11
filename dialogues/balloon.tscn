@@ -1,9 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://bv8xvb5uksg1y"]
+[gd_scene load_steps=15 format=3 uid="uid://bv8xvb5uksg1y"]
 
 [ext_resource type="Script" uid="uid://k7xu8cyy73ia" path="res://dialogues/balloon.gd" id="1_36de5"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_a8ve6"]
 [ext_resource type="Texture2D" uid="uid://bpjjobblq8dvt" path="res://dialogues/dialog container.png" id="2_pa16h"]
 [ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://addons/dialogue_manager/dialogue_responses_menu.gd" id="3_72ixx"]
+[ext_resource type="Texture2D" uid="uid://crvmxmqtpnqfk" path="res://backgrounds/Transitions/Giorno 2.png" id="3_ooonl"]
+[ext_resource type="Texture2D" uid="uid://bl70vf3n5ql65" path="res://dialogues/white_box.png" id="4_7c2jb"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_spyqn"]
 bg_color = Color(0, 0, 0, 1)
@@ -107,6 +109,7 @@ grow_vertical = 2
 theme = SubResource("Theme_qq3yp")
 
 [node name="PanelContainer" type="PanelContainer" parent="Balloon"]
+visible = false
 clip_children = 2
 layout_mode = 0
 offset_left = 251.0
@@ -117,38 +120,58 @@ mouse_filter = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Balloon"]
 layout_mode = 0
-offset_left = 358.0
-offset_top = 458.0
-offset_right = 856.325
-offset_bottom = 574.265
+offset_left = 751.0
+offset_top = 809.0
+offset_right = 1845.505
+offset_bottom = 1061.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Balloon/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+
+[node name="Giorno2" type="Sprite2D" parent="Balloon/HBoxContainer/VBoxContainer"]
+position = Vector2(941.9999, 357)
+scale = Vector2(1.0190104, 0.7092593)
+texture = ExtResource("3_ooonl")
+
+[node name="WhiteBox" type="Sprite2D" parent="Balloon/HBoxContainer/VBoxContainer"]
+visible = false
+position = Vector2(146.5, 23.500055)
+scale = Vector2(0.12975302, 0.046824932)
+skew = -0.3630285
+texture = ExtResource("4_7c2jb")
 
 [node name="CharacterLabel" type="RichTextLabel" parent="Balloon/HBoxContainer/VBoxContainer"]
 unique_name_in_owner = true
 modulate = Color(1, 1, 1, 0.501961)
 layout_mode = 2
 mouse_filter = 1
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_constants/line_separation = 4
+theme_override_constants/paragraph_separation = 15
+theme_override_font_sizes/normal_font_size = 30
+theme_override_font_sizes/bold_font_size = 30
+theme_override_font_sizes/bold_italics_font_size = 30
+theme_override_font_sizes/italics_font_size = 30
+theme_override_font_sizes/mono_font_size = 30
 bbcode_enabled = true
 text = "Character"
+fit_content = true
 scroll_active = false
 
 [node name="DialogueLabel" parent="Balloon/HBoxContainer/VBoxContainer" instance=ExtResource("2_a8ve6")]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/normal_font_size = 22
-theme_override_font_sizes/bold_font_size = 22
-theme_override_font_sizes/bold_italics_font_size = 22
-theme_override_font_sizes/italics_font_size = 22
-theme_override_font_sizes/mono_font_size = 22
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/normal_font_size = 34
+theme_override_font_sizes/bold_font_size = 34
+theme_override_font_sizes/bold_italics_font_size = 34
+theme_override_font_sizes/italics_font_size = 34
+theme_override_font_sizes/mono_font_size = 34
 text = "Dialogue..."
 
 [node name="Control" type="Control" parent="Balloon/HBoxContainer"]
-modulate = Color(0, 0, 0, 1)
 custom_minimum_size = Vector2(20, 10)
 layout_mode = 2
 size_flags_vertical = 8
@@ -190,19 +213,19 @@ text = "Response example"
 [node name="Portrait" type="TextureRect" parent="Balloon"]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = -3.0
-offset_top = 252.0
-offset_right = 247.0
-offset_bottom = 652.0
+offset_left = 58.0
+offset_top = 489.0
+offset_right = 658.0
+offset_bottom = 1089.0
 expand_mode = 4
 stretch_mode = 4
 
-[node name="SecondaryPortrait" type="TextureRect" parent="Balloon"]
+[node name="SecondaryPortrait" type="TextureRect" parent="Balloon" groups=["dialogue_baloon"]]
 layout_mode = 0
-offset_left = 905.0
-offset_top = 250.0
-offset_right = 1155.0
-offset_bottom = 650.0
+offset_left = 1461.0
+offset_top = 617.0
+offset_right = 1911.0
+offset_bottom = 1067.0
 expand_mode = 2
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]

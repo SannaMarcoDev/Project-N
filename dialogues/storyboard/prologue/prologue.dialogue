@@ -1,0 +1,73 @@
+import "res://dialogues/storyboard/chapter1/intro.dialogue" as gameStart
+
+~ start
+22 gennaio 1999
+Una tranquilla giornata nella bellissima capitale.
+Piazza San Mirko, 12.37
+George: E quindi gli ho detto, guardare ma non toccare!
+George: Ahh se solo sapessi, un sacco di squattrinati passano nella mia bottega, maledetti turisti.
+George: Perlomeno da quando c'è [color=red]Saninski[/color] al governo, pago molte meno tasse! ha ha ha!
+Lucifero: Ah Ah Ah!
+Lucifero: Non lo dire a me! Guarda, da quando c'è questo fantastico governo, ho detto basta.
+Lucifero: Ho rimosso tutti i carboidrati, mangio solo organico, carne e verdure!
+George: Ma dai anche tu? Tante persone che sento, col fatto che il prezzo della carne è stato abbattuto, hanno cambiato completamente dieta!
+George: Dicono anche sia più buona di prima!
+George: Ha Ha Ha!
+Lucifero: Carne del nostro paese! Vecchio mio, qua facciamo le cose come nessun altro!
+George: Ad ogni modo, volevo chiederti, so che lavori al governo ora, ma di preciso di cosa ti occupi?
+Lucifero: Ah solite cose, scartoffie, documenti, pause caffè.
+Lucifero: Qualsiasi stereotipo ti venga in mente, sono io! Ah Ah Ah Ah!
+George: No perchè volevo chiederti, l'altro giorno ero vicino al confine, e ho sentito dei marinai parlare.
+George: Dicevano che forse non hanno bloccato tutta l'area a sud per un [color=red]virus[/color], e in più hanno sentito un botto in pieno giorno.
+George: Dicevano provenisse da oltre [color=red]il muro[/color]. Ma sui giornali non ho sentito niente, te sai qualcosa?
+Lucifero: Ah Ah Ah Ah.
+Lucifero: Marinai, a stare in mare tutto il tempo, chissà cosa si immaginano.
+Lucifero: Ne so quanto te George, ma ti dirò di più!
+Lucifero: Mangia tanta carne, goditi la vita, e viva [color=red]Saninski[/color]!
+- Viva il governo!
+	George: Hai ragione, evviva [color=red]Saninski[/color]!
+	George: Stasera bowling? Mi devi una rivincita.
+	Lucifero: Contaci!
+- ...
+	- Viva il governo!
+		George: Hai ragione, evviva [color=red]Saninski[/color]!
+		George: Stasera bowling? Mi devi una rivincita.
+		Lucifero: Contaci!
+	- Viva il governo!
+		George: Hai ragione, evviva [color=red]Saninski[/color]!
+		George: Stasera bowling? Mi devi una rivincita.
+		Lucifero: Contaci!
+	- Viva il governo!
+		George: Hai ragione, evviva [color=red]Saninski[/color]!
+		George: Stasera bowling? Mi devi una rivincita.
+		Lucifero: Contaci!
+	- Viva il governo!
+		George: Hai ragione, evviva [color=red]Saninski[/color]!
+		George: Stasera bowling? Mi devi una rivincita.
+		Lucifero: Contaci!
+	- Viva il governo!
+		George: Hai ragione, evviva [color=red]Saninski[/color]!
+		George: Stasera bowling? Mi devi una rivincita.
+		Lucifero: Contaci!
+	- Viva il governo!
+		George: Hai ragione, evviva [color=red]Saninski[/color]!
+		George: Stasera bowling? Mi devi una rivincita.
+		Lucifero: Contaci!
+	- Viva il governo!
+		George: Hai ragione, evviva [color=red]Saninski[/color]!
+		George: Stasera bowling? Mi devi una rivincita.
+		Lucifero: Contaci!
+	- Viva il governo!
+		George: Hai ragione, evviva [color=red]Saninski[/color]!
+		George: Stasera bowling? Mi devi una rivincita.
+		Lucifero: Contaci!
+	- Viva il governo!
+		George: Hai ragione, evviva [color=red]Saninski[/color]!
+		George: Stasera bowling? Mi devi una rivincita.
+		Lucifero: Contaci!
+	- Viva il governo!
+		George: Hai ragione, evviva [color=red]Saninski[/color]!
+		George: Stasera bowling? Mi devi una rivincita.
+		Lucifero: Contaci!
+
+=> gameStart/start

@@ -73,6 +73,8 @@ func _ready() -> void:
 	balloon.hide()
 	Engine.get_singleton("DialogueManager").mutated.connect(_on_mutated)
 
+	GameState.register_baloon(self)
+
 	# If the responses menu doesn't have a next action set, use this one
 	if responses_menu.next_action.is_empty():
 		responses_menu.next_action = next_action
@@ -89,6 +91,10 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if is_instance_valid(dialogue_line):
 		progress.visible = not dialogue_label.is_typing and dialogue_line.responses.size() == 0 and not dialogue_line.has_tag("voice")
+	if Input.is_action_pressed("dialogic_skip") and dialogue_label.is_typing:
+		dialogue_label.skip_typing()
+		await get_tree().create_timer(0.1).timeout
+		next(dialogue_line.next_id)
 
 
 func _unhandled_input(_event: InputEvent) -> void:

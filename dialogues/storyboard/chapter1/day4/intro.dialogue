@@ -1,0 +1,46 @@
+~ start
+do GameState.change_background("res://backgrounds/Transitions/Giorno 4.png")
+[wait=2]
+do GameState.change_background("res://backgrounds/temps/temp_camp.jpg")
+if GameState.stole_food
+	Il profumo di avena calda e carne in scatola si diffondeva nell'aria gelida, un balsamo per il morale.
+	I soldati si muovevano con vigore, pulendo le armi e allacciando gli scarponi con mani ferme.
+	Niente tremori, niente sguardi vacui. Eravamo forti.
+	Vicino al fuoco centrale, Irina sedeva accanto al ragazzino che avevamo salvato.
+	Il bambino aveva una ciotola fumante tra le mani e mangiava con una voracità commovente, sporcandosi le guance.
+	nele: Fai piano piccola peste. Ne abbiamo ancora.
+	nele: Mangia tutto, oggi ci servi forte. Devi tenere d'occhio l'accampamento mentre noi non ci siamo!
+	Il bambino annuì, sorridendo a bocca piena.
+	Irina alzò lo sguardo su di me e mi fece un cenno. I suoi occhi erano limpidi, concentrati.
+	Avere la pancia piena e aver salvato quel bambino ci aveva dato qualcosa di più delle calorie, ci aveva dato la speranza.
+else
+	L'appello del mattino fu una litania funebre prima ancora che la battaglia iniziasse.
+	ivan: Ne mancano 3.
+	ivan: Jonas, Andrea e il Lungo. Non erano nelle tende.
+	luka: Che è successso?
+	ivan: Li hanno trovato fuori l'accampamento.
+	ivan: Due li abbiamo trovati stecchiti con la bava alla bocca, Jonas non sappiamo ancora dove sia finito.
+	ivan: Sono morti in cerca di cibo, stavano morendo di fame.
+	Sapevo bene che era colpa mia, dovevo impegnarmi di più con le scorte, avrei potuto fare di più
+	ivan: Non incolparti, hai fatto quello che credevi giusto.
+	luka: Vediamo di mangiare tutto quello che è rimasto, comunque vadano le cose oggi, non ci serviranno più domani.
+	La colazione consisteva in acqua calda in cui erano state bollite delle cortecce di pino e le ultime briciole di gallette ammuffite.
+	I soldati bevevano quel liquido amaro in silenzio, guardando i compagni morti portati via.
+	Irina stringeva il ragazzino a sé, ma non aveva nulla da offrirgli se non un sorso della sua acqua calda.
+	Il bambino piagnucolava piano per la fame. Eravamo deboli, decimati e arrabbiati.
+	
+if GameState.petr_alive
+	Petr si fece largo tra i soldati, tirando fuori dalla tasca il suo vecchio cacciavite con l'impugnatura rossa, quasi fosse una reliquia sacra.
+	petr: Vi ricordate il condotto a nord di cui parlavo nel camion?
+	petr: Ho riguardato la planimetria sulla chiavetta. Quel settore è in "manutenzione differita" da tre anni. Nessuno lo controlla.
+	petr: La grata è qui, nascosta dietro i cespugli ornamentali secchi. Le viti saranno arrugginite, ma con questo cacciavite, vi porto dentro in silenzio.
+	petr: Sbuca direttamente dietro le linee delle guardie, vicino alle sale generatori. Niente allarmi, niente esplosioni.
+	Ivan lo guardò, poi guardò il cacciavite.
+	ivan: Sei sicuro che quel pezzo di ferro non si spezzi?
+	petr: È acciaio sovietico, Non si spezza mai.
+	luka: Allora si va con il piano del Miracolato
+else
+	Se petr è morto, ancora da scrivere
+	
+luka: Prepararsi all'ingaggio. Ci muoviamo tra 10 minuti.
+=> END

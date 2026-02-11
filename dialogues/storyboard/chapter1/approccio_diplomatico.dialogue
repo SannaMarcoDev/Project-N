@@ -4,6 +4,7 @@ import "res://dialogues/storyboard/chapter1/uccidilo.dialogue" as uccidilo
 ~ start
 luka: Apetta qui, se senti urlare, entra e spara a tutto ciò che non sono io.
 ivan: Ho il colpo in canna capo.
+do GameState.change_background("res://backgrounds/temps/inside.jpg")
 petr: ...
 luka: ...
 luka: Non sono qui per farti del male. Puoi stare tranquillo.
@@ -34,6 +35,10 @@ petr: Lavoravo lì come manutentore, ho scritto io tutti i documenti, planimetri
 luka: Fammi controllare...
 petr: C'è tutto, falle nel sistema ancora non sistemati, planimetrie complete, tutte le informazioni sui sistemi di difesa, ronde...
 petr: Per favore devi credermi! Ho rischiato la vita per fare avere tutto questo alla resistenza!
+Prendo i fascicoli con tutte le informazioni che abbiamo a riguardo.
+luka: forse...
+Quasi non ci credo, combacia quasi tutto, ma quello che mi sta dando ha molte più informazioni.
+Informazioni preziosissime.
 luka: Mi sembra tutto attendibile... Lo farò controllare anche dagli altri comunque.
 luka: Grazie.
 luka: Quindi, vorresti unirti a noi, e aiutarci a prendere la centrale elettrica? Conveniente.
@@ -46,7 +51,8 @@ petr: Per mio fratello, per la mia nazione, vorrei solo che tutto ciò finisca.
 petr: Ma per favore, sono un ingegnere, posso aiutarvi coi vostri macchinari!
 petr: Inoltre conosco bene i dintorni della centrale, riuscirei a farvi entrare senza neanche essere visti!
 luka: Basta così.
-luka: Aspetta qua.
+Sarà meglio informare Ivan
+do GameState.change_background("res://backgrounds/temps/camp.jpg")
 luka: Che situazione.
 ivan: allora?
 luka: Sembrerebbe dire il vero, è scappato per consegnarci tutte le informazioni sulla centrale elettrica, con queste entreremmo in 5 minuti.

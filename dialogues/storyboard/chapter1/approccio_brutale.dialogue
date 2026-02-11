@@ -2,6 +2,7 @@ import "res://dialogues/storyboard/chapter1/perdonalo.dialogue" as perdonalo
 import "res://dialogues/storyboard/chapter1/uccidilo.dialogue" as uccidilo
 
 ~ start
+do GameState.change_background("res://backgrounds/temps/inside.jpg")
 luka: SVEGLIA!
 petr: AHHHHHHHHH!
 luka: Spero non ti faccia male la mia pistola sulla tua tempia, non che mi interessi ovviamente, io non sento nulla.
@@ -17,8 +18,10 @@ luka: Dai qua! Fammi controllare...
 petr: C'è tutto, falle nel sistema ancora non sistemati, planimetrie complete, tutte le informazioni sui sistemi di difesa, ronde...
 petr: Per favore devi credermi! Ho rischiato la vita per fare avere tutto questo alla resistenza!
 luka: Taci poppante, sto leggendo.
-petr: ...
+Prendo i fascicoli con tutte le informazioni che abbiamo a riguardo.
 luka: forse...
+Quasi non ci credo, combacia quasi tutto, ma quello che mi sta dando ha molte più informazioni.
+Informazioni preziosissime.
 petr: ...
 luka: Senti un po', schifoso topo di fogna, perchè dovrei credere a una singola parola che dici?
 luka: Indossi l'uniforme, non sei neanche un collaborazionista forzato, hai scelto tu di arruolarti, e ora cambi idea così? All'improvviso, fai i bagagli e ci consegni le chiavi di casa?
@@ -40,13 +43,14 @@ luka: Ah e grazie per i documenti, sembrano tutti veritieri, perlomeno hai fatto
 petr: Aspetta! Ti ho dato tutto, ho rischiato tutto per fare finalmente la differenza, posso dare una mano, sono un ingegnere, posso aiutarvi con le macchine!
 petr: Inoltre non ci metteranno tanto a capire che i documenti sono spariti, possiamo attaccarli in fretta, con me ad aiutarvi sarà più semplice!
 luka: ...
-luka: Aspetta qua.
-luka: Che situazione.
+Sarà meglio informare Ivan.
+Che situazione.
+do GameState.change_background("res://backgrounds/temps/camp.jpg")
 ivan: allora?
 luka: Sembrerebbe dire il vero, è scappato per consegnarci tutte le informazioni sulla centrale elettrica, con queste entreremmo in 5 minuti.
 ivan: E di lui cosa ne facciamo? So ti ho sentito sbraitare dentro, ha ucciso tante persone, forse anche famigliari nostri.
 ivan: Solo perchè ci fa un regalino alla fine non vuol dire che vada perdonato. Vogliamo vendetta.
-luka: So cosa intende, le risorse scarseggiano, sarebbe una bocca in più che non possiamo permetterci di sfamare. Ma uccidere un uomo che si è arreso? Cosa direbbe...?
+So cosa intende, le risorse scarseggiano, sarebbe una bocca in più che non possiamo permetterci di sfamare. Ma uccidere un uomo che si è arreso?
 - Uccidilo
 	=> uccidilo/start
 - Perdonalo

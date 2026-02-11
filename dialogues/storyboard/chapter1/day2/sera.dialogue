@@ -1,49 +1,64 @@
 import "res://dialogues/storyboard/chapter1/day3/intro.dialogue" as day3
 
 ~ start
-Era ormai sera.
-La mensa, che solo poche ore prima risuonava di speranze e risate nervose, ora era un antro di ombre, allungate dalla luce tremolante del generatore.
-Era mezza vuota. Molti avevano preferito ritirarsi direttamente nelle loro cuccette, forse per dormire.
+do GameState.change_background("res://backgrounds/temps/cafeteria.jpg")
+do GameState.wait()
+È ormai sera.
+La mensa, che solo poche ore prima risuonava di speranze e risate nervose, ora è un antro di ombre, allungate dalla luce tremolante del generatore.
+È mezza vuota. Molti preferiscono ritirarsi direttamente nelle loro cuccette, forse per dormire.
 if GameState.stole_food
-	O forse per continuare a mangiare senza essere visti, senza senzi di colpa.
+	O forse per continuare a mangiare senza essere visti, senza sensi di colpa.
 else
-	o forse solo per fissare il soffitto buio, coi crampi allo stomaco.
+	O forse solo per fissare il soffitto buio, coi crampi allo stomaco.
 
-Pochi soldati sedevano ai tavoli di metallo.
-E qualunque cibo avessero davanti, per tutti aveva lo stesso sapore. Quello metallico del sangue versato sulla neve.
-Nele puliva il suo fucile in un angolo. Lo smontava e lo rimontava con gesti meccanici, ossessivi, senza mai alzare lo sguardo.
-Ivan fissava il vuoto, stringeva la sua solita tazza di latte caldo.
-Luka: Buonanotte ragazzi, domani partiremo, è meglio per tutti se andate a dormire anche voi.
+Pochi soldati siedono ai tavoli di metallo.
+E qualunque cibo abbiano davanti, per tutti ha lo stesso sapore. L'amaro sapore metallico del sangue versato sulla neve.
+Nele pulisce il suo fucile in un angolo. Lo smonta e lo rimonta con gesti meccanici, ossessivi, senza mai alzare lo sguardo.
+Ivan fissa il vuoto, stringendo la sua solita tazza di latte caldo.
+if GameState.stole_food
+	ivan: Hai fatto la cosa giusta ragazzo.
+	ivan: Nonostante tutto, grazie a questo riusciremo a combattere, riusciremo a prendere la centrale.
+Mi alzo per andarmene, non sono dell'umore per fare chiacchiere serali oggi.
+luka: Buonanotte ragazzi, domani partiamo, è meglio per tutti se andate a dormire anche voi.
 ivan: ...
-Uscendo dalla tenda, vengo fermato da Nele bruscamente.
+do GameState.change_background("res://backgrounds/temps/camp.jpg")
+Uscendo dalla tenda, vengo fermato bruscamente.
 nele: Ascolta Luka...
 luka: ...
 nele: ...buonanotte, ci vediamo domani.
 
 if GameState.petr_alive and GameState.stole_food
-	Tornando alla mia tenda, ancora dolorante dalla fatica del giorno, venni fermato da Petr.
-	luka: Ciao miracolato, cosa ci fai ancora in giro? Domani partiremo, sarà meglio che tu sia riposato.
+	do GameState.change_background("res://backgrounds/temps/inside.jpg")
+	do GameState.wait(1.0)
+	Tornando alla mia tenda, ancora dolorante per la fatica del giorno, vengo fermato da Petr.
+	luka: Ciao miracolato, cosa ci fai ancora in giro? Domani partiamo, è meglio che tu sia riposato.
 	petr: ...
-	Aveva uno strano sguardo in faccia, le mani nascoste nelle tasche.
+	Ha uno strano sguardo in faccia, le mani nascoste nelle tasche.
 	luka: Scusa?
 	petr: Assassini.
 	petr: Quante persone moriranno a causa vostra?! Rubare il cibo a dei poveri innocenti.
-	petr: Avete condannato tutti per riempirvi la panca!
-	luka: Petr per favore, ho solo fatto quello che ritenevo giusto. Per noi, noi faremo la differenza in questa guerra.
+	petr: Avete condannato tutti per riempirvi la pancia!
+	luka: Petr per favore, faccio solo quello che ritengo giusto. Noi faremo la differenza in questa guerra.
 	petr: Ho disertato e mi sono unito alla resistenza per fare del bene. NON PER QUESTO!
-	Vidi il luccichio opaco di una vecchia pistola d'ordinanza nella sua mano.
+	Vedo il luccichio opaco di una vecchia pistola d'ordinanza nella sua mano.
+	Ma non faccio in tempo a reagire.
 	BANG
-	Sentì una fiammata violenta alla spalla sinistra, un dolore accecante, come se un ferro rovente mi avesse trapassato la carne e frantumato l'osso.
+	Sento una fiammata violenta alla spalla sinistra, un dolore accecante, come se un ferro rovente mi trapassasse la carne e mi frantumasse l'osso.
 	luka: Lurido...!
-	Petr, con gli occhi sgranati dal terrore per ciò che aveva fatto, cercò di prendere la mira per il colpo di grazia.
-	Non gliene diedi il tempo.
-	Mi lanciai su di lui, ignorando il sangue che mi colava lungo il braccio.
-	Lo travolsi di peso, facendolo schiantare contro il pavimento freddo e innevato.
-	Cercò di divincolarsi, scalciando e urlando, ma la mia mano destra aveva già trovato l'impugnatura del coltello alla mia cintura.
-	luka: Lo sapevo che non ci si poteva fidare di te. Governativo del cazzo.
+	Petr, con gli occhi sgranati dal terrore per ciò che ha fatto, cerca di prendere la mira per il colpo di grazia.
+	Non gliene do il tempo.
+	Mi lancio su di lui, ignorando il sangue che mi cola lungo il braccio.
+	Lo travolgo di peso, facendolo schiantare contro il pavimento freddo e innevato.
+	Cerca di divincolarsi, scalcia e urla, ma la mia mano destra ha già trovato l'impugnatura del coltello alla mia cintura.
+	luka: Non siamo in un cazzo di film, non si può fare solo del bene, per i propri obiettivi, a volte, dei sacrifici sono necessari!
+	luka: PER IL BENE DI QUESTO MALEDETTO PAESE!
 	SPLAT.
-	Con un unico movimento, affondai la lama nel suo petto, dritto al cuore.
-	Mi guardò, la bocca aperta in un grido muto, e la luce nei suoi occhi spenta per sempre.
-	Il ragazzo che avevo risparmiato ieri, era morto oggi per mano mia.
+	Con un unico movimento, affondo la lama nel suo petto, dritto al cuore.
+	Con la bocca piena di sangue, Petr pronuncia le sue ultime parole.
+	petr: Pensi davvero... Che le persone che han- hanno fatto tutto questo... Non la pensino esattamente... come te...
+	petr: Non c'è... Via d'uscita... quindi...
+	luka: ...
+	Il suo sguardo fisso nei miei occhi, la bocca aperta in un grido muto, e la luce nei suoi occhi spenta per sempre.
+	Il ragazzo che ho risparmiato ieri, muore oggi per mano mia.
 
 => day3/start

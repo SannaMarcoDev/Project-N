@@ -1,0 +1,59 @@
+import "res://dialogues/storyboard/chapter1/day4/intro.dialogue" as giorno4
+
+~ start
+Guardo il ragazzo tremante, poi alzo lo sguardo verso la volta di rami sopra di noi. Posso quasi sentire il ronzio invisibile dei sensori nemici nel cielo.
+luka: Niente fuoco. È troppo rischioso.
+luka: Non posso scommettere le nostre vite e la riuscita della missione su una fiamma.
+nele: ...
+luka: Non metterò mai in gioco la tua vita, Nele, abbiamo una missione, io e te,e non ho nessuna intenzione di mettere a repentaglio anni di rischi.
+nele: Lo so ma...
+nele: Ho un'idea! Ivan, dammi una mano.
+
+Lavoriamo in silenzio. Spogliamo il ragazzo dei suoi stracci ghiacciati. La sua pelle è fredda al tatto, inquietantemente simile a un tronco gelato.
+Lo avvolgiamo in due strati di coperte termiche.
+nele: Serve contatto. Pelle su pelle. È l'unico modo per trasferire calore abbastanza in fretta.
+
+Mettiamo il ragazzo in mezzo a noi. È piccolo, fragile come un uccellino caduto dal nido.
+Il suo corpo è un blocco di ghiaccio contro il mio fianco. Lo stringo, cercando di trasmettergli ogni grammo di calore che ho.
+Nele lo abbraccia da dietro, avvolgendolo completamente, sussurrandogli preghiere all'orecchio.
+Per ora, è il meglio che possiamo fare.
+
+do GameState.change_background("res://backgrounds/temps/black.jpg")
+
+Alla fine, la stanchezza ha la meglio e il buio ci inghiotte.
+do GameState.wait()
+
+Mi sveglio con la luce grigia dell'alba che filtra attraverso la tela della tenda.
+Riesco a sentire la neve che cade dalle frasche, sciolta dai primi raggi di sole.
+Il silenzio della foresta è rotto solo da un singhiozzare vicino.
+Apro gli occhi.
+
+La visione davanti a me è qualcosa che si può solo sognare.
+
+Nele è sveglia. Mi guarda sopra la testa arruffata del ragazzino.
+La temibile cecchina, la donna che ho visto abbattere soldati senza battere ciglio, sta piangendo.
+Sono lacrime silenziose che le rigano il volto. Tiene il ragazzo stretto a sé, il mento appoggiato sulla sua fronte, lo dondola impercettibilmente.
+
+Non sembra un soldato in questo momento. Sembra una madre che ha appena riavuto indietro un figlio che credeva perso.
+
+Il ragazzo è vivo.
+
+nele: È caldo.
+nele: Ce l'ha fatta, Luka. È caldo.
+luka: Grazie a Dio.
+luka: Non sopporterei l'idea di svegliarmi accanto a...
+nele: Non dirlo. Stai un po' zitto per ora.
+Rimaniamo in questo stato per non so quanto tempo.
+Il bambino che dormiva, e noi abbracciati a lui, parlando come due ragazzini innamorati del liceo.
+Darei tutto per rimanere così, per sempre.
+do GameState.wait()
+Ivan entra con la sua solita espressione burbera, ma alla vista della scena si ferma un attimo.
+ivan: Beh...
+ivan: A quanto pare il calore umano serve ancora a qualcosa in questo dannato mondo.
+
+
+Riportati alla realtà, usciamo dal sacco a pelo piano per non svegliarlo, lo lasciamo dormire ancora un po'.
+Abbiamo rischiato scegliendo la prudenza, ma il miracolo è arrivato lo stesso.
+Siamo pronti a combattere, e per la prima volta dopo giorni, sento che abbiamo qualcosa di concreto per cui vale la pena farlo.
+
+=> giorno4/start

@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="4 days of war"
-run/main_scene="uid://da51p18bbkc8h"
+run/main_scene="uid://dspa18qf4n7jq"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 
 [autoload]
@@ -25,15 +25,29 @@ runtime/balloon_path="res://dialogues/balloon.tscn"
 
 [display]
 
+window/size/viewport_width=1920
+window/size/viewport_height=1080
 window/stretch/mode="viewport"
 
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
 
+[global_group]
+
+dialogue_baloon=""
+
+[input]
+
+dialogic_skip={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194326,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+]
+}
+
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://dialogues/storyboard/chapter1/intro.dialogue", "res://dialogues/storyboard/chapter1/buone_notizie.dialogue", "res://dialogues/storyboard/chapter1/brutte_notizie.dialogue", "res://dialogues/storyboard/chapter1/approccio_diplomatico.dialogue", "res://dialogues/storyboard/chapter1/approccio_brutale.dialogue", "res://dialogues/storyboard/chapter1/uccidilo.dialogue", "res://dialogues/storyboard/chapter1/perdonalo.dialogue", "res://dialogues/storyboard/chapter1/day2/intro.dialogue", "res://dialogues/storyboard/chapter1/day2/depreda.dialogue", "res://dialogues/storyboard/chapter1/day2/lasciali_andare.dialogue", "res://dialogues/storyboard/chapter1/day2/sera.dialogue", "res://dialogues/storyboard/chapter1/day3/intro.dialogue")
+locale/translations_pot_files=PackedStringArray("res://dialogues/storyboard/chapter1/intro.dialogue", "res://dialogues/storyboard/chapter1/buone_notizie.dialogue", "res://dialogues/storyboard/chapter1/brutte_notizie.dialogue", "res://dialogues/storyboard/chapter1/approccio_diplomatico.dialogue", "res://dialogues/storyboard/chapter1/approccio_brutale.dialogue", "res://dialogues/storyboard/chapter1/uccidilo.dialogue", "res://dialogues/storyboard/chapter1/perdonalo.dialogue", "res://dialogues/storyboard/chapter1/day2/intro.dialogue", "res://dialogues/storyboard/chapter1/day2/depreda.dialogue", "res://dialogues/storyboard/chapter1/day2/lasciali_andare.dialogue", "res://dialogues/storyboard/chapter1/day2/sera.dialogue", "res://dialogues/storyboard/chapter1/day3/intro.dialogue", "res://dialogues/storyboard/chapter1/day3/accendi_fuoco.dialogue", "res://dialogues/storyboard/chapter1/day3/coperte.dialogue", "res://dialogues/storyboard/chapter1/day4/intro.dialogue", "res://dialogues/storyboard/chapter1/day1_night.dialogue", "res://dialogues/storyboard/prologue/prologue.dialogue", "res://dialogues/storyboard/chapter2/prologue.dialogue")
 
 [rendering]
 

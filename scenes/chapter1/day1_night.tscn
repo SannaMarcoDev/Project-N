@@ -1,0 +1,89 @@
+[gd_scene load_steps=8 format=3 uid="uid://cj0fs32yjh366"]
+
+[ext_resource type="PackedScene" uid="uid://bv8xvb5uksg1y" path="res://dialogues/balloon.tscn" id="2_upuuy"]
+[ext_resource type="Script" uid="uid://cp4p2evbb42ff" path="res://scenes/chapter1/camera_2d.gd" id="4_i8l7e"]
+[ext_resource type="Texture2D" uid="uid://b7cq5lhnxcajw" path="res://backgrounds/temps/camp_center.jpg" id="4_upuuy"]
+[ext_resource type="Script" uid="uid://biglv2byx7ceh" path="res://scenes/chapter1/veichle.gd" id="6_i8l7e"]
+[ext_resource type="Resource" uid="uid://c78jpliiql227" path="res://dialogues/storyboard/chapter1/day1_night.dialogue" id="7_f1blg"]
+[ext_resource type="Texture2D" uid="uid://d0sl70lhnw3w6" path="res://backgrounds/temps/black.jpg" id="7_kr8h5"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_upuuy"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Background" type="TextureRect" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(1920, 1080)
+offset_right = 1920.0
+offset_bottom = 1080.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("4_upuuy")
+expand_mode = 2
+stretch_mode = 1
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(84, 53)
+anchor_mode = 0
+zoom = Vector2(1.1, 1.1)
+script = ExtResource("4_i8l7e")
+
+[node name="Kitchen" type="Area2D" parent="."]
+position = Vector2(385, 646)
+script = ExtResource("6_i8l7e")
+dialogue_resource = ExtResource("7_f1blg")
+dialogue_start = "kitchen"
+balloon_tscn = ExtResource("2_upuuy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Kitchen"]
+scale = Vector2(9.455, 9.455)
+shape = SubResource("CircleShape2D_upuuy")
+
+[node name="Sprite2D" type="Sprite2D" parent="Kitchen"]
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("7_kr8h5")
+
+[node name="Nele" type="Area2D" parent="."]
+position = Vector2(1577, 713)
+script = ExtResource("6_i8l7e")
+dialogue_resource = ExtResource("7_f1blg")
+dialogue_start = "nele"
+balloon_tscn = ExtResource("2_upuuy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Nele"]
+scale = Vector2(9.455, 9.455)
+shape = SubResource("CircleShape2D_upuuy")
+
+[node name="Sprite2D" type="Sprite2D" parent="Nele"]
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("7_kr8h5")
+
+[node name="Continue" type="Area2D" parent="."]
+position = Vector2(1798, 104)
+script = ExtResource("6_i8l7e")
+dialogue_resource = ExtResource("7_f1blg")
+dialogue_start = "letto"
+balloon_tscn = ExtResource("2_upuuy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Continue"]
+scale = Vector2(9.455, 9.455)
+shape = SubResource("CircleShape2D_upuuy")
+
+[node name="Sprite2D" type="Sprite2D" parent="Continue"]
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("7_kr8h5")
+
+[node name="Veichle" type="Area2D" parent="."]
+position = Vector2(1020, 634)
+script = ExtResource("6_i8l7e")
+dialogue_resource = ExtResource("7_f1blg")
+dialogue_start = "veichle"
+balloon_tscn = ExtResource("2_upuuy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Veichle"]
+scale = Vector2(9.455, 9.455)
+shape = SubResource("CircleShape2D_upuuy")
+
+[node name="Sprite2D" type="Sprite2D" parent="Veichle"]
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("7_kr8h5")
