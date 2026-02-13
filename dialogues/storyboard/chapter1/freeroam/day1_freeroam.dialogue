@@ -1,0 +1,129 @@
+~ nextDay
+Vuoi andare a dormire?
+- Concludi la giornata
+	luka: Sarà il caso di andare a letto, ho fatto abbastanza per oggi.
+	set GameState.story_continue = "res://dialogues/storyboard/chapter1/day2/intro.dialogue"
+	set GameState.continued_from_night = true
+	do GameState.change_scene("res://scenes/chapter1/chapter1.tscn")
+- Aspetta
+	luka: Ancora non ho sonno.
+=> END
+
+~ veichle
+Il mio fidato Land Dweller.
+Nonostante i tanti anni, e un radiatore tenuto su con nastro adesivo e chiodi, fa ancora il suo dovere.
+=> END
+
+~ kitchen
+La cucina per stanotte è chiusa.
+Non credo sia una buona idea entrare.
+=> END
+
+~ nele
+if GameState.day1_night_nele_talk
+	Forse non dovrei disturbarla di nuovo
+else
+	set GameState.day1_night_nele_talk = true
+	luka: Nele! Anche tu ancora in giro?
+	nele: ...
+	- Chiedile di fare una passeggiata
+		luka: Ti va di fare una passeggiata? Per una volta che non c'è una bufera.
+		nele: ...
+		Era seduta su una sedia a dondolo, il suo sguardo fisso nel vuoto.
+		Era davanti a me, e contemporaneamente non c'era.
+		In mano aveva una vecchia foto
+		- Prendi la foto
+			Provai a prendere la foto dalla sua mano.
+			Non oppose resistenza, la foto si sfilò dalle sue dita, che la tenevano con leggerezza.
+			Scoppiò a piangere, non era strano vederla così la sera. Una visione a cui in realtà non mi sono mai abituato.
+			do GameState.change_background("res://backgrounds/temps/family_photo.jpg")
+			Guardai la foto nelle mie mani.
+			Era una foto di famiglia.
+			La nostra foto di famiglia.
+			Quattro persone felici, spensierate
+			do GameState.change_background("res://backgrounds/temps/camp_center.jpg")
+			Rimisi la foto nelle sue mani, mettendole i capelli dietro l'orecchio.
+		- Lascia stare
+			Non avevo la forza di disturbarla
+			La lasciai stare.
+	- Lascia perdere.
+	luka: ...
+	luka: Buonanotte Nele.
+=> END
+
+~ tent_bed
+Il mio letto.
+Non sarà il più comodo, ma perlomeno è meglio che dormire per terra
+=> END
+
+~ tent_workbench
+Il disordine regna sovrano sulla mia scrivania.
+Dovrei dare il buon esempio, ma con l'ordine non sono mai stato bravo.
+Si è sempre occupata Nele di tutto in casa, una vera maniaca dell'ordine.
+Dio li fa e poi li accoppia, come si dice!
+=> END
+
+~ generator
+Il generatore del campo.
+Ci è stato fornito da un amico di Ivan, un collaborazionista che però ogni tanto, ci manda qualche regalino.
+Sembra funziona correttamente
+set GameState.day1_night_generator_checked = true
+=> END
+
+~ bocia
+do GameState.remove_child_by_name("Bocia")
+luka: Bocia!
+bocia: AAAAAAAAHHHHHHH!
+luka: ...
+bocia: ...
+bocia: Ciao Luka! ehm, cosa ci fai in giro a quest'ora?
+luka: Dovrei chiederlo io a te piccola monella, ti sembra l'orario di essere in giro?
+luka: Ti ho già detto, fa freddo ed è percioloso di sera, e se ti dovessi fare male?
+bocia: Daaai ma figurati se mi faccio maleeeee!
+bocia: Sto indagando sai? Sono una detective!
+luka: Ti prego non di nuovo.
+luka: Sentiamo, cosa hai scoperto stasera? Hai di nuovo trovato le tracce di una spia mutaforme?
+bocia: BINGOOOO!
+bocia: Allora stavo tornando dalla sala mensa, un gran baccano come sempre, specialmente stasera.
+bocia: Stavo andando nella mia tenda, entro il coprifuoco che un cattivone ha messo per noi bambini.
+Sta parlando di me...
+bocia: E sai chi ho visto? Ho visto Ivan, che parlava al telefono!
+bocia: Un telefono! Sono anni che non ne vedo uno!
+Perchè mai Ivan dovrebbe parlare al telefono? Anche trovandone uno, le reti di comunicazione non esistono più da anni.
+luka: Bocia sicura che non era una barretta o uno scaldino?
+luka: Non che non ti creda eh, ma da quando mi hai detto di aver visto l'uomo nero, bhe ecco...
+bocia: Heh può essere! Chi lo sa! L'ho visto a malapena, stavo cercando il mio trenino, l'ho perso...
+bocia: Magari l'ha preso Ivan! Accompagnami al promontorio Luka, lo coglieremo con le mani sul trenino!
+if GameState.day1_bench_checked
+	luka: Non può essere andato al promontorio Bocia, non è illuminato stasera.
+else
+	Sarebbe il caso di controllare magari, ma non col Bocia che mi insegue!
+	luka: Sai che non puoi andare al promontorio, il sentiero è pericoloso.
+bocia: Ma...
+luka: Senti facciamo così, tu adesso vai a dormire, e io domani ti riporto il trenino, va bene?
+bocia: Sissignore! A domani Capo Investigatore!
+Che strana conversazione...
+=> END
+
+~ to_bench
+Sembra che le luci per il promontorio siano spente.
+if GameState.day1_night_generator_checked
+	Il generatore sembra funzionare a dovere, il resto del campo è illuminato.
+	Chiederò domani a Ivan, di solito si occupa lui dei generatori
+	set GameState.day1_bench_checked = true
+else
+	Mi chiedo se ci sia qualche problema col generatore, che strano.
+Sarà meglio non andare per stasera, non si vede un bel niente.
+=> END
+
+~ to_side_camp
+do GameState.change_scene("res://scenes/chapter1/freeroam/day1/camp_side.tscn")
+=> END
+
+~ to_tent
+do GameState.change_scene("res://scenes/chapter1/freeroam/day1/inside_tent.tscn")
+=> END
+
+~ to_main_camp
+do GameState.change_scene("res://scenes/chapter1/freeroam/day1/camp_outside.tscn")
+=> END

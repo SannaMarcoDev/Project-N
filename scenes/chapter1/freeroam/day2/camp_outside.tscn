@@ -1,0 +1,109 @@
+[gd_scene load_steps=8 format=3 uid="uid://djb5rdelegr88"]
+
+[ext_resource type="Texture2D" uid="uid://b7cq5lhnxcajw" path="res://backgrounds/temps/camp_center.jpg" id="1_20cv8"]
+[ext_resource type="Script" uid="uid://cp4p2evbb42ff" path="res://scenes/chapter1/camera_2d.gd" id="2_n15vf"]
+[ext_resource type="Script" uid="uid://bubpv3a3l5ws0" path="res://scenes/chapter1/freeroam/day2/day1_freeroam.gd" id="3_ns6ll"]
+[ext_resource type="Resource" uid="uid://bqdh0nromuqlm" path="res://dialogues/storyboard/chapter1/freeroam/day2_freeroam.dialogue" id="4_20cv8"]
+[ext_resource type="PackedScene" uid="uid://bv8xvb5uksg1y" path="res://dialogues/balloon.tscn" id="5_a4kv5"]
+[ext_resource type="Texture2D" uid="uid://6kw80pvu62ps" path="res://characters/portraits/bocia.png" id="6_axfwa"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_upuuy"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Background" type="TextureRect" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(1920, 1080)
+offset_right = 1920.0
+offset_bottom = 1080.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_20cv8")
+expand_mode = 2
+stretch_mode = 1
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(84, 53)
+anchor_mode = 0
+zoom = Vector2(1.1, 1.1)
+script = ExtResource("2_n15vf")
+
+[node name="ToKitchen" type="Area2D" parent="."]
+position = Vector2(385, 646)
+script = ExtResource("3_ns6ll")
+dialogue_resource = ExtResource("4_20cv8")
+dialogue_start = "to_kitchen"
+balloon_tscn = ExtResource("5_a4kv5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ToKitchen"]
+scale = Vector2(9.455, 9.455)
+shape = SubResource("CircleShape2D_upuuy")
+
+[node name="Sprite2D" type="Sprite2D" parent="ToKitchen"]
+position = Vector2(-0.9999962, -10.000004)
+scale = Vector2(0.31333333, 0.31333333)
+texture = ExtResource("6_axfwa")
+
+[node name="Generator" type="Area2D" parent="."]
+position = Vector2(718, 647)
+script = ExtResource("3_ns6ll")
+dialogue_resource = ExtResource("4_20cv8")
+dialogue_start = "generator"
+balloon_tscn = ExtResource("5_a4kv5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Generator"]
+scale = Vector2(9.455, 9.455)
+shape = SubResource("CircleShape2D_upuuy")
+
+[node name="Sprite2D" type="Sprite2D" parent="Generator"]
+position = Vector2(-0.9999962, -10.000004)
+scale = Vector2(0.31333333, 0.31333333)
+texture = ExtResource("6_axfwa")
+
+[node name="Continue" type="Area2D" parent="."]
+position = Vector2(1798, 104)
+script = ExtResource("3_ns6ll")
+dialogue_resource = ExtResource("4_20cv8")
+dialogue_start = "nextDay"
+balloon_tscn = ExtResource("5_a4kv5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Continue"]
+scale = Vector2(9.455, 9.455)
+shape = SubResource("CircleShape2D_upuuy")
+
+[node name="Sprite2D" type="Sprite2D" parent="Continue"]
+position = Vector2(-0.9999962, -10.000004)
+scale = Vector2(0.31333333, 0.31333333)
+texture = ExtResource("6_axfwa")
+
+[node name="Veichle" type="Area2D" parent="."]
+position = Vector2(1020, 634)
+script = ExtResource("3_ns6ll")
+dialogue_resource = ExtResource("4_20cv8")
+dialogue_start = "veichle"
+balloon_tscn = ExtResource("5_a4kv5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Veichle"]
+scale = Vector2(9.455, 9.455)
+shape = SubResource("CircleShape2D_upuuy")
+
+[node name="Sprite2D" type="Sprite2D" parent="Veichle"]
+position = Vector2(-0.9999962, -10.000004)
+scale = Vector2(0.31333333, 0.31333333)
+texture = ExtResource("6_axfwa")
+
+[node name="ToSideCamp" type="Area2D" parent="."]
+position = Vector2(1775, 966)
+script = ExtResource("3_ns6ll")
+dialogue_resource = ExtResource("4_20cv8")
+dialogue_start = "to_side_camp"
+balloon_tscn = ExtResource("5_a4kv5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ToSideCamp"]
+scale = Vector2(9.455, 9.455)
+shape = SubResource("CircleShape2D_upuuy")
+
+[node name="Sprite2D" type="Sprite2D" parent="ToSideCamp"]
+position = Vector2(-0.9999962, -10.000004)
+scale = Vector2(0.31333333, 0.31333333)
+texture = ExtResource("6_axfwa")

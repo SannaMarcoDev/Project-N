@@ -1,0 +1,41 @@
+import "res://dialogues/storyboard/chapter1/day2/intro.dialogue" as giorno2
+
+~ start
+luka: il file è nelle mie mani, lui non ci serve più a niente.
+luka: Un traditore, un agente governativo, magari anche una spia, ma non faremo il loro gioco.
+luka: Ivan.
+ivan: ...
+luka: Portalo fuori, nel cortile principale.
+Ivan esita per una frazione di secondo, poi annuì.
+Capisce. Non possiamo permetterci debolezze. Non con la fame che ci morde lo stomaco e i morti che si accumula.
+do GameState.change_background("res://backgrounds/temps/camp_center.jpg")
+do GameState.wait()
+Trascinano il ragazzo fuori, nella neve grigia del cortile centrale. L'intero accampamento si blocca in un istante.
+Uomini che puliscono fucili, donne che bollono la neve per farne acqua potabile, persino i pochi bambini rimasti. Tutti stanno guardando.
+Il disertore sta piangendo, seduto su un sacco di sabbia.
+luka: Oggi amici miei, faremo capire al mondo, che noi non vacilliamo!
+soldati: SI!
+luka: Che non li perdoneremo mai per quello che ci hanno fatto, anche se dovessero venire da noi strisciando!
+soldati: SI!
+luka: Ci hai dato dei documenti, documenti che hai scritto nella comodità della tua stanza, al riparo dai bombardamenti, mangiando pollo e salmone!
+soldati: A MORTE!
+luka: Il tutto mentre noi morivamo di fame! Hai ucciso, hai aiutato il nemico, e pensi che fare ammenda alla fine ti possa salvare?
+soldati: NO!
+luka: Non siamo un rifugio per chi cambia bandiera!
+soldati: NO!
+luka: SIAMO LA RESISTENZA! E LA RESISTENZA NON DIMENTICA! MORTE A SANINSKI!
+- Sparagli
+	colpo di pistola
+	Il colpo secco della pistola risuona tra le rovine di cemento, più forte di qualsiasi tuono.
+- Accoltellalo
+	stab
+	Pianto il mio pugnale da combattimento dritto nel petto, trafiggendo il cuore.
+Il corpo cade riverso, macchiando di rosso la neve immacolata.
+Nessuno riesce a distogliere lo sguardo
+Questa notte, i miei soldati avrebbero dormito sapendo che il loro comandante non avrebbe mai esitato.
+set GameState.petr_alive = false
+do GameState.change_background("res://backgrounds/temps/inside.jpg")
+do GameState.wait()
+Ancora non ho sonno, tanto vale farsi un giro veloce.
+do GameState.change_scene("res://scenes/chapter1/freeroam/day1/inside_tent.tscn")
+=> END

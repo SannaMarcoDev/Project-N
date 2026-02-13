@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://beb67mt8l60vh"
+path="res://.godot/imported/approccio_brutale.dialogue-65ebf36266227f4d28378ea94a57e756.tres"
+
+[deps]
+
+source_file="res://dialogues/storyboard/chapter1/approccio_brutale.dialogue"
+dest_files=["res://.godot/imported/approccio_brutale.dialogue-65ebf36266227f4d28378ea94a57e756.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://crcsoyn380dbn"
+path="res://.godot/imported/intro.dialogue-6cf5bfc61521cfc39656982a6ae364fd.tres"
+
+[deps]
+
+source_file="res://dialogues/storyboard/chapter1/day2/intro.dialogue"
+dest_files=["res://.godot/imported/intro.dialogue-6cf5bfc61521cfc39656982a6ae364fd.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://b0dra11xcnqjc"
+path="res://.godot/imported/coperte.dialogue-d3fe3faee33bfdf8b542f972fc1492fb.tres"
+
+[deps]
+
+source_file="res://dialogues/storyboard/chapter1/day3/coperte.dialogue"
+dest_files=["res://.godot/imported/coperte.dialogue-d3fe3faee33bfdf8b542f972fc1492fb.tres"]
+
+[params]
+
+defaults=true

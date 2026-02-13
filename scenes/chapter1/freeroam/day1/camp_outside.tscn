@@ -1,0 +1,125 @@
+[gd_scene load_steps=8 format=3 uid="uid://cj0fs32yjh366"]
+
+[ext_resource type="Texture2D" uid="uid://b7cq5lhnxcajw" path="res://backgrounds/temps/camp_center.jpg" id="1_n33c8"]
+[ext_resource type="Script" uid="uid://cp4p2evbb42ff" path="res://scenes/chapter1/camera_2d.gd" id="2_6cxsq"]
+[ext_resource type="Script" uid="uid://biglv2byx7ceh" path="res://scenes/chapter1/freeroam/day1/day1_freeroam.gd" id="3_d1sa8"]
+[ext_resource type="Resource" uid="uid://c78jpliiql227" path="res://dialogues/storyboard/chapter1/freeroam/day1_freeroam.dialogue" id="4_3w7aa"]
+[ext_resource type="PackedScene" uid="uid://bv8xvb5uksg1y" path="res://dialogues/balloon.tscn" id="5_d7lki"]
+[ext_resource type="Texture2D" uid="uid://6kw80pvu62ps" path="res://characters/portraits/bocia.png" id="6_m4g0w"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_upuuy"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Background" type="TextureRect" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(1920, 1080)
+offset_right = 1920.0
+offset_bottom = 1080.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_n33c8")
+expand_mode = 2
+stretch_mode = 1
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(84, 53)
+anchor_mode = 0
+zoom = Vector2(1.1, 1.1)
+script = ExtResource("2_6cxsq")
+
+[node name="Kitchen" type="Area2D" parent="."]
+position = Vector2(385, 646)
+script = ExtResource("3_d1sa8")
+dialogue_resource = ExtResource("4_3w7aa")
+dialogue_start = "kitchen"
+balloon_tscn = ExtResource("5_d7lki")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Kitchen"]
+scale = Vector2(9.455, 9.455)
+shape = SubResource("CircleShape2D_upuuy")
+
+[node name="Sprite2D" type="Sprite2D" parent="Kitchen"]
+position = Vector2(-0.9999962, -10.000004)
+scale = Vector2(0.31333333, 0.31333333)
+texture = ExtResource("6_m4g0w")
+
+[node name="Generator" type="Area2D" parent="."]
+position = Vector2(718, 647)
+script = ExtResource("3_d1sa8")
+dialogue_resource = ExtResource("4_3w7aa")
+dialogue_start = "generator"
+balloon_tscn = ExtResource("5_d7lki")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Generator"]
+scale = Vector2(9.455, 9.455)
+shape = SubResource("CircleShape2D_upuuy")
+
+[node name="Sprite2D" type="Sprite2D" parent="Generator"]
+position = Vector2(-0.9999962, -10.000004)
+scale = Vector2(0.31333333, 0.31333333)
+texture = ExtResource("6_m4g0w")
+
+[node name="Nele" type="Area2D" parent="."]
+position = Vector2(1577, 713)
+script = ExtResource("3_d1sa8")
+dialogue_resource = ExtResource("4_3w7aa")
+dialogue_start = "nele"
+balloon_tscn = ExtResource("5_d7lki")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Nele"]
+scale = Vector2(9.455, 9.455)
+shape = SubResource("CircleShape2D_upuuy")
+
+[node name="Sprite2D" type="Sprite2D" parent="Nele"]
+position = Vector2(-0.9999962, -10.000004)
+scale = Vector2(0.31333333, 0.31333333)
+texture = ExtResource("6_m4g0w")
+
+[node name="Continue" type="Area2D" parent="."]
+position = Vector2(1798, 104)
+script = ExtResource("3_d1sa8")
+dialogue_resource = ExtResource("4_3w7aa")
+dialogue_start = "nextDay"
+balloon_tscn = ExtResource("5_d7lki")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Continue"]
+scale = Vector2(9.455, 9.455)
+shape = SubResource("CircleShape2D_upuuy")
+
+[node name="Sprite2D" type="Sprite2D" parent="Continue"]
+position = Vector2(-0.9999962, -10.000004)
+scale = Vector2(0.31333333, 0.31333333)
+texture = ExtResource("6_m4g0w")
+
+[node name="Veichle" type="Area2D" parent="."]
+position = Vector2(1020, 634)
+script = ExtResource("3_d1sa8")
+dialogue_resource = ExtResource("4_3w7aa")
+dialogue_start = "veichle"
+balloon_tscn = ExtResource("5_d7lki")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Veichle"]
+scale = Vector2(9.455, 9.455)
+shape = SubResource("CircleShape2D_upuuy")
+
+[node name="Sprite2D" type="Sprite2D" parent="Veichle"]
+position = Vector2(-0.9999962, -10.000004)
+scale = Vector2(0.31333333, 0.31333333)
+texture = ExtResource("6_m4g0w")
+
+[node name="ToSideCamp" type="Area2D" parent="."]
+position = Vector2(755, 975)
+script = ExtResource("3_d1sa8")
+dialogue_resource = ExtResource("4_3w7aa")
+dialogue_start = "to_side_camp"
+balloon_tscn = ExtResource("5_d7lki")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ToSideCamp"]
+scale = Vector2(9.455, 9.455)
+shape = SubResource("CircleShape2D_upuuy")
+
+[node name="Sprite2D" type="Sprite2D" parent="ToSideCamp"]
+position = Vector2(-0.9999962, -10.000004)
+scale = Vector2(0.31333333, 0.31333333)
+texture = ExtResource("6_m4g0w")

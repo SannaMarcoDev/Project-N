@@ -1,0 +1,64 @@
+import "res://dialogues/storyboard/chapter1/day3/intro.dialogue" as day3
+
+~ start
+do GameState.change_background("res://backgrounds/temps/cafeteria.jpg")
+do GameState.wait()
+È ormai sera.
+La mensa, che solo poche ore prima risuonava di speranze e risate nervose, ora è un antro di ombre, allungate dalla luce tremolante del generatore.
+È mezza vuota. Molti preferiscono ritirarsi direttamente nelle loro cuccette, forse per dormire.
+if GameState.stole_food
+	O forse per continuare a mangiare senza essere visti, senza sensi di colpa.
+else
+	O forse solo per fissare il soffitto buio, coi crampi allo stomaco.
+
+Pochi soldati siedono ai tavoli di metallo.
+E qualunque cibo abbiano davanti, per tutti ha lo stesso sapore. L'amaro sapore metallico del sangue versato sulla neve.
+Nele pulisce il suo fucile in un angolo. Lo smonta e lo rimonta con gesti meccanici, ossessivi, senza mai alzare lo sguardo.
+Ivan fissa il vuoto, stringendo la sua solita tazza di latte caldo.
+if GameState.stole_food
+	ivan: Hai fatto la cosa giusta ragazzo.
+	ivan: Nonostante tutto, grazie a questo riusciremo a combattere, riusciremo a prendere la centrale.
+Mi alzo per andarmene, non sono dell'umore per fare chiacchiere serali oggi.
+luka: Buonanotte ragazzi, domani partiamo, è meglio per tutti se andate a dormire anche voi.
+ivan: ...
+do GameState.change_background("res://backgrounds/temps/camp.jpg")
+Uscendo dalla tenda, vengo fermato bruscamente.
+nele: Ascolta Luka...
+luka: ...
+nele: ...buonanotte, ci vediamo domani.
+
+if GameState.petr_alive and GameState.stole_food
+	do GameState.change_background("res://backgrounds/temps/inside.jpg")
+	do GameState.wait(1.0)
+	Tornando alla mia tenda, ancora dolorante per la fatica del giorno, vengo fermato da Petr.
+	luka: Ciao miracolato, cosa ci fai ancora in giro? Domani partiamo, è meglio che tu sia riposato.
+	petr: ...
+	Ha uno strano sguardo in faccia, le mani nascoste nelle tasche.
+	luka: Scusa?
+	petr: Assassini.
+	petr: Quante persone moriranno a causa vostra?! Rubare il cibo a dei poveri innocenti.
+	petr: Avete condannato tutti per riempirvi la pancia!
+	luka: Petr per favore, faccio solo quello che ritengo giusto. Noi faremo la differenza in questa guerra.
+	petr: Ho disertato e mi sono unito alla resistenza per fare del bene. NON PER QUESTO!
+	Vedo il luccichio opaco di una vecchia pistola d'ordinanza nella sua mano.
+	Ma non faccio in tempo a reagire.
+	BANG
+	Sento una fiammata violenta alla spalla sinistra, un dolore accecante, come se un ferro rovente mi trapassasse la carne e mi frantumasse l'osso.
+	luka: Lurido...!
+	Petr, con gli occhi sgranati dal terrore per ciò che ha fatto, cerca di prendere la mira per il colpo di grazia.
+	Non gliene do il tempo.
+	Mi lancio su di lui, ignorando il sangue che mi cola lungo il braccio.
+	Lo travolgo di peso, facendolo schiantare contro il pavimento freddo e innevato.
+	Cerca di divincolarsi, scalcia e urla, ma la mia mano destra ha già trovato l'impugnatura del coltello alla mia cintura.
+	luka: Non siamo in un cazzo di film, non si può fare solo del bene, per i propri obiettivi, a volte, dei sacrifici sono necessari!
+	luka: PER IL BENE DI QUESTO MALEDETTO PAESE!
+	SPLAT.
+	Con un unico movimento, affondo la lama nel suo petto, dritto al cuore.
+	Con la bocca piena di sangue, Petr pronuncia le sue ultime parole.
+	petr: Pensi davvero... Che le persone che han- hanno fatto tutto questo... Non la pensino esattamente... come te...
+	petr: Non c'è... Via d'uscita... quindi...
+	luka: ...
+	Il suo sguardo fisso nei miei occhi, la bocca aperta in un grido muto, e la luce nei suoi occhi spenta per sempre.
+	Il ragazzo che ho risparmiato ieri, muore oggi per mano mia.
+
+=> day3/start

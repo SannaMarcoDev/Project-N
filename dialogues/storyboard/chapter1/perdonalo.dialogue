@@ -1,0 +1,65 @@
+import "res://dialogues/storyboard/chapter1/day2/intro.dialogue" as giorno2
+
+~ start
+Il file completo è nelle mie mani.
+Sarebbe molto facile ucciderlo in questo momento, chiamarla vendetta, e andare avanti.
+luka: Fallo uscire Ivan, e dagli qualcosa di caldo da bere.
+ivan: Signore, i ragazzi lo faranno a pezzi se lo vedono girare libero.
+luka: Ho detto fallo uscire. Raduna tutti in cortile.
+luka: Parlerò io.
+do GameState.change_background("res://backgrounds/temps/camp_center.jpg")
+do GameState.wait()
+Dieci minuti dopo, il silenzio nell'aria è pesante.
+Il disertore siede su un sacco di sabbia, tremante, con le lacrime agli occhi.
+Gli sguardi dei miei soldati sono lame puntate alla sua gola. Sento il mormorio di dissenso, la rabbia pronta a esplodere.
+Salgo su una cassa di munizioni per farmi vedere da tutti.
+soldati: ...
+luka: Guardatelo! Guardatelo bene, cosa vedete?
+soldati: Un verme di Saninski!
+soldati: Un assassino!
+Non mi sorprende questa risposta, sono abituati a vedere morte e tragiedia ovunque, ma non possono andare avanti così.
+Non è questa la ribellione che ci salverà.
+luka: Io vedo un ragazzo.
+luka: Vedo qualcuno che ha avuto il coraggio di dire BASTA!
+luka: QUalcuno che ha rischiato la fucilazione per portarci questo.
+luka: Questa è la chiave di volta per la nostra rivoluzione!
+Alzo al cielo il fascicolo che ci aveva portato, come fosse il sacro graal, e in qualche modo, lo è per davvero.
+I soldati rimangono in silenzio, con gli occhi spalancati di stupore.
+luka: Se uccidiamo chiunque cerchi di scappare dalla follia di Saninski, in cosa siamo diversi da lui?
+luka: Se uccidiamo la speranza, o quel poco che ci rimane, abbiamo già perso.
+luka: Da oggi, lavora ai generatori, è un tecnico, e ne abbiamo un fottuto bisogno!
+Un eterno silenzio avvolge la sala.
+Sguardi diffidenti, si chiedono perchè aiutare il nemico.
+Perchè non ucciderlo e basta? Cosa ce lo impedisce?
+Ivan prova a spezzare il silenzio e la tensione che era nell'aria.
+ivan: E finalmente, non ce la facevo più a fare tutto da solo, ti farò sgobbare piccoletto.
+Un piccolo passo avanti, la prima pietra scagliata.
+soldato: A me potrebbe servire un compagno di boxe! Almeno te sembri della mia stessa taglia, con gli altri le prendo e basta...
+soldato: Calmati, se è un tecnico può riparare il jukebox nell'angolo, lascialo stare
+Che si trasforma in una frana, una minuscola frana di benevolenza, forse siamo riusciti a dare speranza a qualcuno, a far provare la compassione.
+Non sarà facile convincere il campo che lui non era più un nemico.
+Scendo dalla cassa e mi avvicino al prigioniero. Gli metto una mano sulla spalla. Si irrigidisce, terrorizzato.
+luka: Come ti chiami ragazzo?
+petr: Petr, signore. Petr.
+luka: Bene Petr, lavora sodo, e vedi di darci una mano.
+luka: E voialtri invece, Petr da oggi è uno dei nostri, ha perso tanto per essere qui.
+luka: Ha sacrificato tutto quello che aveva, un membro della sua famiglia non è più qui con lui oggi.
+luka: Il tutto perchè voleva fare la differenza!
+luka: Ed eccolo qui, davanti a noi, con le chiavi del castello nemico! Grazie a lui, potremo mettere fine a questa guerra!
+Il silenzio nella sala cambia. Un mormorio, piccole discussioni.
+La rabbia non è sparita, ma per qualcuno stasera, si è trasformata in qualcos'altro. Rispetto, forse. O comprensione.
+Ho salvato una vita, e forse, ho ricordato a tutti noi per cosa stiamo combattendo davvero, non per uccidere i mostri, ma per restare umani.
+Si avvicinano uno a uno al prigioniero, chi gli tende la mano in segno di pace, chi nonostante il sospetto, guardandomi negli occhi, accetta il mio giudizio.
+do GameState.change_background("res://backgrounds/temps/bench.jpg")
+do GameState.wait()
+luka: Grazie, per avermi dato corda prima.
+ivan: Cosa faresti senza di me, saresti ancora a spalare letame nella tua fattoria.
+luka: o di quello che è rimasto.
+luka: Buonanotte Ivan.
+ivan: Buonanotte.
+do GameState.change_background("res://backgrounds/temps/inside.jpg")
+do GameState.wait()
+Ancora non ho sonno, tanto vale farsi un giro veloce.
+do GameState.change_scene("res://scenes/chapter1/freeroam/day1/inside_tent.tscn")
+
+=> END

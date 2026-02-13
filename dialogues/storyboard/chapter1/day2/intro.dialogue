@@ -1,0 +1,67 @@
+~ start
+do GameState.story_anchor = "res://dialogues/storyboard/chapter1/day2/intro.dialogue"
+do GameState.change_background("res://backgrounds/Transitions/Giorno 2.png")
+do GameState.wait()
+do GameState.change_background("res://backgrounds/temps/cafeteria.jpg")
+L'odore del caffè surrogato, fatto con chissà quali radici bollite, non è mai stato così dolce.
+Mi fermo sulla soglia della mensa, un vecchio magazzino trasandato dai muri scrostati.
+Di solito, a quest'ora, l'unico rumore è il raschiare stanco dei cucchiai nelle ciotole di latta.
+Oggi no. Oggi c'è rumore.
+luka: Mamma mia che odore, con cosa lo avete fatto il caffè oggi?
+nele: Non credo tu voglia saperlo, bevi e basta
+
+
+if GameState.petr_alive
+	Ci risate. Un rumore bellissimo.
+	Petr, il ragazzo che abbiamo risparmiato, o "il miracolato", come lo chiamano già alcuni, sta armeggiando con il vecchio jukebox nell'angolo.
+	un relitto che non funziona da anni. Qualcuno gli sta passando dei cavi, altri lo incitano, altri ancora non si sono abituati alla sua presenza.
+	soldato: Dai Petr ci sei quasi, se non dovesse funzionare ti ricordo che mi dovrai metà della tua razione.
+	petr: S-Sto facendo del mio meglio! Dovrei av-aver quasi finito...
+	Quasi per miracolo, riesce a sistemarlo. Note di vecchie canzoni jazz riempiono la stanza, costeggiate dallo stupore di molti ragazzi.
+	La sua presenza, vivo e utile, è la prova vivente che forse non siamo ancora diventati mostri.
+	luka: Ci è davvero riuscito, meno male.
+	nele: Stavo perlando coi soldati prima. A quanto pare ieri sera si sono fermati a parlare fino all'alba col nuovo arrivato.
+	nele: Qualcuno lo vede già come uno dei nostri, ma molti sono ancora sospettosi di lui.
+	nele: Poco male, comunque tranquillo, se lo dovessi vedere far qualcosa di strano, sai che il mio colpo di cecchino non manca mai.
+	luka: Vedrò mai la tua parte femminile, Nele?
+	nele: Solo quando spettegolo alle tue spalle, vai a divertirti un po' anche te, è un po' che non sentiamo vera musica.
+else
+	Il rumore è diverso. Il suono di pugni che battono sui tavoli, di voci forti e decise. Un'energia nervosa, quasi predatoria.
+	soldato: Cavolo l'avrei voluto uccidere io ieri.
+	soldato: Non dirlo a me, non vedo l'ora di andare alla centrale e uccidere qualche bastardo traditore.
+	soldato: Chissà quando andremo, non sto più nella pelle!
+	Non c'è pietà, solo vittoria. E questa brutalità ha acceso un fuoco diverso nei miei uomini.
+	Non speranza di pace, ma fame di vendetta. Si sentono forti, invincibili, spietati come il loro comandante.
+	luka: Che aria strana che tira oggi.
+	nele: Tu dici? A me sembra tutto normale.
+	luka: Non so, i ragazzi, li vedo più... accesi, se così si può dire.
+	nele: Bhe qualcuno li ha caricati per bene ieri direi, inoltre, la voce si è sparsa in fretta dei documenti, non vedono l'ora di avere una vittoria.
+	luka: Già, siamo qui da fin troppo tempo ad aspettare, presto faremo i bagagli.
+	luka: A proposito, sei riuscita a sistemare il tuo fucile da cecchino?
+	nele: Non preoccuparti, sai benissimo che potrai contare sui miei colpi da maestro.
+	nele: ...
+	nele: Cerca di non esagerare. So che vuoi il meglio per i tuoi uomini, ma cerca di rimanere lucido.
+	
+Nele è sempre stata premurosa per gli altri.
+Anche se devo dire che da una come lei, fredda e precisa nel campo di battaglia, il cambio di personalità di quando è al campo è... interessante.
+Mi reco dal cuoco per prendere qualcosa da mangiare, e neanche il tempo di tornare ai tavoli, che già l'aria è cambiata.
+soldato A: Non ci credo!
+nele: E non solo, a quanto pare ieri sera Ivan si è fatto scucire la sua razione di tabacco! L'ha persa a carte, e pare sia stato battuto da un novellino!
+ivan: ...
+ivan: Nele ti prego, puoi farti gli affari tuoi ogni tanto? Ti sento quaggù.
+nele: Zitto pelatone! O non ti offro neanche un mozzicone oggi!
+Un soldato mi passa una mela non totalmente marcia.
+soldato: Capo, si dice che a Eden abbiano ricominciato a dare feste.
+soldato: Ho sentito una trasmissione radio intercettata. Parlavano di vino vero. E musica dal vivo!
+if GameState.petr_alive
+	ivan: Lasciali ballare, presto la musica la metteremo noi! Vero comandante?
+else
+	ivan: Lasciali ballare, presto li faremo ballare noi. Sulle loro tombe. Vero, comandante?
+	
+luka: La metteremo noi la musica! E sarà un concerto che non dimenticheranno!
+L'atmosfera è elettrica. Si scambiano battute sui generali grassi che corrono in mutande, su cosa avrebbero mangiato quando avremmo preso i magazzini del centro.
+Per ora, la guerra sembra ben lontana.
+nele: Goditela Capo. Non capita spesso di vederli così. Sembrano quasi pronti a tutto.
+do GameState.change_scene("res://scenes/chapter1/freeroam/day2/kitchen.tscn")
+
+=> END

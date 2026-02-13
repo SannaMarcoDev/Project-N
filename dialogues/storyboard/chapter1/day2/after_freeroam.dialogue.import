@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bji2uj4xug6sp"
+path="res://.godot/imported/after_freeroam.dialogue-2a634d7425b329d0fb6cfd3236abc7ad.tres"
+
+[deps]
+
+source_file="res://dialogues/storyboard/chapter1/day2/after_freeroam.dialogue"
+dest_files=["res://.godot/imported/after_freeroam.dialogue-2a634d7425b329d0fb6cfd3236abc7ad.tres"]
+
+[params]
+
+defaults=true

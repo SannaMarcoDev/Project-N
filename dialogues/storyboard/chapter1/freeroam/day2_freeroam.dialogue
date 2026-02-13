@@ -1,0 +1,225 @@
+~ nextDay
+Vuoi proseguire?
+- Prosegui
+	luka: Ci vorrebbe proprio un bel riposino dopo mangiato.
+	set GameState.story_continue = "res://dialogues/storyboard/chapter1/day2/after_freeroam.dialogue"
+	set GameState.continued_from_night = true
+	do GameState.change_scene("res://scenes/chapter1/chapter1.tscn")
+- Aspetta
+	luka: Vorrei controllare ancora qualcosa.
+=> END
+
+~ cross
+Un enorme croce.
+La abbiamo trovata già qui quando abbiamo deciso di usare questo luogo come campo base.
+Mi chiedo quanti anni abbia.
+E come abbia fatto a rimanere in piedi, in questi 6 anni d'inferno.
+=> END
+
+~ bench
+if GameState.day2_train_found
+	Che bella vista che c'è da quassù.
+	Mi fa sentire proprio in un altro mondo.	
+else
+	set GameState.day2_train_found = true
+	Che bella vista che c'è da quassù.
+	Mi fa sentire proprio in un altro mondo.
+	nele: Ciao Luka.
+	luka: Nele! Cosa ci fai qui?
+	nele: Ti ho visto sgattaiolare via, e ho pensato di seguirti, non è spesso che abbiamo un momento di tranquillità.
+	nele: Vieni qui ogni volta che puoi vero?
+	luka: Ho vissuto fin da piccolo vicino al lago, stare qui mi fa sempre tornare a quei bei tempi.
+	nele: Lo so bene, c'ero anche io.
+	nele: In quella minuscola città di provincia, a volte mi chiedo con che coraggio l'ho lasciata per andare in città.
+	luka: Già, me lo chiedo anche io.
+	luka: Penso sia un po' il ciclo di ogni cosa, si sogna sempre quello che non si ha.
+	luka: E prima o poi, si torna indietro.
+	nele: Bhe non sempre. Ad esempio qu...
+	luka: Dai sto parlando in generale lo sai, goditi la vista invece di punzecchiarmi.
+	nele: Che noioso che sei.
+	luka: A proposito, ieri il Bocia mi ha detto che qua in giro potrebbe esserci il suo trenino giallo.
+	luka: Magari è proprio... Ah! Eccolo qua!
+	nele: Perchè mai il suo trenino dovrebbe essere qua? Lei non può venire fin quassù!
+	luka: Non saprei...
+	luka: In ogni caso, direi che non è importante, vado a riportarglielo, vieni anche tu o aspetti qui?
+	nele: 5 minuti? Poi scendiamo insieme.
+	luka: Va bene, come vuoi tu, capo.
+	...
+	do GameState.wait()
+=> END
+
+~ bocia
+if GameState.day2_bocia_quest_done
+	Sta usando una tazza d'acqua per affogare lo spinosauro...
+elif GameState.day2_bocia_talk and GameState.day2_train_found
+	luka: Guarda cosa ti ho portato?
+	bocia: IL MIO TRENINOOOOO!
+	bocia: CIUF CIUF!
+	bocia: GRAZIE LUKA!
+	bocia: Dove l'hai trovato?
+	luka: L'ho trovato sul promontoro, hai idea di come ci sia finito?
+	bocia: mmmmmm non ne ho idea...
+	bocia: Sarà stato lo spinosauro!
+	luka: Certo...
+elif GameState.day2_bocia_talk and GameState.day2_train_found == false
+	Sta giocando coi suoi giocattoli, in modo a dir poco particolare.
+else
+	set GameState.day2_bocia_talk = true
+	bocia: E LO SPINOSAURO STACCA IL BRACCIO DI ULTRA MAN!!!
+	bocia: RAWWRRRRRRR!!
+	nele: DALLE CORDE DEL RING, LO SPINOSAURO PRENDE LA RINCORSA, SI STA PREPARANDO PER LA SUA MOSSA FINALE!
+	nele: UNA RKO SU ULTRAMAN! CHE LO MANDA AL TAPPETO!
+	nele: E UNO... E DUE... DIN DIN DIN.
+	bocia: SIIIIII
+	luka: ....
+	luka: Nele ti stai divertendo? Non mi sembr...
+	bocia: PRRRRRRR
+	bocia: Non stare ad ascoltare il vecchio puzzoso noioso, ultra man vuole la rivincita!
+	luka: ...
+=> END
+
+~ jukebox
+if GameState.petr_alive
+	Il nostro vecchio jukebox.
+	Lo abbiamo trovato qui quando siamo arrivati, trasandato e tutto rotto
+	Meno male che Petr è riuscito a sistemarlo.
+else
+	Il nostro vecchio jukebox.
+	Lo abbiamo trovato qui quando siamo arrivato, trasandato e tutto rotto
+	Se solo avessimo un tecnico che possa ripararlo.
+=> END
+
+~ ivan
+if GameState.day2_ivan_talk
+	Si è completamente immerso nei suoi pensieri
+else:
+	set GameState.day2_ivan_talk = true
+	luka: Ivan mi fai pensa così.
+	ivan: Cosa vuoi piccolo incosciente?
+	luka: Vieni fuori un attimo? Ti offro una sigaretta.
+	In un istante gli si illuminano gli occhi.
+	ivan: Non me lo farò ripetere.
+	do GameState.change_background("res://backgrounds/temps/camp_center.jpg")
+	do GameState.hide_node(["Jukebox","Bocia","Nele","Ivan","ToMainCamp","Continue"])
+	do GameState.wait()
+	Passo una sigaretta a Ivan, che la accende frettolosamente.
+	Già che ci sono, anche io me ne merito una.
+	ivan: Sentiamo.
+	luka: ?
+	ivan: Non penso tu mi abbia chiamato qui per compagnia, che ti serve?
+	luka: Che burbero, uno non può neanche fare un atto di gentilezza oggigiorno?
+	ivan: ...
+	luka: In ogni caso, ieri sera ho visto che le luci per il promontorio erano spente, hai idea del perchè?
+	ivan: Pensavo di iniziare a spegnerle di notte, così che i bambini non ci vadano di nascosto.
+	ivan: Considerando che ne vedo sempre di più in giro in orari di coprifuoco.
+	luka: Hai ragione, anche ieri ho visto il Bocia a spasso tardi, l'ho già rimproverata.
+	ivan: Devi essere più duro con loro, se vuoi rimanere a capo di questo campo e fare qualcosa, ci vuole il pugno di ferro!
+	ivan: Altrimenti faranno sempre quello che vogliono.
+	luka: Ma figurati.
+	luka: Non posso tartassarli di regole e leggi, già stanno tutti facendo un ottimo lavoro.
+	ivan: Come ti pare.
+	luka: Già che ci siamo, volevo chiederti un altra cosa.
+	luka: E so che posso corromperti con un altra sigaretta.
+	ivan: Sentiamo...
+	luka: Ho sempre voluto chiederti, come feci a sopravvivere quella volta, alla capitale?
+	ivan: Dici quando ho perso il mio braccio per te?
+	luka: Se proprio vuoi ributtarmi in faccia quella storia, basta che mi racconti anche il seguito.
+	ivan: Bene, eravamo al mattatoio della capitale, come ben sai.
+	ivan: Stavamo ispezionando quando qualcuno ebbe l'ottima idea di controllare dentro un enorme tritacarne.
+	- Non dire nulla
+		luka: ...
+	- Andava fatto!
+		luka: Considerando quello che c'era in giro, era solo che ovvio che...
+		ivan: Silenzio, sto parlando io.
+	ivan: In ogni caso, sempre quel qualcuno inciampò, e attivò il tritacarne proprio mentre stavo guardando dentro, e il mio braccio rimase bloccato lì
+	ivan: Il che allertò le guardie, e dopo una breve lotta ti dissi di andartene e lasciarmi lì.
+	ivan: Quel che è successo poi in realtà è ancora abbastanza confuso per me.
+	ivan: Mi fecero prigioniero, per qualche motivo la fucilazione non arrivò, erano occupati sul fronte in quel periodo.
+	ivan: Conobbi Jackson, il nostro attuale contatto che ci riempie di armi. Un gran bel colpo di fortuna.
+	ivan: Una mente brillante, riuscì a scassinare la cella, caricarmi su una camionetta e portarmi in salvo.
+	ivan: Ed eccomi qua, che mi svendo per due sigarette.
+	luka: Non mi avevi mai detto come avevi conosciuto Jackson, quindi era anche lui un prigioniero? Come fa ad avere così tante armi da mandarci?
+	luka: Voglio dire, siamo stracolmi, non che mi lamenti.
+	ivan: Sai figliolo, te dovresti fare meno domande.
+	ivan: In ogni caso, qui ho finito, vado a finire il mio pasto.
+	luka: ...
+	do GameState.wait()
+	do GameState.change_background("res://backgrounds/temps/cafeteria.jpg")
+	do GameState.show_node(["Jukebox","Bocia","Nele","Ivan","ToMainCamp","Continue"])
+=> END
+
+~ nele
+if GameState.day2_nele_talk
+	Sta mangiando la sua zuppa. Rumorosamente.
+else
+	set GameState.day2_nele_talk = true
+	nele: Non ci crederai mai!
+	nele: Ieri stavo dando una mano ai ragazzi a pulire i loro fucili.
+	nele: Solo che mi sono un po' stufata di farlo sempre io, quindi ho deciso di fare solo da supervisore.
+	luka: Chissà perchè non credo sia finita bene.
+	nele: Affatto!
+	nele: Uno è riuscito a fare tutto da solo, ci ha messo un attimo a capire.
+	nele: L'altro... Bhe...
+	nele: Hai presente il botto che si è sentito ieri sera?
+	luka: Ti prego non dirmi che...
+	nele: Diciamo che mentre cercava di smontare il fucile, si è scordato il proiettile dentro.
+	nele: Non se n'è accordo ed è partito un colpo.
+	nele: Ma la cosa più divertente?
+	nele: Sentiamo, secondo te di cosa sapeva la zuppa oggi?
+	- Di pollo
+		luka: Mi sembra un po' più buona del solito, sa di pollo quasi.
+		nele: Bhe, hai presente il proiettile vagante partito?
+		nele: C'era uno stormo di uccelli ieri sera, e quel colpo ne ha colpiti 3.
+		nele: E tadaa! Ecco zuppa di... Uccello non identificato? Non so son tutti piccioni per me.
+		luka: ...
+	- Di selvaggina
+		luka: Mi sembra un po' più buona del solito, è un po' forte, non saprei dirti bene cosa sia.
+		nele: Bhe, hai presente il proiettile vagante partito?
+		nele: Abbiamo sentito uno strano rumore dopo il colpo, siamo andati a vedere velocemente e guarda cosa abbiamo trovato!
+		Col braccio sta indicando verso la cucina.
+		nele: E tadaa! Ecco zuppa di... cinghiale? Credo, mi sembra un cinghiale.
+		nele: In ogni caso, ne vanno tutti pazzi oggi!
+		luka: ...
+=> END
+
+~ veichle
+luka: Il mio fidato Land Dweller.
+luka: Nonostante i tanti anni, e un radiatore tenuto su con nasto adesivo e chiodi, fa ancora il suo dovere.
+if GameState.petr_alive
+	luka: Potrei chiedere a Petr di sistemarlo ora che ci penso, se è riuscito a sistemare un jukebox, questo sarà un gioco da ragazzi.
+=> END
+
+~ generator
+Il generatore del campo.
+Ci è stato fornito da un amico di Ivan, un collaborazionista che però ogni tanto, ci manda qualche regalino.
+Funziona a dovere.
+=> END
+
+~ tent_bed
+Il mio letto.
+Non sarà il più comodo, ma perlomeno è meglio che dormire per terra
+=> END
+
+~ tent_workbench
+La mia scrivania, disordinata come sempre.
+=> END
+
+~ to_side_camp
+do GameState.change_scene("res://scenes/chapter1/freeroam/day2/camp_side.tscn")
+=> END
+
+~ to_tent
+do GameState.change_scene("res://scenes/chapter1/freeroam/day2/inside_tent.tscn")
+=> END
+
+~ to_main_camp
+do GameState.change_scene("res://scenes/chapter1/freeroam/day2/camp_outside.tscn")
+=> END
+
+~ to_bench
+do GameState.change_scene("res://scenes/chapter1/freeroam/day2/bench.tscn")
+=> END
+
+~ to_kitchen
+do GameState.change_scene("res://scenes/chapter1/freeroam/day2/kitchen.tscn")
+=> END

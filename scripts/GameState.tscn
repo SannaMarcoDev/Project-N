@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://da51p18bbkc8h"]
+
+[ext_resource type="Script" uid="uid://bxip1qoe2kqjg" path="res://scripts/game_state.gd" id="1_00qk1"]
+[ext_resource type="Texture2D" uid="uid://d0ss0qe4uwdn1" path="res://backgrounds/chapter1/base_camp.png" id="2_0j86d"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_00qk1")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -110.0
+offset_top = -10.0
+offset_right = 1426.0
+offset_bottom = 662.0
+texture = ExtResource("2_0j86d")

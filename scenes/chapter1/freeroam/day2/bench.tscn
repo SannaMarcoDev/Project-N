@@ -1,0 +1,93 @@
+[gd_scene load_steps=8 format=3 uid="uid://d4g4hxtxdwb2t"]
+
+[ext_resource type="Texture2D" uid="uid://dmi67ioc6prm6" path="res://backgrounds/temps/bench.jpg" id="1_udfoa"]
+[ext_resource type="Script" uid="uid://cp4p2evbb42ff" path="res://scenes/chapter1/camera_2d.gd" id="2_5c4ea"]
+[ext_resource type="Script" uid="uid://bubpv3a3l5ws0" path="res://scenes/chapter1/freeroam/day2/day1_freeroam.gd" id="3_tgobp"]
+[ext_resource type="Resource" uid="uid://bqdh0nromuqlm" path="res://dialogues/storyboard/chapter1/freeroam/day2_freeroam.dialogue" id="4_udfoa"]
+[ext_resource type="PackedScene" uid="uid://bv8xvb5uksg1y" path="res://dialogues/balloon.tscn" id="5_ghm3e"]
+[ext_resource type="Texture2D" uid="uid://6kw80pvu62ps" path="res://characters/portraits/bocia.png" id="6_46krn"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_upuuy"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Background" type="TextureRect" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(1920, 1080)
+offset_right = 1920.0
+offset_bottom = 1080.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_udfoa")
+expand_mode = 2
+stretch_mode = 1
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(84, 53)
+anchor_mode = 0
+zoom = Vector2(1.1, 1.1)
+script = ExtResource("2_5c4ea")
+
+[node name="Cross" type="Area2D" parent="."]
+position = Vector2(1542, 201)
+script = ExtResource("3_tgobp")
+dialogue_resource = ExtResource("4_udfoa")
+dialogue_start = "cross"
+balloon_tscn = ExtResource("5_ghm3e")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cross"]
+scale = Vector2(9.455, 9.455)
+shape = SubResource("CircleShape2D_upuuy")
+
+[node name="Sprite2D" type="Sprite2D" parent="Cross"]
+position = Vector2(-0.9999962, -10.000004)
+scale = Vector2(0.31333333, 0.31333333)
+texture = ExtResource("6_46krn")
+
+[node name="Bench" type="Area2D" parent="."]
+position = Vector2(794, 608)
+script = ExtResource("3_tgobp")
+dialogue_resource = ExtResource("4_udfoa")
+dialogue_start = "bench"
+balloon_tscn = ExtResource("5_ghm3e")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bench"]
+scale = Vector2(9.455, 9.455)
+shape = SubResource("CircleShape2D_upuuy")
+
+[node name="Sprite2D" type="Sprite2D" parent="Bench"]
+position = Vector2(-0.9999962, -10.000004)
+scale = Vector2(0.31333333, 0.31333333)
+texture = ExtResource("6_46krn")
+
+[node name="Continue" type="Area2D" parent="."]
+position = Vector2(1798, 104)
+script = ExtResource("3_tgobp")
+dialogue_resource = ExtResource("4_udfoa")
+dialogue_start = "nextDay"
+balloon_tscn = ExtResource("5_ghm3e")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Continue"]
+scale = Vector2(9.455, 9.455)
+shape = SubResource("CircleShape2D_upuuy")
+
+[node name="Sprite2D" type="Sprite2D" parent="Continue"]
+position = Vector2(-0.9999962, -10.000004)
+scale = Vector2(0.31333333, 0.31333333)
+texture = ExtResource("6_46krn")
+
+[node name="ToSideCamp" type="Area2D" parent="."]
+position = Vector2(1775, 966)
+script = ExtResource("3_tgobp")
+dialogue_resource = ExtResource("4_udfoa")
+dialogue_start = "to_side_camp"
+balloon_tscn = ExtResource("5_ghm3e")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ToSideCamp"]
+scale = Vector2(9.455, 9.455)
+shape = SubResource("CircleShape2D_upuuy")
+
+[node name="Sprite2D" type="Sprite2D" parent="ToSideCamp"]
+position = Vector2(-0.9999962, -10.000004)
+scale = Vector2(0.31333333, 0.31333333)
+texture = ExtResource("6_46krn")

@@ -1,0 +1,37 @@
+import "res://dialogues/storyboard/chapter1/buone_notizie.dialogue" as buone_notizie
+import "res://dialogues/storyboard/chapter1/brutte_notizie.dialogue" as brutte_notizie
+
+
+~ start
+do GameState.change_background("res://backgrounds/Transitions/giorno_1.jpg")
+do GameState.wait()
+do GameState.change_background("res://backgrounds/temps/bench.jpg")
+do GameState.play_sfx("res://SFX/paper_handled_4.wav")
+Sei anni.
+Sono ormai sei lunghi anni che non vi vedo.
+Da quando vi hanno strappato dalle nostre braccia.
+Da quando ha preso il potere... o meglio, da quando se l'è preso con la forza, spacciandola per democrazia, il mio mondo si è ridotto a due sole costanti. La fame e il silenzio.
+Forse vi starete chiedendo, anche in questo istante, perchè mai io abbia accettato un lavoro oltre [color=red]il muro[/color].
+La paga era ottima, avrei potuto farvi andare nelle migliori università del mondo, rendere qualsiasi vostro sogno realtà!
+Ci saremmo pututi finalmente ritirare dall'esercito, niente più guerra, niente più armi.
+Mai avrei pensato che...
+
+do GameState.wait(1.5)
+do GameState.play_sfx("res://SFX/suitcase_dropped.wav")
+ivan: La dovresti smettere di leggere quella vecchia lettera capo, non è bene rivangare il passato.
+Mi giro verso la voce roca alle mie spalle. è Ivan. Il mio fedele amico di una vita.
+ivan: Fa freddo.
+luka: Non dici altro da giorni. Non è che ti sta venendo l'Alzheimer, vecchio pazzo?
+Gli tirerei volentieri un pugno amichevole sulla spalla sinistra, se non fosse che la manica della sua giacca pende vuota.
+Oscillando al vento gelido. Un ricordo dell'ultimo inverno.
+Un promemoria che forse non sono tagliato per guidarli, che quel giorno avrei potuto fare di più.
+ivan: O forse fa solo fottutamente freddo. 
+luka: ...
+luka: Aggiornami vecchio psicopatico, come siamo messi?
+Ivan si è fatto serio, il tono scherzoso scomparso, inghiottito dal rumore del vento.
+ivan: Ho buone e cattive notizie come sempre, quali vuoi sentire prima?
+
+- Buone notizie
+	=> buone_notizie/start
+- Cattive notizie
+	=> brutte_notizie/start

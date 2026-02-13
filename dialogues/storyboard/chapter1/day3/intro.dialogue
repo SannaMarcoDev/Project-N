@@ -1,0 +1,191 @@
+import "res://dialogues/storyboard/chapter1/day3/accendi_fuoco.dialogue" as fuoco
+import "res://dialogues/storyboard/chapter1/day3/coperte.dialogue" as coperte
+
+~ start
+do GameState.change_background("res://backgrounds/Transitions/Giorno 3.png")
+do GameState.wait()
+do GameState.change_background("res://backgrounds/temps/bench.jpg")
+Sono a malapena le sei del mattino.
+L'alba non è ancora arrivata del tutto. Il sole è solo una ferita pallida all'orizzonte, filtrata dalla nebbia gelida.
+Il freddo morde come un cane, ma è un dolore familiare ormai, quasi confortante.
+Accendo la solita sigaretta.
+luka: Ivan queste sigarette fanno proprio cagare. Sanno di copertone bruciato.
+ivan: Sono le solite di sempre, vecchio pazzo. Sei solo stressato.
+ivan: E ringrazia di averne, io sono due giorni che non ne ho.
+luka: Magari smettila di giocare d'azzardo. Lo sanno tutti che sei capace a bluffare.
+ivan: Già...
+ivan: ...
+ivan: Sei sicuro di quello che vuoi fare? Stiamo parlando di un attacco su larga scala. Possiamo davvero fidarci di quel dannato fascicolo?
+
+if GameState.petr_alive
+	luka: L'hai visto anche tu com'è quel ragazzo. Petr.
+	luka: Passo anni a guardare la gente negli occhi prima di sparargli, Ivan.
+	luka: Non c'è malizia in lui. Non una singola cellula del mio corpo mi dice che sia una trappola.
+	luka: Inoltre i tecnici hanno passato le notti a incrociare i suoi dati con le nostre ricognizioni.
+	luka: Turni, planimetrie, tutto combacia.
+	ivan: E se avessimo sbagliato?
+	ivan: E se fosse l'attore migliore della storia?
+	ivan: Vuoi veramente mobilitare l'intera resistenza, svuotare il campo e rischiare tutto su una chance?
+	luka: Rimane una chance molto grossa Ivan. Forse l'unica che avremo mai.
+	ivan: Resta comunque una scommessa.
+	luka: Inoltre sai bene che non possiamo stare qui a marcire ancora a lungo, come ci ha trovato lui ci troveranno presto anche gli altri.
+	luka: E non voglio morire nascondendomi.
+else
+	luka: ...
+	Sospiro, il ricordo del corpo di Petr ancora fresco nella mia memoria.
+	luka: Sono abbastanza sicuro che non era un doppiogiochista.
+	luka: I dati del fascicolo sono solidi. Abbiamo controllato tutto con le informazioni che avevamo già.
+	luka: È roba autentica Ivan. Nessuno sacrifica informazioni così vitali solo per tenderci un'imboscata.
+	ivan: E se avessimo sbagliato? Vuoi veramente mobilitare tutta la resistenza su una chance che ci ha dato un morto?
+	ivan: Un tizio che per giunta, hai spedito tu all'altro mondo?
+	Stringo i pugni.
+	luka: L'ho ucciso per principio!
+	luka: Se fai del male alla causa, non pensare di venire qui a chiedere perdono dopo.
+	luka: Non sono Dio, Ivan. Non riesco a perdonare come Lui.
+	luka: Faccio quello che devo per mantenere l'ordine.
+	luka: ...
+	luka: E comunque, la scommessa è troppo grossa per ignorarla. vivo o morto, le sue informazioni cambieranno questa guerra.
+	ivan: È comunque solo una scommessa.
+	ivan: Ma dannazione, lo capisco. Non possiamo rimanere qui ancora a lungo, mentre il cappio al collo si stringe sempre di più.
+	
+Lascio cadere un mozzicone e lo schiaccio con lo scarpone.
+luka: Hai paura di morire per caso? Che c'è Ivan, cos'hai da perdere ormai?
+ivan: Non ritirare fuori la storia, vecchio bastardo.
+ivan: Solo perché la mia famiglia è morta sotto le macerie dei collaborazionisti, non vuol dire che io abbia fretta di raggiungerli.
+ivan: Spero solo di non morire a casaccio. Voglio morire quando avremo vinto.
+luka: Questa è la nostra vittoria!
+luka: Se dovessimo riuscire veramente a prendere il controllo della centrale elettrica, tutte le loro difese, le loro artiglierie, comunicazioni.
+luka: Tutto alla nostra mercé!
+luka: Inoltre lo sai bene. I bombardamenti avanzano. Sentiamo i boati ogni notte più vicini.
+luka: Non sappiamo quando toccherà a noi, ma una cosa è sicura.
+luka: Non bombarderebbero mai la loro preziosa centrale. Sarebbe un suicidio politico. Lì dentro saremo al sicuro.
+ivan: Va bene, mi hai convinto, non che possa tirarmi indietro ora. Avviso il campo, preparati anche tu.
+
+do GameState.change_background("res://backgrounds/temps/troops.jpg")
+do GameState.wait(2.0)
+
+L'intera resistenza, sopra una dozzina di camion malmessi.
+Un corteo fantasma di mezzi arrugginiti.
+I camion avanzano a fari spenti, guidati solo dalla luce grigia della notte e dalla memoria muscolare degli autisti che conoscono ogni buca di quella foresta.
+
+Nele tiene una mappa stropicciata sulle ginocchia, illuminandola con una torcia a dinamo dalla luce fioca.
+nele: Faremo meglio ad accamparci a ovest della centrale, se i dati del fascicolo sono corretti, le telecamere hanno un punto cieco in quella zona.
+nele: Da lì potremo prenderli alla sprovvista.
+ivan: Se i dati sono corretti, se c'è un punto cieco. La mia vita è appesa a troppi “se” per i miei gusti, ragazza.
+nele: Sempre meglio di un attacco frontale come proponi tu, vecchio. A meno che tu non voglia correre contro le mitragliatrici cercando di schivare i proiettili.
+nele: E con la tua stazza, dubito riusciresti a fare cinque metri.
+
+Nel mentre, nella stiva dei camion, i soldati si preparano.
+
+if GameState.stole_food
+	Il Bocia tira fuori dalla tasca una barretta energetica. È parte del carico rubato.
+	La rigira tra le dita con un sorrisetto nervoso, quasi compiaciuto.
+	bocia: Ivan! Vuoi metà? È al cioccolato!
+	Ivan lo guarda con occhi ridotti a fessure.
+	C'è qualcosa di diverso nei miei uomini oggi. Una sorta di ombra negli sguardi.
+	Non si guardano più come fratelli, ma quasi come complici.
+	Ivan strappa mezza barretta dalle mani della ragazzina.
+	ivan: Dai qua! Potrei non avere fame ma a una barretta al cioccolato non posso mica dire di no!
+	ivan: Chissà come se la passano quelli di Eden, sapendo che il loro riso è nella mia pancia, ahahah!
+	bocia: E chissenefrega? Meglio a noi che a loro, la legge del più forte, no Comandante?
+	luka: ...
+else
+	Il Bocia si stringe le braccia al petto, tremando. Non è solo il freddo.
+	Il suo stomaco brontola rumorosamente nel silenzio del camion, un suono lungo e doloroso.
+	bocia: Ho sentito che nella mensa della centrale hanno scorte vere.
+	bocia: Carne in scatola. Forse persino caffè!
+	Ivan chiude gli occhi, la testa appoggiata contro la paratia metallica. Sembra più vecchio di dieci anni, la pelle grigia tirata sulle ossa.
+	ivan: Smettila di sognare ragazza, risparmia il fiato. Meno parli, meno calorie bruci.
+	Nele stringe le labbra, pallida come un lenzuolo.
+	nele: Se riuscissimo a prendere la centrale... prenderemo anche la loro cucina. Resisti, piccola.
+	La debolezza è palpabile, un passeggero invisibile che ci siede accanto, rendendo ogni movimento uno sforzo titanico.
+
+if GameState.petr_alive
+	Petr è seduto goffamente su una cassa di munizioni, cerca di tenere fermo l'elmetto che gli scivola continuamente sugli occhi.
+	Ogni volta che il camion prende una buca, lui rimbalza e sbatte la spalla contro la paratia, mormorando scuse a nessuno in particolare.
+	bonk bonk
+	petr: Scusate... scusami.
+	nele: Stai calmo, “Miracolato”. Non ti mangiamo mica.
+	petr: È che... non sono abituato a viaggiare. Di solito riparo questi camion, non ci sto sopra mentre si va in guerra.
+	soldato: Tranquillo, amico. Finché ci porti dentro quella centrale, puoi anche ballare la polka.
+	nele: Sei la nostra mascotte ormai. Se sopravvivi tu, sopravviviamo tutti.
+	petr: Heh.
+	petr: Ah, comunque!
+	petr: Mi sono appena ricordato, il condotto di ventilazione nella parte nord della struttura. La grata è mezza andata a causa dei topi che continuano a farci nidi.
+	petr: Posso svitarla io... col mio fidato cacciavite fortunato!
+	Petr tira fuori un vecchio cacciavite dal taschino, lo tiene come se fosse Excalibur. Persino Ivan ride, scuotendo la testa.
+	ivan: Tienitelo stretto, tecnico. Potrebbe valere più del mio fucile domani.
+
+Il camion sobbalza violentemente su una radice, interrompendo le chiacchiere.
+Rallenta fino a fermarsi. Il motore si spegne.
+Dal posto di guida arrivano due colpi secchi sulla carrozzeria.
+luka: Tutti giù, niente rumori, niente luci, ci accampiamo qui fino a domani.
+
+do GameState.change_background("res://backgrounds/temps/electrical_station.jpg")
+
+Scendiamo nel fitto del bosco. L'aria sa di pino e neve.
+Davanti a noi, a meno di un chilometro, la Centrale Termoelettrica si erge come un mostro di cemento.
+Le sue ciminiere vomitano fumo nero nel cielo pallido. Le luci perimetrali tagliano la nebbia.
+
+do GameState.change_background("res://backgrounds/temps/forest.jpg")
+
+Ci accampiamo in un avvallamento naturale coperto da rovi, perfetto per nascondere la nostra presenza per le prossime ore.
+I soldati si muovono veloci, stendendo teli mimetici.
+luka: Sembra tranquillo, che dici?
+ivan: Troppo tranquillo.
+ivan: Abbiamo una lunga notte davanti prima dell'attacco. Cerca di dormire, Capo.
+ivan: Domani ci servirà ogni goccia di forza.
+
+Abbasso il binocolo.
+Domani la prendermo o moriremo provandoci.
+Ma per stasera, siamo solo scoiattoli in attesa nel bosco.
+
+do GameState.change_background("res://backgrounds/temps/temp_camp.jpg")
+do GameState.wait()
+
+La tenda è piccola, un guscio di tela che puzza di muffa e sudore stantio, ma ripara dal vento.
+Ivan russa già da un po' in un angolo, raggomitolato come un vecchio cane da guerra.
+Nele, invece, è ancora sveglia, seduta a gambe incrociate mentre lucida le lenti del suo mirino alla debole luce di una candela.
+luka: Non riesci a dormire?
+nele: Troppi pensieri. Penso al futuro, alla centrale, a cosa succede se dovessimo perderti, cosa succederebbe se dovessi perderti. Se ci sarà un futuro per...
+luka: Ci sarà.
+luka: Sarà diverso, ma ci sarà.
+nele: Buonanotte Luka.
+do GameState.change_background("res://backgrounds/temps/black.jpg")
+Il sonno mi prende quasi subito, un buio pesante e senza sogni.
+do GameState.wait()
+
+bocia: Comandante, svegliatevi!
+do GameState.change_background("res://backgrounds/temps/temp_camp.jpg")
+Apro gli occhi di scatto, la mano già sulla pistola. È il Bocia. Il suo volto è pallido sotto il passamontagna.
+luka: Che succede? Ci hanno trovato?
+bocia: Abbiamo trovato qualcuno. Nel fosso a ovest del perimetro.
+
+Il Bocia scosta il lembo della tenda. Due soldati entrano trascinando un corpo piccolo e inerte.
+È un ragazzino, non può avere più di dodici anni. I suoi vestiti sono stracci bagnati fradici, rigidi per il ghiaccio.
+Le sue labbra sono blu, la pelle cerea. Trema, ma sono scosse deboli, irregolari. Il corpo sta cedendo velocemente.
+
+Mi avvicino, gli tocco la fronte. È freddo come il marmo.
+
+nele: Dobbiamo scaldarlo, e subito!
+nele: Serve un fuoco. Ha bisogno di calore vero per far ripartire la circolazione.
+ivan: Sei impazzita?
+ivan: Siamo a meno di un chilometro dalla centrale! I droni a scansione termica passano ogni ora.
+ivan: Anche se siamo coperti dai rovi, una fonte di calore come un fuoco risalta come un faro nella notte. Vuoi rischiare di farci bombardare tutti?
+ivan: E per cosa? Guardalo. È quasi andato.
+ivan: Forse accendiamo il fuoco, rischiamo la vita di 150 uomini, e lui muore comunque tra mezz'ora per lo shock termico. Inoltre non sappiamo un bel niente di lui!
+nele: E allora cosa facciamo? Lo guardiamo spegnersi?
+ivan: Prendete delle coperte, e sperate per il meglio.
+nele: Luka?!
+
+Guardo il ragazzo. Il suo respiro è un rantolo superficiale.
+Il metodo di Ivan è sicuro per la missione, ma lento. Molto lento. Forse troppo lento per un cuore che batte così piano.
+Il fuoco è rapido, potente, la sua chance migliore di sopravvivere alla notte...
+
+Ma è una scommessa mortale contro i sensori della centrale.
+E anche con il fuoco, non c'è garanzia che si svegli.
+
+- Accendi il fuoco
+	=> fuoco/start
+- Usa le coperte
+	=> coperte/start

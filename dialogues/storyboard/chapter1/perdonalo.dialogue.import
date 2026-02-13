@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bibee1rkrjuxs"
+path="res://.godot/imported/perdonalo.dialogue-c9b34f5a70d0e5a9fe58e6604aaecfee.tres"
+
+[deps]
+
+source_file="res://dialogues/storyboard/chapter1/perdonalo.dialogue"
+dest_files=["res://.godot/imported/perdonalo.dialogue-c9b34f5a70d0e5a9fe58e6604aaecfee.tres"]
+
+[params]
+
+defaults=true

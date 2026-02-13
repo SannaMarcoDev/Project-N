@@ -1,0 +1,39 @@
+import "res://dialogues/storyboard/chapter1/day2/sera.dialogue" as sera
+
+~ start
+luka: ...
+Guardo l'autista negli occhi e abbasso l'arma.
+luka: Chiudete i portelloni.
+luka: Non ruberemo cibo a dei civili. Andiamo via. Ora.
+ivan: Cosa stai facendo, Luka? La nostra gente sta morendo di fame. Non possiamo andare avanti così!
+luka: E cosa dovremmo fare, condannare a morte altra gente? Possiamo resistere col poco che abbiamo, dobbiamo resistere col poco che abbiamo.
+L'autista mi guarda incredulo, quasi in lacrime, e mette in moto freneticamente. Ma il sollievo dura un secondo.
+Alle mie spalle sento il rumore di una portiera sbattuta con violenza.
+suono porta che sbatte
+soldato: Al diavolo, buonista del cazzo!
+È Jarek, uno dei miei mitraglieri più giovani. Ha gli occhi fuori dalle orbite per la fame.
+Lui e altri due ribelli saltano sul terzo camion della colonna, puntano le armi contro l'autista di quel veicolo e lo buttano fuori dalla cabina a calci.
+soldato: Se non lo vuoi tu, noi ci prendiamo questo camion e ce ne andiamo, fanculo te e la tua resistenza. Dove pensi di andare senza mangiare?
+autista: NO!
+Il motore ruggisce. Mi stanno ignorando. Stanno rubando le nostre provviste e disobbedendo a un ordine diretto.
+Se scappano, la catena di comando si spezza per sempre.
+Il camion parte sgommando sulla neve, sollevando una nuvola bianca.
+luka: NELE!
+nele: Non devi dirlo due volte.
+Prende la mira con il fucile di precisione. Il vetro posteriore della cabina inquadra perfettamente la nuca di Jarek.
+Trattiene il respiro.
+Bang
+Screeeeech
+STUMP
+do GameState.change_background("res://backgrounds/chapter1/convoy_tragedy.png")
+do GameState.wait()
+ivan: ...
+luka: ...
+nele: ...
+Il vetro esplode. Il camion sbanda violentemente, finendo la sua corsa contro un albero.
+Il silenzio torna, rotto solo dal vapore che esce dal radiatore distrutto e dal sangue dei miei uomini che macchia il sedile.
+luka: Recuperate quello che riuscite da quel camion e date tutto agli autisti, ripartono a breve.
+Dico ai compagni, rimasti agghiacciati dalla scena appena accaduta davanti a loro.
+luka: MUOVERSI!
+set GameState.stole_food = false
+=> sera/start
