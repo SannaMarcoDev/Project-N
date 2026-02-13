@@ -1,0 +1,125 @@
+[gd_scene load_steps=8 format=3 uid="uid://daqk8gdubtjyf"]
+
+[ext_resource type="Texture2D" uid="uid://ch5wog8jih04m" path="res://backgrounds/temps/temp_camp.jpg" id="1_628gj"]
+[ext_resource type="Script" uid="uid://cp4p2evbb42ff" path="res://scenes/chapter1/camera_2d.gd" id="2_anhbl"]
+[ext_resource type="Script" uid="uid://c0fmb4xoqiy3l" path="res://scenes/chapter1/freeroam/day3/day1_freeroam.gd" id="3_lbrqh"]
+[ext_resource type="Resource" uid="uid://c78jpliiql227" path="res://dialogues/storyboard/chapter1/freeroam/day1_freeroam.dialogue" id="4_j513q"]
+[ext_resource type="PackedScene" uid="uid://bv8xvb5uksg1y" path="res://dialogues/balloon.tscn" id="5_681nh"]
+[ext_resource type="Texture2D" uid="uid://6kw80pvu62ps" path="res://characters/portraits/bocia.png" id="6_2l75x"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_upuuy"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Background" type="TextureRect" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(1920, 1080)
+offset_right = 1920.0
+offset_bottom = 1080.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_628gj")
+expand_mode = 2
+stretch_mode = 1
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(84, 53)
+anchor_mode = 0
+zoom = Vector2(1.1, 1.1)
+script = ExtResource("2_anhbl")
+
+[node name="Tent" type="Area2D" parent="."]
+position = Vector2(766, 357)
+script = ExtResource("3_lbrqh")
+dialogue_resource = ExtResource("4_j513q")
+dialogue_start = "tent"
+balloon_tscn = ExtResource("5_681nh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tent"]
+scale = Vector2(9.455, 9.455)
+shape = SubResource("CircleShape2D_upuuy")
+
+[node name="Sprite2D" type="Sprite2D" parent="Tent"]
+position = Vector2(-0.9999962, -10.000004)
+scale = Vector2(0.31333333, 0.31333333)
+texture = ExtResource("6_2l75x")
+
+[node name="WarPlan" type="Area2D" parent="."]
+position = Vector2(766, 357)
+script = ExtResource("3_lbrqh")
+dialogue_resource = ExtResource("4_j513q")
+dialogue_start = "warplan"
+balloon_tscn = ExtResource("5_681nh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WarPlan"]
+scale = Vector2(9.455, 9.455)
+shape = SubResource("CircleShape2D_upuuy")
+
+[node name="Sprite2D" type="Sprite2D" parent="WarPlan"]
+position = Vector2(-0.9999962, -10.000004)
+scale = Vector2(0.31333333, 0.31333333)
+texture = ExtResource("6_2l75x")
+
+[node name="Soldiers" type="Area2D" parent="."]
+position = Vector2(1178, 694)
+script = ExtResource("3_lbrqh")
+dialogue_resource = ExtResource("4_j513q")
+dialogue_start = "soldiers"
+balloon_tscn = ExtResource("5_681nh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Soldiers"]
+scale = Vector2(9.455, 9.455)
+shape = SubResource("CircleShape2D_upuuy")
+
+[node name="Sprite2D" type="Sprite2D" parent="Soldiers"]
+position = Vector2(-0.9999962, -10.000004)
+scale = Vector2(0.31333333, 0.31333333)
+texture = ExtResource("6_2l75x")
+
+[node name="Nele" type="Area2D" parent="."]
+position = Vector2(862, 688)
+script = ExtResource("3_lbrqh")
+dialogue_resource = ExtResource("4_j513q")
+dialogue_start = "nele"
+balloon_tscn = ExtResource("5_681nh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Nele"]
+scale = Vector2(9.455, 9.455)
+shape = SubResource("CircleShape2D_upuuy")
+
+[node name="Sprite2D" type="Sprite2D" parent="Nele"]
+position = Vector2(-0.9999962, -10.000004)
+scale = Vector2(0.31333333, 0.31333333)
+texture = ExtResource("6_2l75x")
+
+[node name="Bocia" type="Area2D" parent="."]
+position = Vector2(593, 684)
+script = ExtResource("3_lbrqh")
+dialogue_resource = ExtResource("4_j513q")
+dialogue_start = "bocia"
+balloon_tscn = ExtResource("5_681nh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bocia"]
+scale = Vector2(9.455, 9.455)
+shape = SubResource("CircleShape2D_upuuy")
+
+[node name="Sprite2D" type="Sprite2D" parent="Bocia"]
+position = Vector2(-0.9999962, -10.000004)
+scale = Vector2(0.31333333, 0.31333333)
+texture = ExtResource("6_2l75x")
+
+[node name="Continue" type="Area2D" parent="."]
+position = Vector2(1795, 108)
+script = ExtResource("3_lbrqh")
+dialogue_resource = ExtResource("4_j513q")
+dialogue_start = "nextDay"
+balloon_tscn = ExtResource("5_681nh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Continue"]
+scale = Vector2(9.455, 9.455)
+shape = SubResource("CircleShape2D_upuuy")
+
+[node name="Sprite2D" type="Sprite2D" parent="Continue"]
+position = Vector2(-0.9999962, -10.000004)
+scale = Vector2(0.31333333, 0.31333333)
+texture = ExtResource("6_2l75x")
