@@ -5,6 +5,7 @@ import "res://dialogues/storyboard/chapter1/uccidilo.dialogue" as uccidilo
 luka: Apetta qui, se senti urlare, entra e spara a tutto ciò che non sono io.
 ivan: Ho il colpo in canna capo.
 do GameState.change_background("res://backgrounds/temps/inside.jpg")
+do GameState.wait()
 petr: ...
 luka: ...
 luka: Non sono qui per farti del male. Puoi stare tranquillo.

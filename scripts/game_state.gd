@@ -92,7 +92,7 @@ func show_node(node_names: PackedStringArray) -> void:
 		else:
 			push_error("Nodo " + node_name + " non trovato nella scena corrente.")
 
-func wait(seconds: float = 3.0) -> void:
+func wait(seconds: float = 1.5) -> void:
 	await get_tree().create_timer(seconds).timeout
 
 func play_sfx(sfx_path: String) -> void:

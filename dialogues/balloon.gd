@@ -30,6 +30,9 @@ var is_waiting_for_input: bool = false
 ## See if we are running a long mutation and should hide the balloon
 var will_hide_balloon: bool = false
 
+## Flag to prevent input processing while skipping
+var is_skipping: bool = false
+
 ## A dictionary to store any ephemeral variables
 var locals: Dictionary = {}
 
@@ -91,10 +94,12 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if is_instance_valid(dialogue_line):
 		progress.visible = not dialogue_label.is_typing and dialogue_line.responses.size() == 0 and not dialogue_line.has_tag("voice")
-	if Input.is_action_pressed("dialogic_skip") and dialogue_label.is_typing:
+	if Input.is_action_pressed("dialogic_skip") and dialogue_label.is_typing and not is_skipping:
+		is_skipping = true
 		dialogue_label.skip_typing()
 		await get_tree().create_timer(0.05).timeout
 		next(dialogue_line.next_id)
+		is_skipping = false
 
 
 func _unhandled_input(_event: InputEvent) -> void:
@@ -198,6 +203,9 @@ func _on_mutated(_mutation: Dictionary) -> void:
 
 
 func _on_balloon_gui_input(event: InputEvent) -> void:
+	if is_skipping:
+		return
+	
 	# See if we need to skip typing of the dialogue
 	if dialogue_label.is_typing:
 		var mouse_was_clicked: bool = event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.is_pressed()

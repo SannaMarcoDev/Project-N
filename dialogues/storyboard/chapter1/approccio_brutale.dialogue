@@ -3,6 +3,7 @@ import "res://dialogues/storyboard/chapter1/uccidilo.dialogue" as uccidilo
 
 ~ start
 do GameState.change_background("res://backgrounds/temps/inside.jpg")
+do GameState.wait()
 luka: SVEGLIA!
 petr: AHHHHHHHHH!
 luka: Spero non ti faccia male la mia pistola sulla tua tempia, non che mi interessi ovviamente, io non sento nulla.

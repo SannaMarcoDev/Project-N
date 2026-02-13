@@ -140,7 +140,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 
 [node name="Giorno2" type="Sprite2D" parent="Balloon/HBoxContainer/VBoxContainer"]
-self_modulate = Color(1, 1, 1, 0.49019608)
+self_modulate = Color(1, 1, 1, 0.78431374)
 position = Vector2(544, 360)
 scale = Vector2(1.0190104, 0.7092593)
 texture = ExtResource("3_7c2jb")
