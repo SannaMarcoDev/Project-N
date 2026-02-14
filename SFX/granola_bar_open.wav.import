@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://dbnl1lg18pqp"
-path="res://.godot/imported/granola bar wrapper 3.wav-6b03483d8c0cfc41708427a840d25be8.sample"
+path="res://.godot/imported/granola_bar_open.wav-abe92b4a89563eebca4dbd4b8a78e3ec.sample"
 
 [deps]
 
-source_file="res://SFX/granola bar wrapper 3.wav"
-dest_files=["res://.godot/imported/granola bar wrapper 3.wav-6b03483d8c0cfc41708427a840d25be8.sample"]
+source_file="res://SFX/granola_bar_open.wav"
+dest_files=["res://.godot/imported/granola_bar_open.wav-abe92b4a89563eebca4dbd4b8a78e3ec.sample"]
 
 [params]
 

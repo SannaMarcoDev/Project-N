@@ -13,7 +13,8 @@ luka: E la buona notizia? Spero sia meglio di "abbiamo trovato una scatola di fa
 ivan: ehm...
 luka: Cosa...
 ivan: Molto meglio, o molto peggio, dipende da come la guardi. Le sentinelle hanno trovato un uomo a sud dell'accampamento.
-luka: l'ennesimo girovago in cerca di alcol?  
+luka: l'ennesimo girovago in cerca di alcol?
+do GameState.stop_sfx_loop()
 do GameState.play_sfx_loop("res://SFX/music/curiosity.wav")
 ivan: non proprio capo. è un soldato della guardia nazionale.
 luka: COSA?

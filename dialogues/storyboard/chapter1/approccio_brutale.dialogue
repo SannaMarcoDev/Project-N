@@ -51,7 +51,9 @@ ivan: allora?
 luka: Sembrerebbe dire il vero, è scappato per consegnarci tutte le informazioni sulla centrale elettrica, con queste entreremmo in 5 minuti.
 ivan: E di lui cosa ne facciamo? So ti ho sentito sbraitare dentro, ha ucciso tante persone, forse anche famigliari nostri.
 ivan: Solo perchè ci fa un regalino alla fine non vuol dire che vada perdonato. Vogliamo vendetta.
-So cosa intende, le risorse scarseggiano, sarebbe una bocca in più che non possiamo permetterci di sfamare. Ma uccidere un uomo che si è arreso?
+do GameState.stop_sfx_loop()
+So cosa intende, le risorse scarseggiano, sarebbe una bocca in più che non possiamo permetterci di sfamare
+Ma uccidere un uomo che si è arreso?
 - Uccidilo
 	=> uccidilo/start
 - Perdonalo

@@ -5,14 +5,16 @@ import "res://dialogues/storyboard/chapter1/day3/coperte.dialogue" as coperte
 do GameState.change_background("res://backgrounds/Transitions/Giorno 3.png")
 do GameState.wait()
 do GameState.change_background("res://backgrounds/temps/bench.jpg")
+do GameState.stop_sfx_loop()
+do GameState.play_sfx_loop("res://SFX/music/mellow")
 Sono a malapena le sei del mattino.
 L'alba non è ancora arrivata del tutto. Il sole è solo una ferita pallida all'orizzonte, filtrata dalla nebbia gelida.
 Il freddo morde come un cane, ma è un dolore familiare ormai, quasi confortante.
 Accendo la solita sigaretta.
 luka: Ivan queste sigarette fanno proprio cagare. Sanno di copertone bruciato.
 ivan: Sono le solite di sempre, vecchio pazzo. Sei solo stressato.
-ivan: E ringrazia di averne, io sono due giorni che non ne ho.
-luka: Magari smettila di giocare d'azzardo. Lo sanno tutti che sei capace a bluffare.
+ivan: E ringrazia di averne, a me le hanno fregate tutte.
+luka: Magari smettila di giocare d'azzardo. Lo sanno tutti che non sei capace a bluffare.
 ivan: Già...
 ivan: ...
 ivan: Sei sicuro di quello che vuoi fare? Stiamo parlando di un attacco su larga scala. Possiamo davvero fidarci di quel dannato fascicolo?
@@ -33,7 +35,7 @@ if GameState.petr_alive
 else
 	luka: ...
 	Sospiro, il ricordo del corpo di Petr ancora fresco nella mia memoria.
-	luka: Sono abbastanza sicuro che non era un doppiogiochista.
+	luka: Sono abbastanza sicuro che non fosse un doppiogiochista.
 	luka: I dati del fascicolo sono solidi. Abbiamo controllato tutto con le informazioni che avevamo già.
 	luka: È roba autentica Ivan. Nessuno sacrifica informazioni così vitali solo per tenderci un'imboscata.
 	ivan: E se avessimo sbagliato? Vuoi veramente mobilitare tutta la resistenza su una chance che ci ha dato un morto?
@@ -44,7 +46,7 @@ else
 	luka: Non sono Dio, Ivan. Non riesco a perdonare come Lui.
 	luka: Faccio quello che devo per mantenere l'ordine.
 	luka: ...
-	luka: E comunque, la scommessa è troppo grossa per ignorarla. vivo o morto, le sue informazioni cambieranno questa guerra.
+	luka: E comunque, la chance è troppo grossa per ignorarla. vivo o morto, le sue informazioni cambieranno questa guerra.
 	ivan: È comunque solo una scommessa.
 	ivan: Ma dannazione, lo capisco. Non possiamo rimanere qui ancora a lungo, mentre il cappio al collo si stringe sempre di più.
 	
@@ -62,43 +64,52 @@ luka: Non bombarderebbero mai la loro preziosa centrale. Sarebbe un suicidio pol
 ivan: Va bene, mi hai convinto, non che possa tirarmi indietro ora. Avviso il campo, preparati anche tu.
 
 do GameState.change_background("res://backgrounds/temps/troops.jpg")
-do GameState.wait(2.0)
+do GameState.wait()
+do GameState.stop_sfx_loop()
+do GameState.play_sfx_loop("res://SFX/ambience/driving_car.wav")
 
 L'intera resistenza, sopra una dozzina di camion malmessi.
 Un corteo fantasma di mezzi arrugginiti.
 I camion avanzano a fari spenti, guidati solo dalla luce grigia della notte e dalla memoria muscolare degli autisti che conoscono ogni buca di quella foresta.
 
 Nele tiene una mappa stropicciata sulle ginocchia, illuminandola con una torcia a dinamo dalla luce fioca.
-nele: Faremo meglio ad accamparci a ovest della centrale, se i dati del fascicolo sono corretti, le telecamere hanno un punto cieco in quella zona.
+nele: Faremo meglio ad accamparci a ovest della centrale, se i dati del fascicolo sono corretti, le telecamere dovrebbero avere un punto cieco in quella zona.
 nele: Da lì potremo prenderli alla sprovvista.
 ivan: Se i dati sono corretti, se c'è un punto cieco. La mia vita è appesa a troppi “se” per i miei gusti, ragazza.
 nele: Sempre meglio di un attacco frontale come proponi tu, vecchio. A meno che tu non voglia correre contro le mitragliatrici cercando di schivare i proiettili.
 nele: E con la tua stazza, dubito riusciresti a fare cinque metri.
-
 Nel mentre, nella stiva dei camion, i soldati si preparano.
 
 if GameState.stole_food
 	Il Bocia tira fuori dalla tasca una barretta energetica. È parte del carico rubato.
-	La rigira tra le dita con un sorrisetto nervoso, quasi compiaciuto.
+	do GameState.play_sfx("res://SFX/granola_bar_open.wav")
+	La rigira tra le dita con un sorrisetto quasi compiaciuto.
+	Non abbiamo avuto cuore di dirle da dove arrivi tale prelibatezza
 	bocia: Ivan! Vuoi metà? È al cioccolato!
 	Ivan lo guarda con occhi ridotti a fessure.
-	C'è qualcosa di diverso nei miei uomini oggi. Una sorta di ombra negli sguardi.
-	Non si guardano più come fratelli, ma quasi come complici.
-	Ivan strappa mezza barretta dalle mani della ragazzina.
-	ivan: Dai qua! Potrei non avere fame ma a una barretta al cioccolato non posso mica dire di no!
-	ivan: Chissà come se la passano quelli di Eden, sapendo che il loro riso è nella mia pancia, ahahah!
-	bocia: E chissenefrega? Meglio a noi che a loro, la legge del più forte, no Comandante?
-	luka: ...
+	ivan: Mangiala pure piccoletta, io sono ancora pieno.
+	bocia: ouuh...
+	bocia: Volevo dividerla con qualcuno, Nele dice che troppo cioccolato mi bucherà i dentini!
+	luka: Tienila per dopo, non so quante ne abbiamo ancor...
+	Con uno scatto fulmineo, un soldato seduto dall'altra parte della stiva ruba la metà del Bocia.
+	do GameState.play_sfx("res://SFX/granola_grabbed.wav")
+	soldato: Se nessuno la vuole, mangio io hahahahah.
+	soldato: Mi serviranno energie per uccidere domani!
+	Gli uomini erano forti, carichi, pieni di energie.
+	Pronti a conquistare il mondo allo schioccare delle mie dita.
+	Anche se ogni tanto mi ricordo, che questa energia è costata energia vitale di altri.	
 else
 	Il Bocia si stringe le braccia al petto, tremando. Non è solo il freddo.
 	Il suo stomaco brontola rumorosamente nel silenzio del camion, un suono lungo e doloroso.
 	bocia: Ho sentito che nella mensa della centrale hanno scorte vere.
-	bocia: Carne in scatola. Forse persino caffè!
+	bocia: Carne in scatola. Forse persino della marmellata!
 	Ivan chiude gli occhi, la testa appoggiata contro la paratia metallica. Sembra più vecchio di dieci anni, la pelle grigia tirata sulle ossa.
 	ivan: Smettila di sognare ragazza, risparmia il fiato. Meno parli, meno calorie bruci.
 	Nele stringe le labbra, pallida come un lenzuolo.
 	nele: Se riuscissimo a prendere la centrale... prenderemo anche la loro cucina. Resisti, piccola.
 	La debolezza è palpabile, un passeggero invisibile che ci siede accanto, rendendo ogni movimento uno sforzo titanico.
+
+do GameState.wait()
 
 if GameState.petr_alive
 	Petr è seduto goffamente su una cassa di munizioni, cerca di tenere fermo l'elmetto che gli scivola continuamente sugli occhi.
@@ -116,18 +127,23 @@ if GameState.petr_alive
 	Petr tira fuori un vecchio cacciavite dal taschino, lo tiene come se fosse Excalibur. Persino Ivan ride, scuotendo la testa.
 	ivan: Tienitelo stretto, tecnico. Potrebbe valere più del mio fucile domani.
 
+do GameState.wait()
 Il camion sobbalza violentemente su una radice, interrompendo le chiacchiere.
 Rallenta fino a fermarsi. Il motore si spegne.
+do GameState.stop_sfx_loop()
+do GameState.play_sfx_loop("res://SFX/ambience/driving_car.wav")
 Dal posto di guida arrivano due colpi secchi sulla carrozzeria.
 luka: Tutti giù, niente rumori, niente luci, ci accampiamo qui fino a domani.
 
 do GameState.change_background("res://backgrounds/temps/electrical_station.jpg")
+do GameState.wait()
 
 Scendiamo nel fitto del bosco. L'aria sa di pino e neve.
 Davanti a noi, a meno di un chilometro, la Centrale Termoelettrica si erge come un mostro di cemento.
 Le sue ciminiere vomitano fumo nero nel cielo pallido. Le luci perimetrali tagliano la nebbia.
 
 do GameState.change_background("res://backgrounds/temps/forest.jpg")
+do GameState.wait()
 
 Ci accampiamo in un avvallamento naturale coperto da rovi, perfetto per nascondere la nostra presenza per le prossime ore.
 I soldati si muovono veloci, stendendo teli mimetici.

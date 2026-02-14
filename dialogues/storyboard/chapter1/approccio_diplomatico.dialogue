@@ -59,9 +59,10 @@ ivan: allora?
 luka: Sembrerebbe dire il vero, è scappato per consegnarci tutte le informazioni sulla centrale elettrica, con queste entreremmo in 5 minuti.
 ivan: E di lui cosa ne facciamo? Ha ucciso tante persone, e anche una sarebbe fin troppo.
 ivan: Solo perchè ci fa un regalino alla fine non vuol dire che vada perdonato. Vogliamo vendetta.
-luka: So cosa intende, le risorse scarseggiano, sarebbe una bocca in più che non possiamo permetterci di sfamare.
-luka: Una bocca che fino a ieri mangiava caviale, mentre noi mangiavamo topi ghiaciati.
-luka: Ma uccidere un uomo che si è arreso? Cosa direbbe...?
+do GameState.stop_sfx_loop()
+So cosa intende, le risorse scarseggiano, sarebbe una bocca in più che non possiamo permetterci di sfamare.
+Una bocca che fino a ieri mangiava caviale, mentre noi mangiavamo topi ghiaciati.
+Ma uccidere un uomo che si è arreso?
 - Uccidilo
 	=> uccidilo/start
 - Perdonalo
