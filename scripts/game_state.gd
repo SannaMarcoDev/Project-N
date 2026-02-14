@@ -9,7 +9,7 @@ var story_beginning: String = "res://dialogues/storyboard/prologue/prologue.dial
 var pressed_start: bool = false
 
 #Chapter1
-#Day Freeroam
+#Day1 Freeroam
 var day1_night_kitchen_talk: bool = false
 var day1_night_nele_talk: bool = false
 var day1_night_generator_checked = false
@@ -21,9 +21,15 @@ var day2_bocia_talk: bool = false
 var day2_nele_talk: bool = false
 var day2_train_found: bool = false
 var day2_bocia_quest_done: bool = false
+#Day3 Freeroam
+var day3_bocia_talk: bool = false
+var day3_nele_talk: bool = false
+var day3_soldiers_talk: bool = false
+var day3_petr_talk: bool = false
 
 var _current_baloon: Node
 var _looping_audio_player: AudioStreamPlayer = null
+var _loop_tween: Tween = null
 
 func _input(_event):
 	if Input.is_action_just_pressed("toggle_fullscreen"):
@@ -114,14 +120,23 @@ func play_sfx_loop(sfx_path: String) -> void:
 	if _looping_audio_player != null:
 		stop_sfx_loop()
 	
+	# Killare eventuale tween precedente
+	if _loop_tween:
+		_loop_tween.kill()
+	
 	_looping_audio_player = AudioStreamPlayer.new()
 	add_child(_looping_audio_player)
 	
 	var audio_stream = load(sfx_path)
 	if audio_stream:
 		_looping_audio_player.stream = audio_stream
+		_looping_audio_player.volume_db = -80  # Inizia muto
 		_looping_audio_player.finished.connect(_on_loop_audio_finished)
 		_looping_audio_player.play()
+		
+		# Fade in graduale
+		_loop_tween = create_tween()
+		_loop_tween.tween_property(_looping_audio_player, "volume_db", 0.0, 1.0)
 	else:
 		push_error("File audio non trovato: " + sfx_path)
 		_looping_audio_player.queue_free()
@@ -133,9 +148,19 @@ func _on_loop_audio_finished() -> void:
 
 func stop_sfx_loop() -> void:
 	if _looping_audio_player != null:
-		_looping_audio_player.stop()
-		_looping_audio_player.queue_free()
-		_looping_audio_player = null
+		# Killare eventuale tween precedente
+		if _loop_tween:
+			_loop_tween.kill()
+		
+		# Fade out e stop
+		_loop_tween = create_tween()
+		_loop_tween.tween_property(_looping_audio_player, "volume_db", -80.0, 1.0)
+		_loop_tween.tween_callback(func(): 
+			if _looping_audio_player != null:
+				_looping_audio_player.stop()
+				_looping_audio_player.queue_free()
+				_looping_audio_player = null
+		)
 
 func change_scene(scene_path: String) -> void:
 	_current_baloon = null

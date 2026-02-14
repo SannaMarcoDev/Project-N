@@ -14,6 +14,7 @@ ivan: ehm...
 luka: Cosa...
 ivan: Molto meglio, o molto peggio, dipende da come la guardi. Le sentinelle hanno trovato un uomo a sud dell'accampamento.
 luka: l'ennesimo girovago in cerca di alcol?  
+do GameState.play_sfx_loop("res://SFX/music/curiosity.wav")
 ivan: non proprio capo. è un soldato della guardia nazionale.
 luka: COSA?
 luka: UN'INCURSIONE?
@@ -22,12 +23,12 @@ ivan: Non ha opposto nessuna resistenza quando i ragazzi gli sono saltati al col
 ivan: è già fortunato che non gli abbiano sparato a vista, il miracolato.
 ivan: Dice di essere un disertore, e che può darci una mano a liberare la centrale elettrica a est. Ma non vuole dirci altro senza il capo della ribellione.
 ivan: Senza di te.
-luka: (Che situazione, un disertore della guardia nazionale può solo voler dire guai, potrebbe essere una trappola)
-luka: (Non ho granchè voglia di dialogare col nemico, però tanto vale non buttare l'occasione, magari può dirci qualcosa di interessante)
+Un disertore della guardia nazionale può solo voler dire guai, potrebbe essere una trappola
+Non ho granchè voglia di dialogare col nemico, però tanto vale non buttare l'occasione, magari può dirci qualcosa di interessante
 luka: Dov'è ora?
 ivan: Legato nella sala macchine. Le consiglio di fare in fretta, Nele e gli altri hanno già iniziato a spettegolare.
 ivan: Potrebbero piantargli un proiettile in testa da un momento all'altro per pura noia
-luka: (Come dovrei comportarmi...?)
+Come dovrei comportarmi...?
 - Approccio diplomatico
 	=> approccio_diplomatico/start
 - Approccio brutale

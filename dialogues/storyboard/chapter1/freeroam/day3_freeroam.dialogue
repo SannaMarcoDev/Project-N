@@ -1,7 +1,7 @@
 ~ nextDay
-Vuoi proseguire?
-- Prosegui
-	luka: Ci vorrebbe proprio un bel riposino dopo mangiato.
+Vuoi andare a dormire?
+- Vai a letto
+	luka: Penso sia ora di andare a dormire.
 	set GameState.story_continue = "res://dialogues/storyboard/chapter1/day2/after_freeroam.dialogue"
 	set GameState.continued_from_night = true
 	do GameState.change_scene("res://scenes/chapter1/chapter1.tscn")
@@ -10,133 +10,104 @@ Vuoi proseguire?
 => END
 
 ~ bocia
-if GameState.day2_bocia_quest_done
-	Sta usando una tazza d'acqua per affogare lo spinosauro...
-elif GameState.day2_bocia_talk and GameState.day2_train_found
-	luka: Guarda cosa ti ho portato?
-	bocia: IL MIO TRENINOOOOO!
-	bocia: CIUF CIUF!
-	bocia: GRAZIE LUKA!
-	bocia: Dove l'hai trovato?
-	luka: L'ho trovato sul promontoro, hai idea di come ci sia finito?
-	bocia: mmmmmm non ne ho idea...
-	bocia: Sarà stato lo spinosauro!
-	luka: Certo...
-elif GameState.day2_bocia_talk and GameState.day2_train_found == false
-	Sta giocando coi suoi giocattoli, in modo a dir poco particolare.
+if GameState.day3_bocia_talk
+	Il Bocia, sta giocando a sasso carta forbice con Nele.
+	Sembra stia vincendo.
 else
-	set GameState.day2_bocia_talk = true
-	bocia: E LO SPINOSAURO STACCA IL BRACCIO DI ULTRA MAN!!!
-	bocia: RAWWRRRRRRR!!
-	nele: DALLE CORDE DEL RING, LO SPINOSAURO PRENDE LA RINCORSA, SI STA PREPARANDO PER LA SUA MOSSA FINALE!
-	nele: UNA RKO SU ULTRAMAN! CHE LO MANDA AL TAPPETO!
-	nele: E UNO... E DUE... DIN DIN DIN.
-	bocia: SIIIIII
-	luka: ....
-	luka: Nele ti stai divertendo? Non mi sembr...
-	bocia: PRRRRRRR
-	bocia: Non stare ad ascoltare il vecchio puzzoso noioso, ultra man vuole la rivincita!
-	luka: ...
-=> END
-
-~ ivan
-if GameState.day2_ivan_talk
-	Si è completamente immerso nei suoi pensieri
-else:
-	set GameState.day2_ivan_talk = true
-	luka: Ivan mi fai pensa così.
-	ivan: Cosa vuoi piccolo incosciente?
-	luka: Vieni fuori un attimo? Ti offro una sigaretta.
-	In un istante gli si illuminano gli occhi.
-	ivan: Non me lo farò ripetere.
-	do GameState.change_background("res://backgrounds/temps/camp_center.jpg")
-	do GameState.hide_node(["Jukebox","Bocia","Nele","Ivan","ToMainCamp","Continue"])
+	luka: Ciao Piccola, sei pronta per domani?
+	bocia: SIIIII NON VEDO L'ORA DI FARE PEW PEW PEW
+	luka: ehm, ecco a proposito, te domani avrai il compito più arduo di tutti.
+	Gli occhi del bocia si ingigantiscono fissandomi.
+	luka: Dovrai tenere al sicuro il campo, qualsiasi cattivone dovesse avvicinarsi, dovrai prenderlo a calci nel sedere!
+	bocia: Quindi... Non verrò con voi...
+	Sembra quasi si stia per mettere a piangere...
+	bocia: EVVAI, Non preoccuparti capo puzzoso cattivone, la difenderò io la base!
+	Meno male.
+	luka: Brava ragazza, mi raccomando, contiamo su di te.
+	il Bocia si scaraventa su di me abbracciandomi
 	do GameState.wait()
-	Passo una sigaretta a Ivan, che la accende frettolosamente.
-	Già che ci sono, anche io me ne merito una.
-	ivan: Sentiamo.
-	luka: ?
-	ivan: Non penso tu mi abbia chiamato qui per compagnia, che ti serve?
-	luka: Che burbero, uno non può neanche fare un atto di gentilezza oggigiorno?
-	ivan: ...
-	luka: In ogni caso, ieri sera ho visto che le luci per il promontorio erano spente, hai idea del perchè?
-	ivan: Pensavo di iniziare a spegnerle di notte, così che i bambini non ci vadano di nascosto.
-	ivan: Considerando che ne vedo sempre di più in giro in orari di coprifuoco.
-	luka: Hai ragione, anche ieri ho visto il Bocia a spasso tardi, l'ho già rimproverata.
-	ivan: Devi essere più duro con loro, se vuoi rimanere a capo di questo campo e fare qualcosa, ci vuole il pugno di ferro!
-	ivan: Altrimenti faranno sempre quello che vogliono.
-	luka: Ma figurati.
-	luka: Non posso tartassarli di regole e leggi, già stanno tutti facendo un ottimo lavoro.
-	ivan: Come ti pare.
-	luka: Già che ci siamo, volevo chiederti un altra cosa.
-	luka: E so che posso corromperti con un altra sigaretta.
-	ivan: Sentiamo...
-	luka: Ho sempre voluto chiederti, come feci a sopravvivere quella volta, alla capitale?
-	ivan: Dici quando ho perso il mio braccio per te?
-	luka: Se proprio vuoi ributtarmi in faccia quella storia, basta che mi racconti anche il seguito.
-	ivan: Bene, eravamo al mattatoio della capitale, come ben sai.
-	ivan: Stavamo ispezionando quando qualcuno ebbe l'ottima idea di controllare dentro un enorme tritacarne.
-	- Non dire nulla
-		luka: ...
-	- Andava fatto!
-		luka: Considerando quello che c'era in giro, era solo che ovvio che...
-		ivan: Silenzio, sto parlando io.
-	ivan: In ogni caso, sempre quel qualcuno inciampò, e attivò il tritacarne proprio mentre stavo guardando dentro, e il mio braccio rimase bloccato lì
-	ivan: Il che allertò le guardie, e dopo una breve lotta ti dissi di andartene e lasciarmi lì.
-	ivan: Quel che è successo poi in realtà è ancora abbastanza confuso per me.
-	ivan: Mi fecero prigioniero, per qualche motivo la fucilazione non arrivò, erano occupati sul fronte in quel periodo.
-	ivan: Conobbi Jackson, il nostro attuale contatto che ci riempie di armi. Un gran bel colpo di fortuna.
-	ivan: Una mente brillante, riuscì a scassinare la cella, caricarmi su una camionetta e portarmi in salvo.
-	ivan: Ed eccomi qua, che mi svendo per due sigarette.
-	luka: Non mi avevi mai detto come avevi conosciuto Jackson, quindi era anche lui un prigioniero? Come fa ad avere così tante armi da mandarci?
-	luka: Voglio dire, siamo stracolmi, non che mi lamenti.
-	ivan: Sai figliolo, te dovresti fare meno domande.
-	ivan: In ogni caso, qui ho finito, vado a finire il mio pasto.
-	luka: ...
-	do GameState.wait()
-	do GameState.change_background("res://backgrounds/temps/cafeteria.jpg")
-	do GameState.show_node(["Jukebox","Bocia","Nele","Ivan","ToMainCamp","Continue"])
+	if GameState.day2_bocia_quest_done
+		bocia: Prendi questo, ti proteggerà!
+		In mano aveva il trenino che le avevo trovato il giorno prima.
+		- Prendilo
+			luka: Grazie Bocia, lo terrò con me finchè non torneremo.
+			bocia: Mi raccomando, non perderlo! Ci tengo molto!
+			Prendendolo e guardandolo meglio, noto come un pezzo di nastro di carta sul fondo del trenino.
+			C'è un numero segnato, scritto a penna...
+			Sembra stato scritto frettolosamente, inoltre l'inchiostro è tutto sbavato, probabilmente a causa della neve bagnata.
+			8090? Mi chiedo a cosa possa servire...
+		- Non prenderlo
+			luka: Grazie, ma penso sia meglio che lo tenga tu.
+			luka: Potrebbe proteggerti dai cattivoni!
+			bocia: mmmmmmm
+			bocia: Ok! Lo terrò io!
+			Le scompiglio i capelli amorevolmente.
+			luka: Brava piccola.
 => END
 
 ~ nele
-if GameState.day2_nele_talk
-	Sta mangiando la sua zuppa. Rumorosamente.
+if GameState.day3_nele_talk
+	Nele, sta giocando a sasso carta forbice con il Bocia.
+	Sembra stia perdendo alla grande.
 else
-	set GameState.day2_nele_talk = true
-	nele: Non ci crederai mai!
-	nele: Ieri stavo dando una mano ai ragazzi a pulire i loro fucili.
-	nele: Solo che mi sono un po' stufata di farlo sempre io, quindi ho deciso di fare solo da supervisore.
-	luka: Chissà perchè non credo sia finita bene.
-	nele: Affatto!
-	nele: Uno è riuscito a fare tutto da solo, ci ha messo un attimo a capire.
-	nele: L'altro... Bhe...
-	nele: Hai presente il botto che si è sentito ieri sera?
-	luka: Ti prego non dirmi che...
-	nele: Diciamo che mentre cercava di smontare il fucile, si è scordato il proiettile dentro.
-	nele: Non se n'è accordo ed è partito un colpo.
-	nele: Ma la cosa più divertente?
-	nele: Sentiamo, secondo te di cosa sapeva la zuppa oggi?
-	- Di pollo
-		luka: Mi sembra un po' più buona del solito, sa di pollo quasi.
-		nele: Bhe, hai presente il proiettile vagante partito?
-		nele: C'era uno stormo di uccelli ieri sera, e quel colpo ne ha colpiti 3.
-		nele: E tadaa! Ecco zuppa di... Uccello non identificato? Non so son tutti piccioni per me.
-		luka: ...
-	- Di selvaggina
-		luka: Mi sembra un po' più buona del solito, è un po' forte, non saprei dirti bene cosa sia.
-		nele: Bhe, hai presente il proiettile vagante partito?
-		nele: Abbiamo sentito uno strano rumore dopo il colpo, siamo andati a vedere velocemente e guarda cosa abbiamo trovato!
-		Col braccio sta indicando verso la cucina.
-		nele: E tadaa! Ecco zuppa di... cinghiale? Credo, mi sembra un cinghiale.
-		nele: In ogni caso, ne vanno tutti pazzi oggi!
-		luka: ...
+	Aggiungere dialogo mancante
 => END
 
 ~ tent
-Il mio letto.
-Non sarà il più comodo, ma perlomeno è meglio che dormire per terra
+La mia terrificante tenda da notte.
+Non è comoda come quella che abbiamo al campo, ma perlomento è qualcosa.
 => END
 
 ~ soldati
 La mia scrivania, disordinata come sempre.
+=> END
+
+~ warplan
+if GameState.petr_alive
+	if GameState.day3_petr_talk
+		Petr è occupato a scarabocchiare su un documento.
+	else
+		set GameState.day3_petr_talk = true
+		Petr sta rileggendo freneticamente un fascicolo che non avevo mai visto.
+		luka: Petr!
+		petr: AHHHHH!
+		luka: ...
+		petr: ...
+		petr: Ciao Luka, scusami, mi hai spaventato a morte.
+		luka: Cerca di tenere basso il tono di voce, miracolato.
+		luka: Che stai combinando? Non penso di aver mai visto quel... coso che hai in mano.
+		petr: Questo? Sto rivalutando tutto quello che sappiamo sulla centrale, con Nele prima ho studiato un piano d'azione.
+		petr: Vuoi vederlo?
+		- Dagli un'occhiata
+			luka: Dimmi tutto, ti ascolto.
+			petr: Allora, come ho detto prima potremmo provare a passare per la grata trasandata, passare di lì dovrebbe essere molto semplice.
+			petr: Dovremmo trovare una distrazione, pensavamo di mandare qualcuno all'entrata con un camion, che li distrarrà per un po'.
+			luka: E chi mi dice che questi non ci spareranno a vista?
+			petr: Spesso arrivavano camion di diverso tipo dal governo, non sanno mai chi possa arrivare e con che cosa.
+			petr: Il che ci può dare un po' di tempo. Guarda, qui ho un po' di documenti falsi che ho fatto in questi giorni.
+			petr: Sono molto simili a quelli che usavano loro, ci metteranno del tempo a capire il trucco.
+			luka: Rimane comunque molto rischioso.
+			petr: ...è il massimo che possiamo fare.
+			petr: Nel mentre, gli altri passeranno da dietro, nel condotto, e prendendo la via a destra, sbucheranno nei sotterranei.
+			petr: Lì non c'è quasi nessuno, al massimo una guardia affamata, potrete farla fuori tranquillamente con un arma silenziata.
+			petr: Una volta usciti, proseguendo per il corridoio, sulla sinistra c'è la sala di controllo, controlliamo se è aperta.
+			petr: Da lì potremo prendere controllo delle torrette, e ripulire il campo in un attimo.
+			petr: Altimenti, dovremo disattivare il generatore, nella sala macchine più avanti.
+			petr: Una volta fatto, non potranno chiedere aiuto, ed essendo molti di meno, la vinceremo facile.
+			luka: La stai facendo tu molto facile, sei sicuro di quello che dici?
+			petr: Assolutamente, vedrai, la centrale sarà nostra in un battibaleno.
+			luka: Grazie Petr. Sono contento tu sia con noi.
+		- Lascia perdere
+			luka: Per stasera passo, mi fido di voi.
+			luka: Si è fatto tardi, dovresti andare a riposare anche te.
+elif GameState.petr_alive == false
+	if GameState.day3_petr_talk
+		Due fascicoli giaciono sul tavolo.
+	else
+		set GameState.day3_petr_talk = true
+		Due fascicoli giaciono sul tavolo.
+		luka: Nele! Cosa sono questi?
+		nele: Mh? Ah, questo è il fascicolo che ci ha lasciato Petr, questo invece l'ha scritto Ivan.
+		nele: Ha detto di aver scritto un piano d'attacco, non sono proprio convinta, ma dovresti leggerlo anche te.
+		Piano di attacco di ivan va qui.	
 => END

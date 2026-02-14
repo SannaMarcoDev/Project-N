@@ -6,6 +6,7 @@ import "res://dialogues/storyboard/chapter1/brutte_notizie.dialogue" as brutte_n
 do GameState.change_background("res://backgrounds/Transitions/giorno_1.jpg")
 do GameState.wait()
 do GameState.change_background("res://backgrounds/temps/bench.jpg")
+do GameState.play_sfx_loop("res://SFX/ambience/basic.wav")
 do GameState.play_sfx("res://SFX/paper_handled_4.wav")
 Sei anni.
 Sono ormai sei lunghi anni che non vi vedo.

@@ -3,7 +3,8 @@ import "res://dialogues/storyboard/chapter1/intro.dialogue" as gameStart
 ~ start
 22 gennaio 1999
 Una tranquilla giornata nella bellissima capitale.
-Piazza San Mirko, 12.37
+do GameState.play_sfx_loop("res://SFX/music/mellow.wav")
+12.37
 George: E quindi gli ho detto, guardare ma non toccare!
 George: Ahh se solo sapessi, un sacco di squattrinati passano nella mia bottega, maledetti turisti.
 George: Perlomeno da quando c'è [color=red]Saninski[/color] al governo, pago molte meno tasse! ha ha ha!
@@ -70,4 +71,5 @@ Lucifero: Mangia tanta carne, goditi la vita, e viva [color=red]Saninski[/color]
 		George: Stasera bowling? Mi devi una rivincita.
 		Lucifero: Contaci!
 
+do GameState.stop_sfx_loop()
 => gameStart/start
