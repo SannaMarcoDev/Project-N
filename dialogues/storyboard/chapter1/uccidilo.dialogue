@@ -10,6 +10,7 @@ Ivan esita per una frazione di secondo, poi annuì.
 Capisce. Non possiamo permetterci debolezze. Non con la fame che ci morde lo stomaco e i morti che si accumula.
 do GameState.change_background("res://backgrounds/temps/camp_center.jpg")
 do GameState.wait()
+do GameState.play_sfx_loop("res://SFX/music/alarm.wav")
 Trascinano il ragazzo fuori, nella neve grigia del cortile centrale. L'intero accampamento si blocca in un istante.
 Uomini che puliscono fucili, donne che bollono la neve per farne acqua potabile, persino i pochi bambini rimasti. Tutti stanno guardando.
 Il disertore sta piangendo, seduto su un sacco di sabbia.
@@ -23,17 +24,26 @@ luka: Il tutto mentre noi morivamo di fame! Hai ucciso, hai aiutato il nemico, e
 soldati: NO!
 luka: Non siamo un rifugio per chi cambia bandiera!
 soldati: NO!
+do GameState.play_sfx_loop("res://SFX/ambience/basic.wav")
 luka: SIAMO LA RESISTENZA! E LA RESISTENZA NON DIMENTICA! MORTE A SANINSKI!
 - Sparagli
-	colpo di pistola
-	Il colpo secco della pistola risuona tra le rovine di cemento, più forte di qualsiasi tuono.
+	do GameState.play_sfx("res://SFX/shotgun_blast.mp3")
+	do GameState.wait()
+	Il colpo secco del fucile risuona tra le rovine di cemento, più forte di qualsiasi tuono.
 - Accoltellalo
-	stab
+	do GameState.play_sfx("res://SFX/body_stabbed.mp3")
+	do GameState.wait()
 	Pianto il mio pugnale da combattimento dritto nel petto, trafiggendo il cuore.
+do GameState.play_sfx("res://SFX/body_fall_impact.mp3")
 Il corpo cade riverso, macchiando di rosso la neve immacolata.
 Nessuno riesce a distogliere lo sguardo
 Questa notte, i miei soldati avrebbero dormito sapendo che il loro comandante non avrebbe mai esitato.
 set GameState.petr_alive = false
+do GameState.change_background("res://backgrounds/temps/black.jpg")
+do GameState.wait()
+Me ne torno alla mia tenda, da solo.
+Ma non prima di essermi ripulito, e aver messo via l'equipaggiamento, che ormai pesava sul mio corpo.
+Mi sento comunque più pesante del solito
 do GameState.change_background("res://backgrounds/temps/inside.jpg")
 do GameState.wait()
 Ancora non ho sonno, tanto vale farsi un giro veloce.

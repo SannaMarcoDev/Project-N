@@ -108,9 +108,8 @@ func play_sfx(sfx_path: String) -> void:
 	var audio_stream = load(sfx_path)
 	if audio_stream:
 		audio_player.stream = audio_stream
+		audio_player.finished.connect(func(): audio_player.queue_free())
 		audio_player.play()
-		await audio_player.finished
-		audio_player.queue_free()
 	else:
 		push_error("File audio non trovato: " + sfx_path)
 		audio_player.queue_free()
@@ -118,11 +117,11 @@ func play_sfx(sfx_path: String) -> void:
 func play_sfx_loop(sfx_path: String) -> void:
 	# Ferma il loop precedente se esiste
 	if _looping_audio_player != null:
-		stop_sfx_loop()
-	
-	# Killare eventuale tween precedente
-	if _loop_tween:
-		_loop_tween.kill()
+		if _loop_tween:
+			_loop_tween.kill()
+		_looping_audio_player.stop()
+		_looping_audio_player.queue_free()
+		_looping_audio_player = null
 	
 	_looping_audio_player = AudioStreamPlayer.new()
 	add_child(_looping_audio_player)

@@ -55,6 +55,8 @@ do GameState.stop_sfx_loop()
 So cosa intende, le risorse scarseggiano, sarebbe una bocca in più che non possiamo permetterci di sfamare
 Ma uccidere un uomo che si è arreso?
 - Uccidilo
+	do GameState.play_sfx("res://SFX/dramatic_boom.mp3")
 	=> uccidilo/start
 - Perdonalo
+	do GameState.play_sfx("res://SFX/dramatic_boom.mp3")
 	=> perdonalo/start

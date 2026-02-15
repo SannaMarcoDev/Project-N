@@ -9,6 +9,7 @@ George: E quindi gli ho detto, guardare ma non toccare!
 George: Ahh se solo sapessi, un sacco di squattrinati passano nella mia bottega, maledetti turisti.
 George: Perlomeno da quando c'è [color=red]Saninski[/color] al governo, pago molte meno tasse! ha ha ha!
 Lucifero: Ah Ah Ah!
+do GameState.play_sfx("res://SFX/water_pour.wav")
 Lucifero: Non lo dire a me! Guarda, da quando c'è questo fantastico governo, ho detto basta.
 Lucifero: Ho rimosso tutti i carboidrati, mangio solo organico, carne e verdure!
 George: Ma dai anche tu? Tante persone che sento, col fatto che il prezzo della carne è stato abbattuto, hanno cambiato completamente dieta!

@@ -9,6 +9,7 @@ luka: Ho detto fallo uscire. Raduna tutti in cortile.
 luka: Parlerò io.
 do GameState.change_background("res://backgrounds/temps/camp_center.jpg")
 do GameState.wait()
+do GameState.play_sfx_loop("res://SFX/music/alarm.wav")
 Dieci minuti dopo, il silenzio nell'aria è pesante.
 Il disertore siede su un sacco di sabbia, tremante, con le lacrime agli occhi.
 Gli sguardi dei miei soldati sono lame puntate alla sua gola. Sento il mormorio di dissenso, la rabbia pronta a esplodere.
@@ -39,6 +40,7 @@ soldato: Calmati, se è un tecnico può riparare il jukebox nell'angolo, lascial
 Che si trasforma in una frana, una minuscola frana di benevolenza, forse siamo riusciti a dare speranza a qualcuno, a far provare la compassione.
 Non sarà facile convincere il campo che lui non era più un nemico.
 Scendo dalla cassa e mi avvicino al prigioniero. Gli metto una mano sulla spalla. Si irrigidisce, terrorizzato.
+do GameState.play_sfx_loop("res://SFX/ambience/basic.wav")
 luka: Come ti chiami ragazzo?
 petr: Petr, signore. Petr.
 luka: Bene Petr, lavora sodo, e vedi di darci una mano.

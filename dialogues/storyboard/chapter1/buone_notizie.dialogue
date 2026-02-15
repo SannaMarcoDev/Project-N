@@ -20,6 +20,7 @@ ivan: Molto meglio, o molto peggio, dipende da come la guardi. Le sentinelle han
 luka: l'ennesimo girovago in cerca di alcol?  
 do GameState.stop_sfx_loop()
 do GameState.play_sfx_loop("res://SFX/music/curiosity.wav")
+do GameState.play_sfx("res://SFX/dramatic_boom.mp3")
 ivan: non proprio capo. è un soldato della guardia nazionale.
 luka: COSA?
 luka: UN'INCURSIONE?

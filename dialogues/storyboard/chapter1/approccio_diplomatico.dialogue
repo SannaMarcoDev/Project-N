@@ -64,6 +64,8 @@ So cosa intende, le risorse scarseggiano, sarebbe una bocca in più che non poss
 Una bocca che fino a ieri mangiava caviale, mentre noi mangiavamo topi ghiaciati.
 Ma uccidere un uomo che si è arreso?
 - Uccidilo
+	do GameState.play_sfx("res://SFX/dramatic_boom.mp3")
 	=> uccidilo/start
 - Perdonalo
+	do GameState.play_sfx("res://SFX/dramatic_boom.mp3")
 	=> perdonalo/start
