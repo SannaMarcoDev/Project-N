@@ -4,11 +4,15 @@ import "res://dialogues/storyboard/chapter1/uccidilo.dialogue" as uccidilo
 ~ start
 do GameState.change_background("res://backgrounds/temps/inside.jpg")
 do GameState.wait()
+Entro con un calcio alla porta, quasi buttandola a terra.
+do GameState.play_sfx("res://SFX/door_bang.mp3")
+Il calore della caldaia avvolge completamente la stanza, Ivan deve aver aggiunto un paio di tronchi per bollire il prigioniero.
 luka: SVEGLIA!
 petr: AHHHHHHHHH!
-luka: Spero non ti faccia male la mia pistola sulla tua tempia, non che mi interessi ovviamente, io non sento nulla.
-luka: Senti ho poco tempo e ancora meno pazienza.
-luka: Dammi una sola ragione per non spargere il tuo cervello su questo pavimento e andarmene a dormire.
+Gli occhi di Petr sono colmi di terrore.
+luka: Spero non faccia male la mia pistola sulla tua tempia, non che mi interessi ovviamente, io non sento nulla.
+luka: Ascoltami bene, ho poco tempo e ancora meno pazienza.
+luka: Dammi una sola ragione per cui non dovrei spargere il tuo cervello su questo pavimento e andarmene a dormire.
 petr: No! No ti prego!
 petr: Ho informazioni!
 petr: Ho le planimetrie della centrale!
@@ -16,22 +20,25 @@ luka: Di quale centrale stai parlando? E ti avviso, se sento puzza di bugie, ti 
 petr: La centrale a est, a metà strada da qui a Eden, sulla statale.
 petr: Lavoravo lì come manutentore, ho scritto io tutti i documenti, planimetrie e codici. Posso farvi entrare con questo!
 luka: Dai qua! Fammi controllare...
-petr: C'è tutto, falle nel sistema ancora non sistemati, planimetrie complete, tutte le informazioni sui sistemi di difesa, ronde...
+petr: C'è tutto, falle nel sistema tuttora presenti, planimetrie complete, tutte le informazioni sui sistemi di difesa, ronde...
 petr: Per favore devi credermi! Ho rischiato la vita per fare avere tutto questo alla resistenza!
 luka: Taci poppante, sto leggendo.
 Prendo i fascicoli con tutte le informazioni che abbiamo a riguardo.
 luka: forse...
-Quasi non ci credo, combacia quasi tutto, ma quello che mi sta dando ha molte più informazioni.
+Quasi non ci credo, combacia quasi tutto, ma il file che mi sta dando ha molte più informazioni.
 Informazioni preziosissime.
 petr: ...
 luka: Senti un po', schifoso topo di fogna, perchè dovrei credere a una singola parola che dici?
 luka: Indossi l'uniforme, non sei neanche un collaborazionista forzato, hai scelto tu di arruolarti, e ora cambi idea così? All'improvviso, fai i bagagli e ci consegni le chiavi di casa?
 petr: Sono stato costretto!
+petr: Ti racconterò tutto...
 petr: Avevo bisogno di un lavoro, mi avevano detto che sarei rimasto alla manutenzione dei veicoli. Saremmo morti di fame senza soldi.
 petr: Mio fratello è invalido dalla guerra civile di 5 anni fa, veniamo dal nord, non c'è via di fuga lassù!
 petr: Ho dovuto fare cose orribili è vero, sono stato torturato perchè mi sono rifiutato tante volte di obbedire.
-luka: Effettivamente mi chiedevo cosa fossero quelle botte sul viso, ha anche un orecchio... sembra mangiato? Cosa fanno veramente alla capitale?
-petr: Dopo anni di lavoro disgustoso sono riuscito a farci cambiare di sede, lontano dalla capitale, nella speranza di fuggire.
+Effettivamente mi chiedevo cosa fossero quelle botte sul viso, ha anche un orecchio... sembra mangiato?
+Cosa fanno veramente alla capitale?
+petr: Dopo anni di lavoro disgustoso sono riuscito a farci cambiare sede, lontano dalla capitale, nella speranza di fuggire.
+petr: Sono stato spostato alla manutenzione della centrale elettrica nazionale un anno fa.
 petr: Nel mentre ho guadagnato la fiducia dei lavoratori della centrale, non sono cattivi, sono solo... Neutrali, fanno quel che possono per dar da mangiare ai loro figli.
 luka: Cazzate! Non esistono neutrali in questa guerra, pensano di lavarsene le mani così, ma sono solo dei vigliacchi. Complici.
 luka: Mentre voi siete lì a lavorare per mantenere l'infrastruttura del governo in piedi, a mangiare caviale nei vostri latti caldi.
@@ -45,12 +52,12 @@ petr: Aspetta! Ti ho dato tutto, ho rischiato tutto per fare finalmente la diffe
 petr: Inoltre non ci metteranno tanto a capire che i documenti sono spariti, possiamo attaccarli in fretta, con me ad aiutarvi sarà più semplice!
 luka: ...
 Sarà meglio informare Ivan.
-Che situazione.
 do GameState.change_background("res://backgrounds/temps/camp.jpg")
+do GameState.wait()
 ivan: allora?
 luka: Sembrerebbe dire il vero, è scappato per consegnarci tutte le informazioni sulla centrale elettrica, con queste entreremmo in 5 minuti.
-ivan: E di lui cosa ne facciamo? So ti ho sentito sbraitare dentro, ha ucciso tante persone, forse anche famigliari nostri.
-ivan: Solo perchè ci fa un regalino alla fine non vuol dire che vada perdonato. Vogliamo vendetta.
+ivan: E di lui cosa ne facciamo? Ti ho sentito sbraitare dentro, ha ucciso tante persone, forse anche famigliari nostri.
+ivan: Solo perchè alla fine ci fa un regalino non vuol dire che vada perdonato. Vogliamo vendetta.
 do GameState.stop_sfx_loop()
 So cosa intende, le risorse scarseggiano, sarebbe una bocca in più che non possiamo permetterci di sfamare
 Ma uccidere un uomo che si è arreso?

@@ -16,7 +16,7 @@ Gli sguardi dei miei soldati sono lame puntate alla sua gola. Sento il mormorio 
 Salgo su una cassa di munizioni per farmi vedere da tutti.
 soldati: ...
 luka: Guardatelo! Guardatelo bene, cosa vedete?
-soldati: Un verme di Saninski!
+soldati: Un verme di [color=red]Saninski[/color]!
 soldati: Un assassino!
 Non mi sorprende questa risposta, sono abituati a vedere morte e tragiedia ovunque, ma non possono andare avanti così.
 Non è questa la ribellione che ci salverà.
@@ -26,7 +26,7 @@ luka: QUalcuno che ha rischiato la fucilazione per portarci questo.
 luka: Questa è la chiave di volta per la nostra rivoluzione!
 Alzo al cielo il fascicolo che ci aveva portato, come fosse il sacro graal, e in qualche modo, lo è per davvero.
 I soldati rimangono in silenzio, con gli occhi spalancati di stupore.
-luka: Se uccidiamo chiunque cerchi di scappare dalla follia di Saninski, in cosa siamo diversi da lui?
+luka: Se uccidiamo chiunque cerchi di scappare dalla follia di [color=red]Saninski[/color], in cosa siamo diversi da lui?
 luka: Se uccidiamo la speranza, o quel poco che ci rimane, abbiamo già perso.
 luka: Da oggi, lavora ai generatori, è un tecnico, e ne abbiamo un fottuto bisogno!
 Un eterno silenzio avvolge la sala.
@@ -59,6 +59,8 @@ ivan: Cosa faresti senza di me, saresti ancora a spalare letame nella tua fattor
 luka: o di quello che è rimasto.
 luka: Buonanotte Ivan.
 ivan: Buonanotte.
+Mi reco verso la tenda, togliendomi tutto il mio equipaggiamento.
+Mi sentivo più leggero, in tutti i sensi.
 do GameState.change_background("res://backgrounds/temps/inside.jpg")
 do GameState.wait()
 Ancora non ho sonno, tanto vale farsi un giro veloce.

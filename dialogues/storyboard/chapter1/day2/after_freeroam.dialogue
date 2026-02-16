@@ -11,12 +11,13 @@ nele: Subito!
 luka: ...
 nele: ...
 nele: Chiaro, grazie!
-nele: Capo! Movimento sulla vecchia strada statale! Un convoglio diretto a est, verso Eden!
+nele: Luka! Movimento sulla vecchia strada statale! Un convoglio diretto a est, verso Eden!
 ivan: Che tipo di camion? Soldati? Provviste? Armi?
 nele: Sono tre camion, tutti col logo della croce rossa nazionale.
 nele: Sono gli aiuti umanitari, portano scorte per la popolazione, farina, riso, latte in polvere.
 ivan: E perchè dovrebbero essere diretti a Eden? Quel posto è per ufficiali e collaborazionisti, non per la povera gente.
-ivan: Mi puzza di copertura
+ivan: Mi puzza di copertura.
+ivan: Assalitamoli comunque!
 do GameState.change_background("res://backgrounds/temps/camp.jpg")
 luka: ...
 nele: Luka?!
@@ -24,30 +25,36 @@ luka: Prendete l'equipaggiamento, li intercettiamo ai vecchi caselli autostradal
 luka: Vedremo coi nostri occhi cosa sono veramente.
 do GameState.change_background("res://backgrounds/temps/convoy.jpg")
 do GameState.wait()
-do GameState.wait()
 nele: Squadra di cecchini pronta! 
 ivan: Anche i massi sono stati posizionati capo, al suo segnale.
 luka: ...
 luka: Ora!
 bang pow
 L'imboscata è andata perfettamente.
-Nele ha spaventato il primo blindato con un colpo preciso al vetro.
-Un razzo artigianale ha fatto sbandare l'ultimo camion, bloccando la colonna. Gli autisti sono usciti dai camion con le mani bene alzate.
+Nele ha fatto sbandare il primo blindato con un colpo preciso al vetro.
+Un razzo artigianale ha inchiodato l'ultimo camion, bloccando la colonna. Gli autisti sono usciti dai camion con le mani bene alzate.
 In meno di dieci minuti, la strada è ora nostra.
 
+do GameState.change_background("res://backgrounds/temps/black.jpg")
+Scendiamo dalla collina per ispezionare i camion.
+do GameState.wait()
 do GameState.change_background("res://backgrounds/temps/truck_incident.jpg")
 do GameState.wait()
-ivan: Capo vieni qui!
-ivan: Guarda, il carico, sono medicinali, cibo in scatola, tutto il necessario per smettere di sopravvivere, potremmo avere dei pasti decenti per le prossime settimane!
+ivan: Luka vieni qui!
+ivan: Guarda il carico, sono medicinali, cibo in scatola, tutto il necessario per smettere di sopravvivere, potremmo avere dei pasti decenti per le prossime settimane!
 autista: Vi prego! Lo so che è poco... Hanno chiuso tutte le ferrovie e questo è tutto quello che abbiamo per l'intero mese.
-autista: A eden la gente sta già bollendo le cortecce degli alberi. Se non arriva almeno questo, se non portiamo queste briciole... I bambini non arriveranno a fine mese!
+autista: Due giorni fa hanno bombardato metà città, case di gente comunque, persone disperse sotto le macerie...
+autista: A Eden la gente sta già bollendo le cortecce degli alberi. Se non arriva almeno questo, se non portiamo queste briciole... I bambini non arriveranno a fine mese!
 luka: E i generali di Eden? Se non sbaglio molti ufficiali vivono lì.
-autista: Loro ricevono cibo direttamente via aerea, approvigionamenti pieni di cibo, caviale, champagne, le ho viste coi miei occhi.
+autista: Loro ricevono cibo direttamente via aerea, approvigionamenti pieni di cibo, caviale, champagne, li ho viste coi miei occhi.
 autista: Ma se lo tengono tutto per loro, si sono segregati in un angolo della città, e sparano a vista chiunque provi a entrarci.
 autista: Ti prego, lasciaci proseguire! Vogliamo solo portare cibo alle nostre famiglie!
-luka: (Per noi questo cibo sarebbe bastato settimane, energia per i miei soldati, ne abbiamo bisogno, sopratutto in un momento cruciale come questo.)
-luka: (Per loro invece è a malapena un respiro in più prima dell'apnea, maledetti collaborazionisti, vedete cosa succedede ad ascoltare un tiranno?)
-luka: (Eppure...)
+ivan: Ma se giusto ieri abbiamo sentito trasmissioni di musica e balli provenire da Eden.
+luka: Ci stavo giusto pensando, erano i generali che festeggiavano la rovina della città? Per quale motivo?
+luka: Così tante domande...
+Per noi questo cibo sarebbe bastato settimane, energia per i miei soldati, ne abbiamo bisogno, sopratutto in un momento cruciale come questo.
+Per loro invece è a malapena un respiro in più prima dell'apnea, maledetti collaborazionisti, vedete cosa succedede ad ascoltare un tiranno?
+Eppure...
 
 - Depreda tutto
 	=> depreda/start

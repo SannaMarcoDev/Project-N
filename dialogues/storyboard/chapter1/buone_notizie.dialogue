@@ -3,37 +3,38 @@ import "res://dialogues/storyboard/chapter1/approccio_diplomatico.dialogue" as a
 
 ~ start
 luka: Iniziamo con la buona, di negatività oggi ne ho avuto abbastanza.
-ivan: Credo che in questo caso sia meglio la cattiva prima, potremmo doverne discutere un po' di quella buona.
+ivan: Credo che in questo caso sia meglio iniziare con la cattiva, potremmo doverne discutere un po' di quella buona.
 luka: Non mi sembra una buona notizia se dobbiamo discuterne. E allora cosa me lo chiedi a fare se hai già scelto quale dirmi prima?
-ivan: Perchè non puoi arrabbiarti con me visto che mi devi un braccio, quindi ne approfitto per prenderti in giro un po'
+ivan: Perchè non puoi arrabbiarti con me visto che mi devi un braccio, quindi ne approfitto per prenderti un po' in giro.
 luka: Come al solito. Dammela subito. Cominciamo con la cattiva allora.
-ivan: Non ti piacerà. L'artiglieria pesante si è spostata. hanno iniziato a battere a tappeto i settori a nord.
+ivan: Non ti piacerà. L'artiglieria pesante si è spostata. hanno iniziato a battere a tappeto i settori a est.
 ivan: Non mi sembra abbiano un obiettivo preciso. Stanno radendo al suolo qualsiasi cosa sospetta.
-ivan: Non sanno che siamo qui, non ancora. Ma se continuano ad avanzare con questo ritmo, è solo questione di tempo prima che un colpo di mortaio mi cada in testa.
+ivan: Non sanno che siamo qui, non ancora. Ma se continuano ad avanzare con questo ritmo, è solo questione di tempo prima che un colpo di mortaio ci cada in testa.
 ivan: Per ora possiamo solo stare zitti, spegnere le luci, e pregare. Ma qui non potremo stare ancora a lungo.
 luka: ...
 luka: Fantastico.
 luka: E la buona notizia? Spero sia meglio di "abbiamo trovato una scatola di fagioli in più".
-ivan: ehm...
+ivan: Ehm...
 luka: Cosa...
-ivan: Molto meglio, o molto peggio, dipende da come la guardi. Le sentinelle hanno trovato un uomo a sud dell'accampamento.
-luka: l'ennesimo girovago in cerca di alcol?  
+ivan: Molto meglio! O molto peggio. Dipende da come la guardi. Le sentinelle hanno trovato un uomo a sud dell'accampamento.
+luka: L'ennesimo girovago in cerca di alcol?  
 do GameState.stop_sfx_loop()
 do GameState.play_sfx_loop("res://SFX/music/curiosity.wav")
 do GameState.play_sfx("res://SFX/dramatic_boom.mp3")
-ivan: non proprio capo. è un soldato della guardia nazionale.
+ivan: Non proprio capo. è un soldato della guardia nazionale.
 luka: COSA?
 luka: UN'INCURSIONE?
-ivan: Non sembrerebbe, era da solo. Disarmato. Era quasi morto assiderato.
+ivan: Non sembrerebbe, era da solo. Disarmato. Quasi morto assiderato.
 ivan: Non ha opposto nessuna resistenza quando i ragazzi gli sono saltati al collo.
-ivan: è già fortunato che non gli abbiano sparato a vista, il miracolato.
+ivan: È già fortunato che non gli abbiano sparato a vista, il miracolato.
 ivan: Dice di essere un disertore, e che può darci una mano a liberare la centrale elettrica a est. Ma non vuole dirci altro senza il capo della ribellione.
 ivan: Senza di te.
-Un disertore della guardia nazionale può solo voler dire guai, potrebbe essere una trappola
-Non ho granchè voglia di dialogare col nemico, però tanto vale non buttare l'occasione, magari può dirci qualcosa di interessante
+Un disertore della guardia nazionale può solo voler dire guai, potrebbe essere una trappola.
+Non ho granchè voglia di dialogare col nemico, fosse per me lo butterei in un fosso seduta stante.
+Però tanto vale non sprecare l'occasione, magari può dirci qualcosa di interessante.
 luka: Dov'è ora?
-ivan: Legato nella sala macchine. Le consiglio di fare in fretta, Nele e gli altri hanno già iniziato a spettegolare.
-ivan: Potrebbero piantargli un proiettile in testa da un momento all'altro per pura noia
+ivan: Legato nella sala macchine. Le consiglio di fare in fretta, le voci hanno già iniziato a girare.
+ivan: I ragazzi potrebbero piantargli un proiettile in testa da un momento all'altro per pura noia.
 Come dovrei comportarmi...?
 - Approccio diplomatico
 	=> approccio_diplomatico/start

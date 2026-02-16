@@ -42,7 +42,7 @@ if GameState.petr_alive and GameState.stole_food
 	petr: Ho disertato e mi sono unito alla resistenza per fare del bene. NON PER QUESTO!
 	Vedo il luccichio opaco di una vecchia pistola d'ordinanza nella sua mano.
 	Ma non faccio in tempo a reagire.
-	BANG
+	do GameState.play_sfx("res://SFX/shotgun_blast.mp3")
 	Sento una fiammata violenta alla spalla sinistra, un dolore accecante, come se un ferro rovente mi trapassasse la carne e mi frantumasse l'osso.
 	luka: Lurido...!
 	Petr, con gli occhi sgranati dal terrore per ciò che ha fatto, cerca di prendere la mira per il colpo di grazia.
@@ -52,13 +52,13 @@ if GameState.petr_alive and GameState.stole_food
 	Cerca di divincolarsi, scalcia e urla, ma la mia mano destra ha già trovato l'impugnatura del coltello alla mia cintura.
 	luka: Non siamo in un cazzo di film, non si può fare solo del bene, per i propri obiettivi, a volte, dei sacrifici sono necessari!
 	luka: PER IL BENE DI QUESTO MALEDETTO PAESE!
-	SPLAT.
+	do GameState.play_sfx("res://SFX/body_stabbed.mp3")
 	Con un unico movimento, affondo la lama nel suo petto, dritto al cuore.
 	Con la bocca piena di sangue, Petr pronuncia le sue ultime parole.
 	petr: Pensi davvero... Che le persone che han- hanno fatto tutto questo... Non la pensino esattamente... come te...
 	petr: Non c'è... Via d'uscita... quindi...
 	luka: ...
 	Il suo sguardo fisso nei miei occhi, la bocca aperta in un grido muto, e la luce nei suoi occhi spenta per sempre.
-	Il ragazzo che ho risparmiato ieri, muore oggi per mano mia.
+	Il ragazzo che ieri ho risparmiato, oggi muore per mano mia.
 
 => day3/start

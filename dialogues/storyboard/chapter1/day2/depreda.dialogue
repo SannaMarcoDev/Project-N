@@ -7,12 +7,13 @@ luka: SVUOTATE I CAMION!
 luka: Ogni singolo sacco. La rivoluzione non si combatte a stomaco vuoto.
 luka: Loro sono già condannati, noi abbiamo ancora una possibilità.
 Luka: MORTE AI COLLABORAZIONISTI!
-ivan: Subito capo.
+ivan: Subito.
 autista: NO!
 autista: I miei figli! Non potete. Non potete farci questo!
 luka: Lasciami andare stupido vecchio! Lasciami andare ho detto!
-BAM
-do GameState.change_background("res://backgrounds/temps/dead_body.jpg")
+do GameState.play_sfx("res://SFX/shotgun_blast.mp3")
+do GameState.wait()
+do GameState.change_background("res://backgrounds/temps/black.jpg")
 do GameState.wait()
 Alzo la mia pistola e premo il grilletto. Il colpo secco rimbomba nella gola, seguito immediatamente da altri due spari dei miei uomini che abbattono gli altri guidatori.
 La mia mente rimane appannata per quella che sembra un’eternità.
@@ -24,4 +25,8 @@ luka: E fatelo in fretta.
 soldato: Si mangia finalmente!.
 soldato: Non ne potevo veramente più, ancora un giorno così e sarei uscito di testa.
 set GameState.stole_food = true
+do GameState.change_background("res://backgrounds/temps/black.jpg")
+do GameState.wait()
+I soldati recuperano tutto con una velocità impressionante.
+E in neanche un'ora, abbiamo recuperato nuovi camion, e risorse per proseguire con la nostra missione.
 => sera/start

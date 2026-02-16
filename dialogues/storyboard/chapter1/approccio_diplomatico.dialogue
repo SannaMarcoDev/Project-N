@@ -6,62 +6,67 @@ luka: Apetta qui, se senti urlare, entra e spara a tutto ciò che non sono io.
 ivan: Ho il colpo in canna capo.
 do GameState.change_background("res://backgrounds/temps/inside.jpg")
 do GameState.wait()
+Entrato nella tenda, l'odore di legna nella caldaia riempie l'atmosfera.
 petr: ...
 luka: ...
-luka: Non sono qui per farti del male. Puoi stare tranquillo.
+luka: Puoi stare tranquillo. Non sono qui per farti del male. 
 luka: Non ancora almeno.
 luka: Mi dicono che hai regali per noi. Ma prima, voglio sapere perchè.
 luka: Perchè mai un soldato con un pasto caldo garantito e un letto sicuro viene a morire di freddo da noi ratti?
-luka: Vedo che hai anche l'uniforme della guardia nazionale, ti sei arruolato tu di tua spontanea volontà, non sei stato forzato come tanti altri.
+luka: Vedo che hai anche l'uniforme della guardia nazionale, ti sei arruolato di tua spontanea volontà, non sei stato forzato come tanti altri.
 luka: Perchè non dovrei spararti un colpo qui e ora?
 petr: ...
-petr: Ti prego no!
+petr: No ti prego!
+petr: Ti racconterò tutto.
 petr: Avevo bisogno di un lavoro, mi avevano detto che sarei rimasto alla manutenzione dei veicoli. Saremmo morti di fame senza soldi.
 petr: Mio fratello è invalido dalla guerra civile di 5 anni fa, veniamo dal nord, non c'è via di fuga lassù!
-petr: Ho dovuto fare cose orribili è vero, sono stato torturato perchè mi sono rifiutato tante volte di obbedire.
-luka: Effettivamente mi chiedevo cosa fossero quelle botte sul viso, ha anche un orecchio... sembra mangiato? Cosa fanno veramente alla capitale?
-petr: Dopo anni di lavoro disgustoso sono riuscito a farci cambiare di sede, lontano dalla capitale, nella speranza di fuggire.
+petr: Ho dovuto fare cose orribili, è vero. Sono stato torturato perchè mi sono rifiutato tante volte di obbedire.
+Effettivamente mi chiedevo cosa fossero quelle botte sul viso, ha anche un orecchio... sembra mangiato?
+Cosa fanno veramente alla capitale?
+petr: Dopo anni di lavoro disgustoso sono riuscito a farci cambiare sede, lontano dalla capitale, nella speranza di fuggire.
+petr: Sono stato spostato alla manutenzione della centrale elettrica nazionale un anno fa.
 petr: Nel mentre ho guadagnato la fiducia dei lavoratori della centrale, non sono cattivi, sono solo... Neutrali, fanno quel che possono per dar da mangiare ai loro figli.
-luka: tsk.
+luka: Tsk.
 luka: Non esistono neutrali qua, chiunque lavori per l'infrastruttura governativa è una cane tanto quanto i soldati.
 luka: Tuo fratello invece, è rimasto alla centrale?
-petr: Lui... è morto.
-petr: Ha dato la sua vita per permettermi di scappare, ha distratto le guardie mentre scappavo, ho sentito la sua esecuzione da lonano.
+petr: Lui... È morto.
+petr: Ha dato la sua vita per permettermi di scappare, ha distratto le guardie mentre io correvo all'impazzata, ho sentito la sua esecuzione da lontano.
 luka: Capisco, mi dispiace.
 luka: Andiamo al dunque, cosa hai per noi?
 petr: Ho le planimetrie della centrale, prendile ti prego.
 luka: Di quale centrale stai parlando?
 petr: La centrale a est, a metà strada da qui a Eden, sulla statale.
-petr: Lavoravo lì come manutentore, ho scritto io tutti i documenti, planimetrie e codici. Con questo e il mio aiuto potremmo liberarla, sarebbe una enorme vittoria per la resistenza!
+petr: Lavoravo lì come manutentore, ho scritto io tutti i documenti, planimetrie e codici. Con questo e il mio aiuto potremmo liberarla, sarebbe un'enorme vittoria per la resistenza!
 luka: Fammi controllare...
-petr: C'è tutto, falle nel sistema ancora non sistemati, planimetrie complete, tutte le informazioni sui sistemi di difesa, ronde...
-petr: Per favore devi credermi! Ho rischiato la vita per fare avere tutto questo alla resistenza!
+petr: C'è tutto, falle nel sistema tuttora presenti, planimetrie complete, tutte le informazioni sui sistemi di difesa, ronde...
+petr: Per favore, devi credermi! Ho rischiato la vita per fare avere tutto questo alla resistenza!
 Prendo i fascicoli con tutte le informazioni che abbiamo a riguardo.
-luka: forse...
-Quasi non ci credo, combacia quasi tutto, ma quello che mi sta dando ha molte più informazioni.
+luka: Forse...
+Quasi non ci credo, combacia quasi tutto, ma il file che mi sta dando ha molte più informazioni.
 Informazioni preziosissime.
-luka: Mi sembra tutto attendibile... Lo farò controllare anche dagli altri comunque.
+luka: Mi sembra tutto attendibile... Comunque lo farò controllare anche dagli altri.
 luka: Grazie.
-luka: Quindi, vorresti unirti a noi, e aiutarci a prendere la centrale elettrica? Conveniente.
-luka: E chi mi dice che questa non è una trappola?
-luka: Inoltre, puoi anche fare ammenda quanto vuoi, ma non toglie il fatto che hai ucciso tanta gente durante il tuo "servizio".
-luka: Nostri famigliari forse, perchè dovrei perdonarti? Chi mi garantisce che quando saremo alla centrale, non troveremo mezzo esercito a circondarci?
+luka: Quindi... Vorresti unirti a noi, e aiutarci a prendere la centrale elettrica? Conveniente.
+luka: E chi mi dice che questa non sia una trappola?
+luka: Inoltre, puoi fare ammenda quanto vuoi, ma ciò non toglie che hai ucciso tante persone durante il tuo "servizio".
+luka: Forse anche nostri amici, perchè dovrei perdonarti? Chi mi garantisce che quando saremo alla centrale non troveremo mezzo esercito a circondarci?
 luka: Chi mi garantisce che non è tutta una trappola?
-petr: Non lo so, sono solo qui per fare ammenda per ciò che ho fatto.
-petr: Per mio fratello, per la mia nazione, vorrei solo che tutto ciò finisca.
+petr: Non lo so. 
+petr: Sono solo qui per fare ammenda per ciò che ho fatto.
+petr: Per mio fratello, per la mia nazione. Vorrei solo che tutto ciò finisca.
 petr: Ma per favore, sono un ingegnere, posso aiutarvi coi vostri macchinari!
 petr: Inoltre conosco bene i dintorni della centrale, riuscirei a farvi entrare senza neanche essere visti!
 luka: Basta così.
-Sarà meglio informare Ivan
+Sarà meglio informare Ivan.
 do GameState.change_background("res://backgrounds/temps/camp.jpg")
 luka: Che situazione.
-ivan: allora?
+ivan: Allora?
 luka: Sembrerebbe dire il vero, è scappato per consegnarci tutte le informazioni sulla centrale elettrica, con queste entreremmo in 5 minuti.
-ivan: E di lui cosa ne facciamo? Ha ucciso tante persone, e anche una sarebbe fin troppo.
-ivan: Solo perchè ci fa un regalino alla fine non vuol dire che vada perdonato. Vogliamo vendetta.
+ivan: E di lui cosa ne facciamo? Ha ucciso tante persone, e anche una sarebbe già fin troppo.
+ivan: Solo perchè alla fine ci fa un regalino non vuol dire che vada perdonato. Vogliamo vendetta.
 do GameState.stop_sfx_loop()
 So cosa intende, le risorse scarseggiano, sarebbe una bocca in più che non possiamo permetterci di sfamare.
-Una bocca che fino a ieri mangiava caviale, mentre noi mangiavamo topi ghiaciati.
+Una bocca che fino a ieri mangiava caviale, mentre noi mangiavamo ratti ghiacciati.
 Ma uccidere un uomo che si è arreso?
 - Uccidilo
 	do GameState.play_sfx("res://SFX/dramatic_boom.mp3")

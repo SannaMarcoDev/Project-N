@@ -36,28 +36,28 @@ else
 	luka: ...
 	Sospiro, il ricordo del corpo di Petr ancora fresco nella mia memoria.
 	luka: Sono abbastanza sicuro che non fosse un doppiogiochista.
-	luka: I dati del fascicolo sono solidi. Abbiamo controllato tutto con le informazioni che avevamo già.
+	luka: I dati del fascicolo sono solidi. Abbiamo confrontato tutto con le informazioni che avevamo già.
 	luka: È roba autentica Ivan. Nessuno sacrifica informazioni così vitali solo per tenderci un'imboscata.
 	ivan: E se avessimo sbagliato? Vuoi veramente mobilitare tutta la resistenza su una chance che ci ha dato un morto?
-	ivan: Un tizio che per giunta, hai spedito tu all'altro mondo?
+	ivan: Un tizio che, per giunta, hai spedito tu all'altro mondo?
 	Stringo i pugni.
 	luka: L'ho ucciso per principio!
-	luka: Se fai del male alla causa, non pensare di venire qui a chiedere perdono dopo.
+	luka: Se fai del male alla causa, non pensare di venire qui a chiedere perdono.
 	luka: Non sono Dio, Ivan. Non riesco a perdonare come Lui.
 	luka: Faccio quello che devo per mantenere l'ordine.
 	luka: ...
-	luka: E comunque, la chance è troppo grossa per ignorarla. vivo o morto, le sue informazioni cambieranno questa guerra.
+	luka: E comunque, la chance è troppo grossa per ignorarla. Vivo o morto, le sue informazioni cambieranno questa guerra.
 	ivan: È comunque solo una scommessa.
 	ivan: Ma dannazione, lo capisco. Non possiamo rimanere qui ancora a lungo, mentre il cappio al collo si stringe sempre di più.
 	
 Lascio cadere un mozzicone e lo schiaccio con lo scarpone.
 luka: Hai paura di morire per caso? Che c'è Ivan, cos'hai da perdere ormai?
-ivan: Non ritirare fuori la storia, vecchio bastardo.
+ivan: Non ritirare fuori quella storia, vecchio bastardo.
 ivan: Solo perché la mia famiglia è morta sotto le macerie dei collaborazionisti, non vuol dire che io abbia fretta di raggiungerli.
 ivan: Spero solo di non morire a casaccio. Voglio morire quando avremo vinto.
 luka: Questa è la nostra vittoria!
-luka: Se dovessimo riuscire veramente a prendere il controllo della centrale elettrica, tutte le loro difese, le loro artiglierie, comunicazioni.
-luka: Tutto alla nostra mercé!
+luka: Se dovessimo riuscire veramente a prendere il controllo della centrale elettrica, tutte le loro difese, le loro artiglierie, comunicazioni...
+luka: Sarebbe tutto alla nostra mercé!
 luka: Inoltre lo sai bene. I bombardamenti avanzano. Sentiamo i boati ogni notte più vicini.
 luka: Non sappiamo quando toccherà a noi, ma una cosa è sicura.
 luka: Non bombarderebbero mai la loro preziosa centrale. Sarebbe un suicidio politico. Lì dentro saremo al sicuro.
@@ -73,7 +73,7 @@ Un corteo fantasma di mezzi arrugginiti.
 I camion avanzano a fari spenti, guidati solo dalla luce grigia della notte e dalla memoria muscolare degli autisti che conoscono ogni buca di quella foresta.
 
 Nele tiene una mappa stropicciata sulle ginocchia, illuminandola con una torcia a dinamo dalla luce fioca.
-nele: Faremo meglio ad accamparci a ovest della centrale, se i dati del fascicolo sono corretti, le telecamere dovrebbero avere un punto cieco in quella zona.
+nele: Faremo meglio ad accamparci a ovest della centrale. Se i dati del fascicolo sono corretti, le telecamere dovrebbero avere un punto cieco in quella zona.
 nele: Da lì potremo prenderli alla sprovvista.
 ivan: Se i dati sono corretti, se c'è un punto cieco. La mia vita è appesa a troppi “se” per i miei gusti, ragazza.
 nele: Sempre meglio di un attacco frontale come proponi tu, vecchio. A meno che tu non voglia correre contro le mitragliatrici cercando di schivare i proiettili.
@@ -81,32 +81,32 @@ nele: E con la tua stazza, dubito riusciresti a fare cinque metri.
 Nel mentre, nella stiva dei camion, i soldati si preparano.
 
 if GameState.stole_food
-	Il Bocia tira fuori dalla tasca una barretta energetica. È parte del carico rubato.
+	Bocia tira fuori dalla tasca una barretta energetica. È parte del carico rubato.
 	do GameState.play_sfx("res://SFX/granola_bar_open.wav")
 	La rigira tra le dita con un sorrisetto quasi compiaciuto.
-	Non abbiamo avuto cuore di dirle da dove arrivi tale prelibatezza
+	Non abbiamo avuto cuore di dirle da dove arrivi tale prelibatezza.
 	bocia: Ivan! Vuoi metà? È al cioccolato!
-	Ivan lo guarda con occhi ridotti a fessure.
+	Ivan la guarda con occhi ridotti a fessure.
 	ivan: Mangiala pure piccoletta, io sono ancora pieno.
-	bocia: ouuh...
+	bocia: Owww...
 	bocia: Volevo dividerla con qualcuno, Nele dice che troppo cioccolato mi bucherà i dentini!
 	luka: Tienila per dopo, non so quante ne abbiamo ancor...
-	Con uno scatto fulmineo, un soldato seduto dall'altra parte della stiva ruba la metà del Bocia.
+	Con uno scatto fulmineo, un soldato seduto dall'altra parte della stiva ruba la metà di Bocia.
 	do GameState.play_sfx("res://SFX/granola_grabbed.wav")
 	soldato: Se nessuno la vuole, mangio io hahahahah.
-	soldato: Mi serviranno energie per uccidere domani!
-	Gli uomini erano forti, carichi, pieni di energie.
+	soldato: Mi serviranno energie per uccidere, domani!
+	Gli uomini sono forti, carichi, pieni di energie.
 	Pronti a conquistare il mondo allo schioccare delle mie dita.
-	Anche se ogni tanto mi ricordo, che questa energia è costata energia vitale di altri.	
+	Anche se, ogni tanto, mi ricordo che questa energia è costata energia vitale di altri.	
 else
-	Il Bocia si stringe le braccia al petto, tremando. Non è solo il freddo.
+	Bocia si stringe le braccia al petto, tremando. Non è solo il freddo.
 	Il suo stomaco brontola rumorosamente nel silenzio del camion, un suono lungo e doloroso.
 	bocia: Ho sentito che nella mensa della centrale hanno scorte vere.
 	bocia: Carne in scatola. Forse persino della marmellata!
 	Ivan chiude gli occhi, la testa appoggiata contro la paratia metallica. Sembra più vecchio di dieci anni, la pelle grigia tirata sulle ossa.
 	ivan: Smettila di sognare ragazza, risparmia il fiato. Meno parli, meno calorie bruci.
 	Nele stringe le labbra, pallida come un lenzuolo.
-	nele: Se riuscissimo a prendere la centrale... prenderemo anche la loro cucina. Resisti, piccola.
+	nele: Se riuscissimo a prendere la centrale... prenderemmo anche la loro cucina. Resisti, piccola.
 	La debolezza è palpabile, un passeggero invisibile che ci siede accanto, rendendo ogni movimento uno sforzo titanico.
 
 do GameState.wait()
@@ -117,7 +117,7 @@ if GameState.petr_alive
 	bonk bonk
 	petr: Scusate... scusami.
 	nele: Stai calmo, “Miracolato”. Non ti mangiamo mica.
-	petr: È che... non sono abituato a viaggiare. Di solito riparo questi camion, non ci sto sopra mentre si va in guerra.
+	petr: È che... non sono abituato a viaggiare. Di solito li riparo questi camion, non ci sto sopra mentre si va in guerra.
 	soldato: Tranquillo, amico. Finché ci porti dentro quella centrale, puoi anche ballare la polka.
 	nele: Sei la nostra mascotte ormai. Se sopravvivi tu, sopravviviamo tutti.
 	petr: Heh.
