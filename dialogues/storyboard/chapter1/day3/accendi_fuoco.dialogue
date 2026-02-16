@@ -12,7 +12,7 @@ I soldati si muovono con efficienza silenziosa.
 Scavano una buca profonda per nascondere la fiamma alla vista laterale e usano legna secca, priva di resina, per minimizzare il fumo.
 Spogliamo il ragazzo dei vestiti fradici e lo avvolgiamo in coperte asciutte, posizionandolo vicino al calore della roccia.
 Per un'ora lunga e agonizzante, non succede nulla. Nessuno osa fiatare.
-Solo il crepitio sommesso della legna e il sibilo del vento fuori dal nostro piccolo rifugio caldo.
+Si distinguono solo il crepitio sommesso della legna che arde e il sibilo del vento fuori dal nostro piccolo rifugio caldo.
 Ogni volta che sento un rumore in cielo, il cuore mi salta in gola, immaginando il ronzio di un drone.
 
 do GameState.wait()
@@ -20,16 +20,16 @@ do GameState.wait()
 Poi, un colpo di tosse.
 Debole, rauco, ma inconfondibile.
 Il ragazzo inspira profondamente, come chi riemerge dall'acqua.
-luka: piano ragazzo, piano.
+luka: Piano ragazzo, piano.
 luka: Sei al sicuro, sei con noi ora.
 Un'ondata di sollievo attraversa il piccolo gruppo riunito attorno al fuoco.
 Le spalle tese si rilassano. Qualcuno ridacchia nervosamente.
 nele: Hai visto, Ivan? Il vecchio fuoco funziona ancora.
 ivan: Tsk. Ci è andata bene.
-Il Bocia tira fuori dallo zaino una salsiccia rinsecchita, un tesoro che probabilmente conserva per l'occasione speciale della vittoria.
-bocia: Al diavolo, si festeggia stasera.
+Bocia tira fuori dallo zaino una salsiccia rinsecchita, un tesoro che probabilmente conserva per l'occasione speciale della vittoria.
+bocia: Non aspettiamo! Si festeggia stasera.
 Il profumo di carne e grasso che sfrigola sul fuoco riempie la piccola grotta improvvisata. Sembra il profumo di casa.
-Condividiamo quel boccone simbolico, passandoci la salsiccia calda di mano in mano, ognuno prendendone un morso minuscolo come se fosse un sacramento.
+Condividiamo quel boccone simbolico, passandoci la salsiccia calda di mano in mano, prendendone ognuno un morso minuscolo come se fosse un sacramento.
 Chiacchieriamo sottovoce, non della guerra, non della centrale, ma di cose stupide.
 Il sapore del cibo vero, il ricordo di un letto morbido, scommesse su chi avrebbe dormito di più dopo la vittoria.
 nele: Si è già riaddormentato.
@@ -37,10 +37,10 @@ luka: Lascialo riposare, anzi, dovremmo farlo anche noi, non manca molto all'alb
 Mi sdraio accanto a Nele, che fissa il ragazzino.
 nele: Hai scelto bene.
 luka: Non potrei mai andarti contro, lo sai.
-Passiamo ancora qualche minuti a chiacchierare, solo io e lei.
-Il resto del campo era già a terra, non sapevo che così tanti dei miei soldati russavano.
-Mi sentivo come un liceale con una enorme cotta per qualcuno, parlando con Nele.
-Domani, dovrò dare tutto me stesso per proteggerla, per poter finalmente tornare a casa un giorno.
+Passiamo ancora qualche minuto a chiacchierare, solo io e lei.
+Il resto del campo è già a terra, non sapevo che così tanti dei miei soldati russassero.
+Mi sento come un liceale con una enorme cotta, parlando con Nele.
+Domani, dovrò dare tutto me stesso per proteggerla, per poter finalmente tornare a casa, un giorno.
 Chissà cosa staranno facendo in questo momento...
 do GameState.change_background("res://backgrounds/temps/black.jpg")
 do GameState.wait()

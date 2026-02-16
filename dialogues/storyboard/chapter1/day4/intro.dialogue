@@ -1,6 +1,8 @@
 ~ start
 do GameState.change_background("res://backgrounds/Transitions/Giorno 4.png")
-[wait=2]
+do GameState.wait()
+FINE DEMO
+TUTTA QUESTA SEZIONE é TBD
 do GameState.change_background("res://backgrounds/temps/temp_camp.jpg")
 if GameState.stole_food
 	Il profumo di avena calda e carne in scatola si diffondeva nell'aria gelida, un balsamo per il morale.
@@ -40,7 +42,7 @@ if GameState.petr_alive
 	petr: È acciaio sovietico, Non si spezza mai.
 	luka: Allora si va con il piano del Miracolato
 else
-	Se petr è morto, ancora da scrivere
-	
+	Se petr è morto.
+
 luka: Prepararsi all'ingaggio. Ci muoviamo tra 10 minuti.
 => END
