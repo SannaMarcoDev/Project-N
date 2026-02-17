@@ -16,13 +16,16 @@ do GameState.wait()
 do GameState.change_background("res://backgrounds/temps/black.jpg")
 do GameState.wait()
 Alzo la mia pistola e premo il grilletto. Il colpo secco rimbomba nella gola, seguito immediatamente da altri due spari dei miei uomini che abbattono gli altri guidatori.
+do GameState.play_sfx("res://SFX/shotgun_blast.mp3")
+do GameState.wait(0.5)
+do GameState.play_sfx("res://SFX/shotgun_blast.mp3")
 La mia mente rimane appannata per quella che sembra un’eternità.
 ivan: ...
 nele: ...
 do GameState.change_background("res://backgrounds/temps/truck_incident.jpg")
 luka: Prendete anche i camion, fate in modo che non si noti nemmeno che siamo stati qui.
 luka: E fatelo in fretta.
-soldato: Si mangia finalmente!.
+soldato: Si mangia finalmente!
 soldato: Non ne potevo veramente più, ancora un giorno così e sarei uscito di testa.
 set GameState.stole_food = true
 do GameState.change_background("res://backgrounds/temps/black.jpg")

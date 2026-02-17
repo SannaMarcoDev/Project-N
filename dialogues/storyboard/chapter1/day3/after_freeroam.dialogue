@@ -1,0 +1,54 @@
+import "res://dialogues/storyboard/chapter1/day3/accendi_fuoco.dialogue" as fuoco
+import "res://dialogues/storyboard/chapter1/day3/coperte.dialogue" as coperte
+
+~ start
+
+do GameState.change_background("res://backgrounds/temps/temp_camp.jpg")
+do GameState.wait()
+
+La tenda è piccola, un guscio di tela che puzza di muffa e sudore stantio, ma ripara dal vento.
+Ivan russa già da un po' in un angolo, raggomitolato come un vecchio cane da guerra.
+Nele, invece, è ancora sveglia, seduta a gambe incrociate mentre lucida le lenti del suo mirino alla debole luce di una candela.
+luka: Non riesci a dormire?
+nele: Troppi pensieri. Penso al futuro, alla centrale, a cosa succederebbe se dovessimo perdere, se dovessi perderti. Se ci sarà un futuro per...
+luka: Ci sarà.
+luka: Sarà diverso, ma ci sarà.
+nele: Buonanotte Luka.
+do GameState.change_background("res://backgrounds/temps/black.jpg")
+Il sonno mi prende quasi subito, un buio pesante e senza sogni.
+do GameState.wait()
+
+Braciola: Luka, sveglia!
+do GameState.change_background("res://backgrounds/temps/temp_camp.jpg")
+Apro gli occhi di scatto, la mano già sulla pistola. È Braciola. Il suo volto è pallido sotto il passamontagna.
+luka: Che succede? Ci hanno trovato?
+Braciola: Abbiamo trovato qualcuno. Nel fosso a ovest del perimetro.
+
+Bocia scosta il lembo della tenda. Due soldati entrano trascinando un corpo piccolo e inerte.
+È un ragazzino, non può avere più di dodici anni. I suoi vestiti sono stracci bagnati fradici, rigidi per il ghiaccio.
+Le sue labbra sono blu, la pelle cerea. Trema, ma sono scosse deboli, irregolari. Il corpo sta cedendo velocemente.
+
+Mi avvicino, gli tocco la fronte. È freddo come il marmo.
+
+nele: Dobbiamo scaldarlo, e subito!
+nele: Serve un fuoco. Ha bisogno di calore vero per far ripartire la circolazione.
+ivan: Sei impazzita?
+ivan: Siamo a meno di un chilometro dalla centrale! I droni a scansione termica passano ogni ora.
+ivan: Anche se siamo coperti dai rovi, una fonte di calore come un fuoco risalta come un faro nella notte. Vuoi rischiare di farci bombardare tutti?
+ivan: E per cosa? Guardalo. È quasi andato.
+ivan: Accendiamo il fuoco, rischiamo la vita di 150 uomini, e lui muore comunque tra mezz'ora per lo shock termico. Inoltre non sappiamo un bel niente di lui!
+nele: E allora cosa facciamo? Lo guardiamo spegnersi?
+ivan: Prendete delle coperte, e sperate per il meglio.
+nele: Luka?!
+
+Guardo il ragazzo. Il suo respiro è un rantolo superficiale.
+Il metodo di Ivan è sicuro per la missione, ma lento. Molto lento. Forse troppo lento per un cuore che batte così piano.
+Il fuoco è rapido, potente, la sua chance migliore di sopravvivere alla notte...
+
+Ma è una scommessa mortale contro i sensori della centrale.
+E anche con il fuoco, non c'è garanzia che si svegli.
+
+- Accendi il fuoco
+	=> fuoco/start
+- Usa le coperte
+	=> coperte/start

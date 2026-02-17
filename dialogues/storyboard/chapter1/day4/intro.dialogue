@@ -3,18 +3,19 @@ do GameState.change_background("res://backgrounds/Transitions/Giorno 4.png")
 do GameState.wait()
 FINE DEMO
 TUTTA QUESTA SEZIONE é TBD
+Da riscrivere da 0.
 do GameState.change_background("res://backgrounds/temps/temp_camp.jpg")
 if GameState.stole_food
-	Il profumo di avena calda e carne in scatola si diffondeva nell'aria gelida, un balsamo per il morale.
+	Il profumo di avena calda e carne in scatola si diffondeva nell'aria gelida, un toccasana per il morale.
 	I soldati si muovevano con vigore, pulendo le armi e allacciando gli scarponi con mani ferme.
 	Niente tremori, niente sguardi vacui. Eravamo forti.
-	Vicino al fuoco centrale, Irina sedeva accanto al ragazzino che avevamo salvato.
+	Vicino al fuoco centrale, Nele sedeva accanto al ragazzino che avevamo salvato.
 	Il bambino aveva una ciotola fumante tra le mani e mangiava con una voracità commovente, sporcandosi le guance.
 	nele: Fai piano piccola peste. Ne abbiamo ancora.
 	nele: Mangia tutto, oggi ci servi forte. Devi tenere d'occhio l'accampamento mentre noi non ci siamo!
 	Il bambino annuì, sorridendo a bocca piena.
-	Irina alzò lo sguardo su di me e mi fece un cenno. I suoi occhi erano limpidi, concentrati.
-	Avere la pancia piena e aver salvato quel bambino ci aveva dato qualcosa di più delle calorie, ci aveva dato la speranza.
+	Nele alzò lo sguardo su di me e mi fece un cenno. I suoi occhi erano decisi, pronti a tutto.
+	Avere la pancia piena e aver salvato quel bambino ci aveva dato qualcosa di più di una pancia piena, ci aveva dato la speranza.
 else
 	L'appello del mattino fu una litania funebre prima ancora che la battaglia iniziasse.
 	ivan: Ne mancano 3.
@@ -22,27 +23,83 @@ else
 	luka: Che è successso?
 	ivan: Li hanno trovato fuori l'accampamento.
 	ivan: Due li abbiamo trovati stecchiti con la bava alla bocca, Jonas non sappiamo ancora dove sia finito.
-	ivan: Sono morti in cerca di cibo, stavano morendo di fame.
+	ivan: Sono morti in cerca di cibo, stavano morendo di fame. Probabilmente hanno mangiato qualche bacca avvelenata.
 	Sapevo bene che era colpa mia, dovevo impegnarmi di più con le scorte, avrei potuto fare di più
 	ivan: Non incolparti, hai fatto quello che credevi giusto.
 	luka: Vediamo di mangiare tutto quello che è rimasto, comunque vadano le cose oggi, non ci serviranno più domani.
 	La colazione consisteva in acqua calda in cui erano state bollite delle cortecce di pino e le ultime briciole di gallette ammuffite.
-	I soldati bevevano quel liquido amaro in silenzio, guardando i compagni morti portati via.
-	Irina stringeva il ragazzino a sé, ma non aveva nulla da offrirgli se non un sorso della sua acqua calda.
+	I soldati bevevano quel liquido amaro in silenzio, senza neanche chiedersi dove fossero i loro compagni mancanti
+	Nele stringeva il ragazzino a sé, ma non aveva nulla da offrirgli se non un sorso della sua acqua calda.
 	Il bambino piagnucolava piano per la fame. Eravamo deboli, decimati e arrabbiati.
 	
 if GameState.petr_alive
-	Petr si fece largo tra i soldati, tirando fuori dalla tasca il suo vecchio cacciavite con l'impugnatura rossa, quasi fosse una reliquia sacra.
-	petr: Vi ricordate il condotto a nord di cui parlavo nel camion?
-	petr: Ho riguardato la planimetria sulla chiavetta. Quel settore è in "manutenzione differita" da tre anni. Nessuno lo controlla.
-	petr: La grata è qui, nascosta dietro i cespugli ornamentali secchi. Le viti saranno arrugginite, ma con questo cacciavite, vi porto dentro in silenzio.
-	petr: Sbuca direttamente dietro le linee delle guardie, vicino alle sale generatori. Niente allarmi, niente esplosioni.
-	Ivan lo guardò, poi guardò il cacciavite.
-	ivan: Sei sicuro che quel pezzo di ferro non si spezzi?
-	petr: È acciaio sovietico, Non si spezza mai.
-	luka: Allora si va con il piano del Miracolato
+	if GameState.day3_petr_talk
+		petr: Ehm, capo, per caso ha bisogno che le ricordi il piano d'attacco?
+		- Rinfrescami la memoria
+			petr: Allora, come ho detto ieri potremmo provare a passare per la grata trasandata, passare di lì dovrebbe essere molto semplice.
+			petr: Dovremmo trovare una distrazione, pensavamo di mandare qualcuno all'entrata con un camion, che li distrarrà per un po'.
+			luka: E chi mi dice che questi non ci spareranno a vista?
+			petr: Spesso arrivavano camion di diverso tipo dal governo, non sanno mai chi possa arrivare e con che cosa.
+			petr: Il che ci può dare un po' di tempo. Guarda, qui ho un po' di documenti falsi che ho fatto in questi giorni.
+			petr: Sono molto simili a quelli che usavano loro, ci metteranno del tempo a capire il trucco.
+			luka: Rimane comunque molto rischioso.
+			petr: ...è il massimo che possiamo fare.
+			petr: Nel mentre, gli altri passeranno da dietro, nel condotto, e prendendo la via a destra, sbucheranno nei sotterranei.
+			petr: Lì non c'è quasi nessuno, al massimo una guardia, potrete farla fuori tranquillamente con un arma silenziata.
+			petr: Una volta usciti, proseguendo per il corridoio, sulla sinistra c'è la sala di controllo, controlliamo se è aperta.
+			petr: Da lì potremo prendere controllo delle torrette, e ripulire il campo in un attimo.
+			petr: Altimenti, dovremo disattivare il generatore, nella sala macchine più avanti.
+			petr: Una volta fatto, non potranno chiedere aiuto, ed essendo molti di meno, la vinceremo facile.
+			luka: La stai facendo tu molto facile, sei sicuro di quello che dici?
+			petr: Assolutamente, vedrai, la centrale sarà nostra in un battibaleno.
+			luka: Grazie Petr. Sono contento tu sia con noi.
+		- Non serve
+			luka: Per chi mi hai preso, per un vecchio smemorato?
+			luka: Vai tranquillo, non serve.
+	else
+		petr: Capo! Non le ho ancora spiegato il piano d'attacco!
+		luka: Mi stavo giusto chiedendo come avremmo fatto a entrare.
+		luka: Dimmi tutto soldato.
+		petr: Allora, come ho detto ieri potremmo provare a passare per la grata trasandata, passare di lì dovrebbe essere molto semplice.
+		petr: Dovremmo trovare una distrazione, pensavamo di mandare qualcuno all'entrata con un camion, che li distrarrà per un po'.
+		luka: E chi mi dice che questi non ci spareranno a vista?
+		petr: Spesso arrivavano camion di diverso tipo dal governo, non sanno mai chi possa arrivare e con che cosa.
+		petr: Il che ci può dare un po' di tempo. Guarda, qui ho un po' di documenti falsi che ho fatto in questi giorni.
+		petr: Sono molto simili a quelli che usavano loro, ci metteranno del tempo a capire il trucco.
+		luka: Rimane comunque molto rischioso.
+		petr: ...è il massimo che possiamo fare.
+		petr: Nel mentre, gli altri passeranno da dietro, nel condotto, e prendendo la via a destra, sbucheranno nei sotterranei.
+		petr: Lì non c'è quasi nessuno, al massimo una guardia, potrete farla fuori tranquillamente con un arma silenziata.
+		petr: Una volta usciti, proseguendo per il corridoio, sulla sinistra c'è la sala di controllo, controlliamo se è aperta.
+		petr: Da lì potremo prendere controllo delle torrette, e ripulire il campo in un attimo.
+		petr: Altimenti, dovremo disattivare il generatore, nella sala macchine più avanti.
+		petr: Una volta fatto, non potranno chiedere aiuto, ed essendo molti di meno, la vinceremo facile.
+		luka: La stai facendo tu molto facile, sei sicuro di quello che dici?
+		petr: Assolutamente, vedrai, la centrale sarà nostra in un battibaleno.
+		luka: Grazie Petr. Sono contento tu sia con noi.
 else
-	Se petr è morto.
+	if GameState.day3_petr_talk
+		nele: Hai bisogno di rivedere il piano d'attacco?
+		- Non serve
+			luka: Vai tranquilla, ho ancora una mente sana, non scordo così in fretta.
+			nele: Come vuoi allora, i fascicoli resteranno qua al campo, non ha senso portarceli dietro.
+		- Forse è meglio.
+			luka: Non vedo cosa ci sia di male in una rinfrescata.
+			Stando a quanto scritto nel fascicolo di Ivan, il piano è molto semplice, rudimentale oserei dire.
+			In pratica, dovremo lanciare un camion con degli esplosivi, all'entrata principale, e al contempo alcuni forniranno fuoco di copertura.
+			Il tutto è in realtà una distrazione, una seconda squadra, meno numerosa, passerà dalle fogne.
+			Non sarà un granchè, dato il freddo e la puzza, ma perlomeno dovremmo riuscire a entrare.
+			Dopodichè, sbucheremo nei sotterranei, non sappiamo quanta gente possa esserci, quindi dovremo essere pronti a tutto.
+			Preso il controllo dei sotterranei, uscendo dalla porta e andando a destra, in fondo, dovremmo trovare una sala di controllo
+			Potrebbe essere chiusa, nel caso, la porta successiva è la sala macchine, basterà spegnere il generatore per aprire la porta.
+			Presa quella sala, avremo tutto il campo sotto controllo, con telecamere e comandi a distanza di porte e torrette.
+			Non resterà altro che eliminare i nemici, e il gioco sarà fatto.
+			nele: Bhe mi sembra tutto chiaro.
+			nele: Non sarà il miglior piano, ma a me non viene in mente molto altro.
+			nele: Che ne dici?
+			- Va bene così
+				luka: No direi che va bene.
+				luka: Mi fido di Ivan, se questo è il meglio che ha tirato fuori, allora faremo così.
 
 luka: Prepararsi all'ingaggio. Ci muoviamo tra 10 minuti.
 => END

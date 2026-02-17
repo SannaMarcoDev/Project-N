@@ -5,7 +5,7 @@
 [ext_resource type="Script" uid="uid://biglv2byx7ceh" path="res://scenes/chapter1/freeroam/day1/day1_freeroam.gd" id="3_p3moq"]
 [ext_resource type="Resource" uid="uid://c78jpliiql227" path="res://dialogues/storyboard/chapter1/freeroam/day1_freeroam.dialogue" id="4_4hnxq"]
 [ext_resource type="PackedScene" uid="uid://bv8xvb5uksg1y" path="res://dialogues/balloon.tscn" id="5_p7prq"]
-[ext_resource type="Texture2D" uid="uid://6kw80pvu62ps" path="res://characters/portraits/bocia.png" id="6_psp60"]
+[ext_resource type="Texture2D" uid="uid://6kw80pvu62ps" path="res://characters/portraits/Braciola.png" id="6_psp60"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_upuuy"]
 

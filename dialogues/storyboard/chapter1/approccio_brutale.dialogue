@@ -24,7 +24,7 @@ petr: C'è tutto, falle nel sistema tuttora presenti, planimetrie complete, tutt
 petr: Per favore devi credermi! Ho rischiato la vita per fare avere tutto questo alla resistenza!
 luka: Taci poppante, sto leggendo.
 Prendo i fascicoli con tutte le informazioni che abbiamo a riguardo.
-luka: forse...
+luka: Forse...
 Quasi non ci credo, combacia quasi tutto, ma il file che mi sta dando ha molte più informazioni.
 Informazioni preziosissime.
 petr: ...
@@ -43,7 +43,7 @@ petr: Nel mentre ho guadagnato la fiducia dei lavoratori della centrale, non son
 luka: Cazzate! Non esistono neutrali in questa guerra, pensano di lavarsene le mani così, ma sono solo dei vigliacchi. Complici.
 luka: Mentre voi siete lì a lavorare per mantenere l'infrastruttura del governo in piedi, a mangiare caviale nei vostri latti caldi.
 luka: Noi siamo qui a fare la differenza, mangiando topi e dormendo tutti vicini per un po' di calore.
-luka: Che fine ha fatto tuo fratello? è in agguato da qualche parte in attesa che ti lasciamo andare? Perchè non succederà.
+luka: Che fine ha fatto tuo fratello? È in agguato da qualche parte in attesa che ti lasciamo andare? Perchè non succederà.
 petr: Lui... è morto.
 petr: Ha dato la sua vita per permettermi di scappare, ha distratto le guardie mentre scappavo, ho sentito la sua esecuzione da lonano.
 luka: Ottimo! Un verme in meno. Tempo di fare lo stesso con te.
@@ -54,7 +54,7 @@ luka: ...
 Sarà meglio informare Ivan.
 do GameState.change_background("res://backgrounds/temps/camp.jpg")
 do GameState.wait()
-ivan: allora?
+ivan: Allora?
 luka: Sembrerebbe dire il vero, è scappato per consegnarci tutte le informazioni sulla centrale elettrica, con queste entreremmo in 5 minuti.
 ivan: E di lui cosa ne facciamo? Ti ho sentito sbraitare dentro, ha ucciso tante persone, forse anche famigliari nostri.
 ivan: Solo perchè alla fine ci fa un regalino non vuol dire che vada perdonato. Vogliamo vendetta.

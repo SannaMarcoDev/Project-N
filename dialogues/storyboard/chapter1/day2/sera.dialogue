@@ -3,6 +3,7 @@ import "res://dialogues/storyboard/chapter1/day3/intro.dialogue" as day3
 ~ start
 do GameState.change_background("res://backgrounds/temps/cafeteria.jpg")
 do GameState.wait()
+do GameState.play_sfx_loop("res://SFX/ambience/basic.wav")
 È ormai sera.
 La mensa, che solo poche ore prima risuonava di speranze e risate nervose, ora è un antro di ombre, allungate dalla luce tremolante del generatore.
 È mezza vuota. Molti preferiscono ritirarsi direttamente nelle loro cuccette, forse per dormire.
@@ -43,6 +44,7 @@ if GameState.petr_alive and GameState.stole_food
 	Vedo il luccichio opaco di una vecchia pistola d'ordinanza nella sua mano.
 	Ma non faccio in tempo a reagire.
 	do GameState.play_sfx("res://SFX/shotgun_blast.mp3")
+	do GameState.play_sfx_loop("res://SFX/music/shit.wav")
 	Sento una fiammata violenta alla spalla sinistra, un dolore accecante, come se un ferro rovente mi trapassasse la carne e mi frantumasse l'osso.
 	luka: Lurido...!
 	Petr, con gli occhi sgranati dal terrore per ciò che ha fatto, cerca di prendere la mira per il colpo di grazia.
@@ -60,5 +62,6 @@ if GameState.petr_alive and GameState.stole_food
 	luka: ...
 	Il suo sguardo fisso nei miei occhi, la bocca aperta in un grido muto, e la luce nei suoi occhi spenta per sempre.
 	Il ragazzo che ieri ho risparmiato, oggi muore per mano mia.
+	set GameState.petr_alive = false
 
 => day3/start

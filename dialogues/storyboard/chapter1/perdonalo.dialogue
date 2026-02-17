@@ -22,7 +22,7 @@ Non mi sorprende questa risposta, sono abituati a vedere morte e tragiedia ovunq
 Non è questa la ribellione che ci salverà.
 luka: Io vedo un ragazzo.
 luka: Vedo qualcuno che ha avuto il coraggio di dire BASTA!
-luka: QUalcuno che ha rischiato la fucilazione per portarci questo.
+luka: Qualcuno che ha rischiato la fucilazione per portarci questo.
 luka: Questa è la chiave di volta per la nostra rivoluzione!
 Alzo al cielo il fascicolo che ci aveva portato, come fosse il sacro graal, e in qualche modo, lo è per davvero.
 I soldati rimangono in silenzio, con gli occhi spalancati di stupore.
@@ -33,10 +33,10 @@ Un eterno silenzio avvolge la sala.
 Sguardi diffidenti, si chiedono perchè aiutare il nemico.
 Perchè non ucciderlo e basta? Cosa ce lo impedisce?
 Ivan prova a spezzare il silenzio e la tensione che era nell'aria.
-ivan: E finalmente, non ce la facevo più a fare tutto da solo, ti farò sgobbare piccoletto.
+ivan: E finalmente, non ce la facevo più a fare tutto da solo, ci tornerai utile, poco ma sicuro.
 Un piccolo passo avanti, la prima pietra scagliata.
 soldato: A me potrebbe servire un compagno di boxe! Almeno te sembri della mia stessa taglia, con gli altri le prendo e basta...
-soldato: Calmati, se è un tecnico può riparare il jukebox nell'angolo, lascialo stare
+soldato: Calmati, se è un tecnico può riparare il jukebox nell'angolo, lascialo stare.
 Che si trasforma in una frana, una minuscola frana di benevolenza, forse siamo riusciti a dare speranza a qualcuno, a far provare la compassione.
 Non sarà facile convincere il campo che lui non era più un nemico.
 Scendo dalla cassa e mi avvicino al prigioniero. Gli metto una mano sulla spalla. Si irrigidisce, terrorizzato.
@@ -55,8 +55,8 @@ Si avvicinano uno a uno al prigioniero, chi gli tende la mano in segno di pace, 
 do GameState.change_background("res://backgrounds/temps/bench.jpg")
 do GameState.wait()
 luka: Grazie, per avermi dato corda prima.
-ivan: Cosa faresti senza di me, saresti ancora a spalare letame nella tua fattoria.
-luka: o di quello che è rimasto.
+ivan: Cosa faresti senza di me? Saresti ancora a spalare letame nella tua fattoria.
+luka: O di quello che è rimasto.
 luka: Buonanotte Ivan.
 ivan: Buonanotte.
 Mi reco verso la tenda, togliendomi tutto il mio equipaggiamento.

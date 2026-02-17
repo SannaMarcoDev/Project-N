@@ -37,7 +37,7 @@ else
 	nele: Bhe non sempre. Ad esempio qu...
 	luka: Dai sto parlando in generale lo sai, goditi la vista invece di punzecchiarmi.
 	nele: Che noioso che sei.
-	luka: A proposito, ieri il Bocia mi ha detto che qua in giro potrebbe esserci il suo trenino giallo.
+	luka: A proposito, ieri Braciola mi ha detto che qua in giro potrebbe esserci il suo trenino giallo.
 	luka: Magari è proprio... Ah! Eccolo qua!
 	nele: Perchè mai il suo trenino dovrebbe essere qua? Lei non può venire fin quassù!
 	luka: Non saprei...
@@ -53,28 +53,29 @@ if GameState.day2_bocia_quest_done
 	Sta usando una tazza d'acqua per affogare lo spinosauro...
 elif GameState.day2_bocia_talk and GameState.day2_train_found
 	luka: Guarda cosa ti ho portato?
-	bocia: IL MIO TRENINOOOOO!
-	bocia: CIUF CIUF!
-	bocia: GRAZIE LUKA!
-	bocia: Dove l'hai trovato?
+	Braciola: IL MIO TRENINOOOOO!
+	Braciola: CIUF CIUF!
+	Braciola: GRAZIE LUKA!
+	Braciola: Dove l'hai trovato?
 	luka: L'ho trovato sul promontoro, hai idea di come ci sia finito?
-	bocia: mmmmmm non ne ho idea...
-	bocia: Sarà stato lo spinosauro!
+	Braciola: mmmmmm non ne ho idea...
+	Braciola: Sarà stato lo spinosauro!
 	luka: Certo...
+	set GameState.day2_bocia_quest_done = true
 elif GameState.day2_bocia_talk and GameState.day2_train_found == false
 	Sta giocando coi suoi giocattoli, in modo a dir poco particolare.
 else
 	set GameState.day2_bocia_talk = true
-	bocia: E LO SPINOSAURO STACCA IL BRACCIO DI ULTRA MAN!!!
-	bocia: RAWWRRRRRRR!!
+	Braciola: E LO SPINOSAURO STACCA IL BRACCIO DI ULTRA MAN!!!
+	Braciola: RAWWRRRRRRR!!
 	nele: DALLE CORDE DEL RING, LO SPINOSAURO PRENDE LA RINCORSA, SI STA PREPARANDO PER LA SUA MOSSA FINALE!
 	nele: UNA RKO SU ULTRAMAN! CHE LO MANDA AL TAPPETO!
 	nele: E UNO... E DUE... DIN DIN DIN.
-	bocia: SIIIIII
+	Braciola: SIIIIII
 	luka: ....
 	luka: Nele ti stai divertendo? Non mi sembr...
-	bocia: PRRRRRRR
-	bocia: Non stare ad ascoltare il vecchio puzzoso noioso, ultra man vuole la rivincita!
+	Braciola: PRRRRRRR
+	Braciola: Non stare ad ascoltare il vecchio puzzoso noioso, ultra man vuole la rivincita!
 	luka: ...
 => END
 
@@ -94,7 +95,7 @@ if GameState.day2_ivan_talk
 	Si è completamente immerso nei suoi pensieri
 else:
 	set GameState.day2_ivan_talk = true
-	luka: Ivan mi fai pensa così.
+	luka: Ivan mi fai pena così.
 	ivan: Cosa vuoi piccolo incosciente?
 	luka: Vieni fuori un attimo? Ti offro una sigaretta.
 	In un istante gli si illuminano gli occhi.
@@ -112,7 +113,7 @@ else:
 	luka: In ogni caso, ieri sera ho visto che le luci per il promontorio erano spente, hai idea del perchè?
 	ivan: Pensavo di iniziare a spegnerle di notte, così che i bambini non ci vadano di nascosto.
 	ivan: Considerando che ne vedo sempre di più in giro in orari di coprifuoco.
-	luka: Hai ragione, anche ieri ho visto il Bocia a spasso tardi, l'ho già rimproverata.
+	luka: Hai ragione, anche ieri ho visto Braciola a spasso tardi, l'ho già rimproverata.
 	ivan: Devi essere più duro con loro, se vuoi rimanere a capo di questo campo e fare qualcosa, ci vuole il pugno di ferro!
 	ivan: Altrimenti faranno sempre quello che vogliono.
 	luka: Ma figurati.
