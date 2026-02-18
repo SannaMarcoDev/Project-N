@@ -225,11 +225,20 @@ text = "Response example"
 [node name="EnableAutoButton" type="Button" parent="Balloon"]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 1529.0
-offset_top = 1029.0
-offset_right = 1630.915
-offset_bottom = 1069.795
+offset_left = 1538.0
+offset_top = 1028.0
+offset_right = 1706.4451
+offset_bottom = 1068.795
 text = "AUTO"
+
+[node name="OpenHistory" type="Button" parent="Balloon"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 1732.0
+offset_top = 1028.0
+offset_right = 1900.4451
+offset_bottom = 1068.795
+text = "History"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true

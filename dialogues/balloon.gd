@@ -86,6 +86,12 @@ var auto_advance_timer: Timer = Timer.new()
 ## The button to toggle auto-advance
 @onready var enable_auto_button: Button = %EnableAutoButton
 
+## The button to open dialogue history
+@onready var open_history_button: Button = %OpenHistory
+
+## History popup reference
+var history_popup: Node = null
+
 
 func _ready() -> void:
 	balloon.hide()
@@ -102,6 +108,9 @@ func _ready() -> void:
 
 	auto_advance_timer.timeout.connect(_on_auto_advance_timeout)
 	add_child(auto_advance_timer)
+
+	# Setup history popup
+	_setup_history_popup()
 
 	if auto_start:
 		if not is_instance_valid(dialogue_resource):
@@ -311,3 +320,18 @@ func get_dialogue_history() -> Array:
 func clear_dialogue_history() -> void:
 	dialogue_history.clear()
 	GameState.update_dialogue_history(dialogue_history.duplicate())
+
+
+## Setup the history popup
+func _setup_history_popup() -> void:
+	var history_scene = load("res://dialogues/dialogue_history_popup.tscn")
+	if history_scene:
+		history_popup = history_scene.instantiate()
+		get_tree().root.add_child(history_popup)
+		open_history_button.pressed.connect(_on_open_history_pressed)
+
+
+## Open the history popup
+func _on_open_history_pressed() -> void:
+	if history_popup:
+		history_popup.show_history()
