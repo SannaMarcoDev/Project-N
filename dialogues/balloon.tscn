@@ -222,8 +222,18 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 30
 text = "Response example"
 
+[node name="EnableAutoButton" type="Button" parent="Balloon"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 1529.0
+offset_top = 1029.0
+offset_right = 1630.915
+offset_bottom = 1069.795
+text = "AUTO"
+
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
 
 [connection signal="gui_input" from="Balloon" to="." method="_on_balloon_gui_input"]
 [connection signal="response_selected" from="Balloon/ResponsesMenu" to="." method="_on_responses_menu_response_selected"]
+[connection signal="pressed" from="Balloon/EnableAutoButton" to="." method="_on_enable_auto_pressed"]

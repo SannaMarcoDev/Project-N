@@ -31,6 +31,9 @@ var _current_baloon: Node
 var _looping_audio_player: AudioStreamPlayer = null
 var _loop_tween: Tween = null
 
+# Dialogue history (last 20 lines)
+var dialogue_history: Array = []
+
 func _input(_event):
 	if Input.is_action_just_pressed("toggle_fullscreen"):
 		if DisplayServer.window_get_mode() == DisplayServer.WINDOW_MODE_EXCLUSIVE_FULLSCREEN:
@@ -164,3 +167,34 @@ func stop_sfx_loop() -> void:
 func change_scene(scene_path: String) -> void:
 	_current_baloon = null
 	get_tree().change_scene_to_file.call_deferred(scene_path)
+
+
+## Update dialogue history from balloon
+func update_dialogue_history(history: Array) -> void:
+	dialogue_history = history.duplicate()
+
+
+## Get the dialogue history
+func get_dialogue_history() -> Array:
+	return dialogue_history.duplicate()
+
+
+## Get a specific dialogue line from history by index (0 is oldest)
+func get_dialogue_from_history(index: int) -> Dictionary:
+	if index >= 0 and index < dialogue_history.size():
+		return dialogue_history[index]
+	return {}
+
+
+## Get the last N dialogue lines
+func get_last_dialogue_lines(count: int = 5) -> Array:
+	var result: Array = []
+	var start_index = max(0, dialogue_history.size() - count)
+	for i in range(start_index, dialogue_history.size()):
+		result.append(dialogue_history[i])
+	return result
+
+
+## Clear dialogue history
+func clear_dialogue_history() -> void:
+	dialogue_history.clear()
